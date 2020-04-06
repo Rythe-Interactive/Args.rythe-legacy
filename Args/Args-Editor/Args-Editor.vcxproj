@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{CB2916A5-2CF2-4D93-BDD0-C16CC83481FF}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>GLXEditor</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)Args-Engine\Header;$(SolutionDir)Args-Engine\Include;$(SolutionDir)Resources\Include;$(SolutionDir)Args-Physics\Header;$(SolutionDir)Args-Physics\Include;$(SolutionDir)Args-Math\Header;$(SolutionDir)Args-Math\Include;$(SolutionDir)Args-Window\Header;$(SolutionDir)Args-Window\Include;$(SolutionDir)Args-Rendering\Header;$(SolutionDir)Args-Rendering\Include;$(SolutionDir)Args-Input\Header;$(SolutionDir)Args-Input\Include;$(SolutionDir)Args-Audio\Header;$(SolutionDir)Args-Audio\Include;$(ProjectDir)Header;$(IncludePath)</IncludePath>
+    <IntDir>$(SolutionDir)Bin\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)\$(ProjectName)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)Args-Engine\Header;$(SolutionDir)Args-Engine\Include;$(SolutionDir)Resources\Include;$(SolutionDir)Args-Physics\Header;$(SolutionDir)Args-Physics\Include;$(SolutionDir)Args-Math\Header;$(SolutionDir)Args-Math\Include;$(SolutionDir)Args-Window\Header;$(SolutionDir)Args-Window\Include;$(SolutionDir)Args-Rendering\Header;$(SolutionDir)Args-Rendering\Include;$(SolutionDir)Args-Input\Header;$(SolutionDir)Args-Input\Include;$(SolutionDir)Args-Audio\Header;$(SolutionDir)Args-Audio\Include;$(ProjectDir)Header;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)Bin\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)Args-Engine\Header;$(SolutionDir)Args-Engine\Include;$(SolutionDir)Resources\Include;$(SolutionDir)Args-Physics\Header;$(SolutionDir)Args-Physics\Include;$(SolutionDir)Args-Math\Header;$(SolutionDir)Args-Math\Include;$(SolutionDir)Args-Window\Header;$(SolutionDir)Args-Window\Include;$(SolutionDir)Args-Rendering\Header;$(SolutionDir)Args-Rendering\Include;$(SolutionDir)Args-Input\Header;$(SolutionDir)Args-Input\Include;$(SolutionDir)Args-Audio\Header;$(SolutionDir)Args-Audio\Include;$(ProjectDir)Header;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)Bin\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)Args-Engine\Header;$(SolutionDir)Args-Engine\Include;$(SolutionDir)Resources\Include;$(SolutionDir)Args-Physics\Header;$(SolutionDir)Args-Physics\Include;$(SolutionDir)Args-Math\Header;$(SolutionDir)Args-Math\Include;$(SolutionDir)Args-Window\Header;$(SolutionDir)Args-Window\Include;$(SolutionDir)Args-Rendering\Header;$(SolutionDir)Args-Rendering\Include;$(SolutionDir)Args-Input\Header;$(SolutionDir)Args-Input\Include;$(SolutionDir)Args-Audio\Header;$(SolutionDir)Args-Audio\Include;$(ProjectDir)Header;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)Bin\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <CompileAsManaged>false</CompileAsManaged>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Args-Core.lib;Args-Physics.lib;Args-Window.lib;Args-Rendering.lib;Args-Input.lib;Args-Audio.lib;IrrKlang\irrKlang.lib;GLFW\glfw3.lib;GLFW\glfw3dll.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Resources\Lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <CompileAsManaged>false</CompileAsManaged>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Args-Core.lib;Args-Physics.lib;Args-Window.lib;Args-Rendering.lib;Args-Input.lib;Args-Audio.lib;IrrKlang\irrKlang.lib;GLFW\glfw3.lib;GLFW\glfw3dll.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Resources\Lib\;</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <CompileAsManaged>false</CompileAsManaged>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Args-Core.lib;Args-Physics.lib;Args-Window.lib;Args-Rendering.lib;Args-Input.lib;Args-Audio.lib;IrrKlang\irrKlang.lib;GLFW\glfw3.lib;GLFW\glfw3dll.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Resources\Lib\;</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <CompileAsManaged>false</CompileAsManaged>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Args-Core.lib;Args-Physics.lib;Args-Window.lib;Args-Rendering.lib;Args-Input.lib;Args-Audio.lib;IrrKlang\irrKlang.lib;GLFW\glfw3.lib;GLFW\glfw3dll.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Resources\Lib\;</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Components\Movement2Component.cpp" />
+    <ClCompile Include="Source\Module\GamePlayModule.cpp" />
+    <ClCompile Include="Source\Systems\CameraMovementSystem.cpp" />
+    <ClCompile Include="Source\Module\TestModule.cpp" />
+    <ClCompile Include="Source\Source.cpp" />
+    <ClCompile Include="Source\Systems\DoorSystem.cpp" />
+    <ClCompile Include="Source\Systems\EndPointSystem.cpp" />
+    <ClCompile Include="Source\Systems\Movement1System.cpp" />
+    <ClCompile Include="Source\Systems\Movement2System.cpp" />
+    <ClCompile Include="Source\Systems\PickupSystem.cpp" />
+    <ClCompile Include="Source\Systems\PushSystem.cpp" />
+    <ClCompile Include="Source\Systems\TestMonoUpdateSystem.cpp" />
+    <ClCompile Include="Source\Systems\TestSystem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header\Components\ButtonTriggerComponent.h" />
+    <ClInclude Include="Header\Components\CameraMovementComponent.h" />
+    <ClInclude Include="Header\Components\CheckGroundComponent.h" />
+    <ClInclude Include="Header\Components\DoorTriggerComponent.h" />
+    <ClInclude Include="Header\Components\EndPointComponent.h" />
+    <ClInclude Include="Header\Components\Movement1Component.h" />
+    <ClInclude Include="Header\Components\Movement2Component.h" />
+    <ClInclude Include="Header\Components\PickupAbleComponent.h" />
+    <ClInclude Include="Header\Components\PickupComponent.h" />
+    <ClInclude Include="Header\Components\PlayerComponent.h" />
+    <ClInclude Include="Header\Components\PressureTriggerComponent.h" />
+    <ClInclude Include="Header\Components\PushAbleComponent.h" />
+    <ClInclude Include="Header\Components\PushComponent.h" />
+    <ClInclude Include="Header\Components\TestComponent.h" />
+    <ClInclude Include="Header\Module\GamePlayModule.h" />
+    <ClInclude Include="Header\Module\TestModule.h" />
+    <ClInclude Include="Header\Systems\CameraMovementSystem.h" />
+    <ClInclude Include="Header\Systems\DoorSystem.h" />
+    <ClInclude Include="Header\Systems\EndPointSystem.h" />
+    <ClInclude Include="Header\Systems\Movement1System.h" />
+    <ClInclude Include="Header\Systems\Movement2System.h" />
+    <ClInclude Include="Header\Systems\PickupSystem.h" />
+    <ClInclude Include="Header\Systems\TestMonoUpdateSystem.h" />
+    <ClInclude Include="Header\Components\TestGlobalComponent.h" />
+    <ClInclude Include="Header\Systems\TestSystem.h" />
+    <ClInclude Include="Header\Systems\PushSystem.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{66234881-2DC3-468B-B348-69B9DA80BEB5}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>GLXEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Args-Core</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(SolutionDir)Bin\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)Resources\Lib\</OutDir>
+    <IncludePath>$(SolutionDir)Resources\Include;$(ProjectDir)Header;$(SolutionDir)Args-Math\Include;$(SolutionDir)Args-Input\Include;$(SolutionDir)Args-Input\Header;$(SolutionDir)Args-Rendering;$(SolutionDir)Args-Rendering\Include;$(SolutionDir)Args-Rendering\Header;$(SolutionDir)Args-Physics;$(SolutionDir)Args-Physics\Include;$(SolutionDir)Args-Physics\Header;$(SolutionDir)Args-Window;$(SolutionDir)Args-Window\Include;$(SolutionDir)Args-Window\Header;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Resources\Lib\</OutDir>
+    <IntDir>$(SolutionDir)Bin\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)Resources\Include;$(ProjectDir)Header;$(SolutionDir)Args-Math\Include;$(SolutionDir)Args-Input\Include;$(SolutionDir)Args-Input\Header;$(SolutionDir)Args-Rendering;$(SolutionDir)Args-Rendering\Include;$(SolutionDir)Args-Rendering\Header;$(SolutionDir)Args-Physics;$(SolutionDir)Args-Physics\Include;$(SolutionDir)Args-Physics\Header;$(SolutionDir)Args-Window;$(SolutionDir)Args-Window\Include;$(SolutionDir)Args-Window\Header;$(SolutionDir)Args-Audio\Header;$(SolutionDir)Agrs-Audio\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Resources\Lib\</OutDir>
+    <IntDir>$(SolutionDir)Bin\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)Resources\Include;$(ProjectDir)Header;$(SolutionDir)Args-Math\Include;$(SolutionDir)Args-Input\Include;$(SolutionDir)Args-Input\Header;$(SolutionDir)Args-Rendering;$(SolutionDir)Args-Rendering\Include;$(SolutionDir)Args-Rendering\Header;$(SolutionDir)Args-Physics;$(SolutionDir)Args-Physics\Include;$(SolutionDir)Args-Physics\Header;$(SolutionDir)Args-Window;$(SolutionDir)Args-Window\Include;$(SolutionDir)Args-Window\Header;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Resources\Lib\</OutDir>
+    <IntDir>$(SolutionDir)Bin\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)Resources\Include;$(ProjectDir)Header;$(SolutionDir)Args-Math\Include;$(SolutionDir)Args-Input\Include;$(SolutionDir)Args-Input\Header;$(SolutionDir)Args-Rendering;$(SolutionDir)Args-Rendering\Include;$(SolutionDir)Args-Rendering\Header;$(SolutionDir)Args-Physics;$(SolutionDir)Args-Physics\Include;$(SolutionDir)Args-Physics\Header;$(SolutionDir)Args-Window;$(SolutionDir)Args-Window\Include;$(SolutionDir)Args-Window\Header;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)Header\;$(ProjectDir)Include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsManaged>false</CompileAsManaged>
+      <GenerateXMLDocumentationFiles>true</GenerateXMLDocumentationFiles>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)Header\;$(ProjectDir)Include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsManaged>false</CompileAsManaged>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)Header\;$(ProjectDir)Include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsManaged>false</CompileAsManaged>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)Header\;$(ProjectDir)Include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsManaged>false</CompileAsManaged>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Header\Algorithms-DataStructures\EnumStruct.h" />
+    <ClInclude Include="Header\Base Components\Transform.h" />
+    <ClInclude Include="Header\ECS\Managers\ECS.h" />
+    <ClInclude Include="Header\Engine\CoreModule.h" />
+    <ClInclude Include="Header\Engine\Engine.h" />
+    <ClInclude Include="Header\Events\Event.h" />
+    <ClInclude Include="Header\Events\DefaultEvents.h" />
+    <ClInclude Include="Header\Hierarchy\Module\SceneModule.h" />
+    <ClInclude Include="Header\Hierarchy\System\SceneSystem.h" />
+    <ClInclude Include="Header\Engine\Module.h" />
+    <ClInclude Include="Header\Hierarchy\Component\SceneComponent.h" />
+    <ClInclude Include="Header\Networking\Client.h" />
+    <ClInclude Include="Header\Networking\odin.h" />
+    <ClInclude Include="Header\Networking\Server.h" />
+    <ClInclude Include="Header\Serialisation\JSONLoader.h" />
+    <ClInclude Include="Header\Utils\Config.h" />
+    <ClInclude Include="Header\ECS\ComponentFamily.h" />
+    <ClInclude Include="Header\ECS\Managers\ComponentManager.h" />
+    <ClInclude Include="Header\Serialisation\Serialisable.h" />
+    <ClInclude Include="Header\Utils\Debug.h" />
+    <ClInclude Include="Include\Engine\BaseComponents.h" />
+    <ClInclude Include="Include\Engine\ECSBase.h" />
+    <ClInclude Include="Include\Engine\Events.h" />
+    <ClInclude Include="Include\Engine\Utils.h" />
+    <ClInclude Include="Header\Utils\Common.h" />
+    <ClInclude Include="Header\Algorithms-DataStructures\Delegate.h" />
+    <ClInclude Include="Header\ECS\Component.h" />
+    <ClInclude Include="Header\ECS\Managers\SystemManager.h" />
+    <ClInclude Include="Header\ECS\Entity.h" />
+    <ClInclude Include="Header\ECS\System.h" />
+    <ClInclude Include="Include\Args-Core.h" />
+    <ClInclude Include="Header\Time\Clock.h" />
+    <ClInclude Include="Header\Time\Time.h" />
+    <ClInclude Include="Header\Utils\Defaults.h" />
+    <ClInclude Include="Header\Math\glm.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Hierarchy\Component\SceneComponent.cpp" />
+    <ClCompile Include="Source\Engine\CoreModule.cpp" />
+    <ClCompile Include="Source\ECS\ComponentFamily.cpp" />
+    <ClCompile Include="Source\ECS\Entity.cpp" />
+    <ClCompile Include="Source\Base Components\Transform.cpp" />
+    <ClCompile Include="Source\Engine\Engine.cpp" />
+    <ClCompile Include="Source\ECS\Component.cpp" />
+    <ClCompile Include="Source\ECS\Managers\ECS.cpp" />
+    <ClCompile Include="Source\Events\Event.cpp" />
+    <ClCompile Include="Source\Hierarchy\Module\SceneModule.cpp" />
+    <ClCompile Include="Source\Hierarchy\System\SceneSystem.cpp" />
+    <ClCompile Include="Source\Networking\Client.cpp" />
+    <ClCompile Include="Source\Networking\Server.cpp" />
+    <ClCompile Include="Source\Serialisation\JSONLoader.cpp" />
+    <ClCompile Include="Source\Utils\Debug.cpp" />
+    <ClCompile Include="Source\ECS\Managers\ComponentManager.cpp" />
+    <ClCompile Include="Source\ECS\Managers\SystemManager.cpp" />
+    <ClCompile Include="Source\Time\Clock.cpp" />
+    <ClCompile Include="Source\Time\Timer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
