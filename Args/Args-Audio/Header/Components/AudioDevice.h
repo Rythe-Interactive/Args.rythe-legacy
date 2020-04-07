@@ -1,6 +1,6 @@
 #pragma once
 #include <Args-Core.h>
-#include <IrrKlang/irrKlang.h>
+//#include <IrrKlang/irrKlang.h>
 
 namespace Args
 {
@@ -8,11 +8,11 @@ namespace Args
 	{
 		AudioDevice();
 
-		irrklang::ISoundEngine* audioDevice;
+		//irrklang::ISoundEngine* audioDevice;
 
 		virtual void CleanUp() override;
 
-		irrklang::ISound* Play(const std::string& file, Vector3 position, bool loop = false, bool paused = false);
+		//irrklang::ISound* Play(const std::string& file, Vector3 position, bool loop = false, bool paused = false);
 		void UpdateListener(Vector3 position, Vector3 forward, Vector3 up);
 
 		// Inherited via GlobalComponent

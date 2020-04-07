@@ -1,14 +1,14 @@
 #pragma once
 #include <Args-Core.h>
-#include <IrrKlang/irrKlang.h>
+//#include <IrrKlang/irrKlang.h>
 
 namespace Args
 {
 	struct AudioSource : public Component<AudioSource>
 	{
-		AudioSource(Entity* entity) : Component<AudioSource>(entity), sound() {}
+		AudioSource(Entity* entity) : Component<AudioSource>(entity)/*, sound()*/ {}
 
-		irrklang::ISound* sound;
+		//irrklang::ISound* sound;
 
 		void Load(const std::string& file, bool loop = false);
 
