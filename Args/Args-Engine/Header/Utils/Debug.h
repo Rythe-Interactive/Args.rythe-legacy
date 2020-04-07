@@ -10,7 +10,7 @@
 #define NOMINMAX
 #include <Windows.h>
 
-//#define LOG_RELEASE
+#define LOG_RELEASE
 
 #ifdef _DEBUG
 #define LOG_CONSOLE

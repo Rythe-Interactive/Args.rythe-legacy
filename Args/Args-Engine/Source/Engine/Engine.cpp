@@ -8,7 +8,8 @@ __declspec(dllexport) DWORD NvOptimusEnablement = 0x0000001;
 __declspec(dllexport) int AmdPowerXpressRequestHighPerformance = 1;
 #endif
 
-std::set<Args::uint32> Args::Engine::events;
+std::set<Args::uint32> Args::Engine::eventIds;
+std::unordered_map<Args::uint32, Args::IEvent*> Args::Engine::events;
 std::unordered_map<std::type_index, std::vector<std::function<void(Args::IEvent*)>>> Args::Engine::eventCallbacks;
 
 Args::Engine::Engine(int argc, char* argv[])
@@ -46,7 +47,7 @@ void Args::Engine::Initialise()
 
 	ecs->InitialiseSystems();
 
-	if(commandlineArguments.empty())
+	if (commandlineArguments.empty())
 		Debug::Success(DebugInfo, "Initialised Engine");
 	else
 	{
@@ -61,13 +62,30 @@ void Args::Engine::Initialise()
 void Args::Engine::Run()
 {
 	Debug::Log(DebugInfo, "Started running engine with %i initial entities", (int)ecs->GetEntityCount());
-	while (!CheckEvent<Events::Exit>())
+	try
 	{
-		ecs->UpdateSystems();
+		while (!CheckEvent<Events::Exit>())
+		{
+			ecs->UpdateSystems();
+		}
+	}
+	catch (std::logic_error e)
+	{
+		Args::Engine::RaiseEvent<Args::Events::Exit>(-1);
 	}
 
 	delete ecs;
 	ecs = nullptr;
+
+	Debug::Log(DebugInfo, "Engine exited with code: %i", ExitCode());
+}
+
+int Args::Engine::ExitCode()
+{
+	if (CheckEvent<Events::Exit>())
+		return GetEvent<Events::Exit>()->exitCode;
+
+	return 0;
 }
 
 Args::Engine::~Engine()

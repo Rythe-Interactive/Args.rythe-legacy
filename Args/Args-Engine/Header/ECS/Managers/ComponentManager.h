@@ -92,6 +92,9 @@ namespace Args
 		size_t GetComponentCount(uint32 entityId);
 
 		template<typename ComponentType, INHERITS_FROM(ComponentType, IComponent)>
+		size_t GetComponentCountOfType();
+
+		template<typename ComponentType, INHERITS_FROM(ComponentType, IComponent)>
 		std::vector<ComponentType*> GetComponentsOfType();
 
 		template<typename ComponentType, INHERITS_FROM(ComponentType, IComponent)>
@@ -238,10 +241,30 @@ namespace Args
 	}
 
 	template<typename ComponentType, typename>
+	inline size_t ComponentManager::GetComponentCountOfType()
+	{
+		std::string typeName = GetTypeName<ComponentType>();
+		if (!componentFamilies.count(typeName))
+		{
+			Debug::Error(DebugInfo, "Component type: \"%s\" does not exist or wasn't registered in the engine.", typeName);
+			return 0;
+		}
+
+		return componentFamilies[typeName].get()->GetComponentCount();
+	}
+
+	template<typename ComponentType, typename>
 	inline std::vector<ComponentType*> ComponentManager::GetComponentsOfType()
 	{
+		std::string typeName = GetTypeName<ComponentType>();
+		if (GetComponentCountOfType<ComponentType>() == 0)
+		{
+			Debug::Warning(DebugInfo, "0 instances found of type: \"%s\"", typeName);
+			return std::vector<ComponentType*>();
+		}
+
 		std::vector<ComponentType*> ret;
-		for (IComponent* component : componentFamilies[GetTypeName<ComponentType>()].get()->GetComponentsList())
+		for (IComponent* component : componentFamilies[typeName].get()->GetComponentsList())
 			ret.push_back(dynamic_cast<ComponentType*>(component));
 		return ret;
 	}

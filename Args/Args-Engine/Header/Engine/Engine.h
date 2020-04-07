@@ -20,8 +20,9 @@ namespace Args
 		ECS* ecs;
 
 		std::set<std::string> commandlineArguments;
-		static std::set<uint32> events;
-
+		static std::set<uint32> eventIds;
+		static std::unordered_map<uint32, Args::IEvent*> events;
+		
 		static std::unordered_map<std::type_index, std::vector<std::function<void(Args::IEvent*)>>> eventCallbacks;
 	public:
 
@@ -36,6 +37,12 @@ namespace Args
 
 		template<typename EventType, INHERITS_FROM(EventType, IEvent)>
 		static bool CheckEvent();
+
+		template<typename EventType, INHERITS_FROM(EventType, IEvent)>
+		static EventType* GetEvent();
+
+		template<typename EventType, INHERITS_FROM(EventType, IEvent)>
+		static void ClearEvent();
 
 		template<typename EventType, INHERITS_FROM(EventType, IEvent)>
 		static void BindToEvent(std::function<void(Args::IEvent*)> callback);
@@ -64,23 +71,44 @@ namespace Args
 
 		template<typename ComponentType, INHERITS_FROM(ComponentType, IComponent)>
 		void RegisterComponentType();
+
+		int ExitCode();
 	};
 
 	template<typename EventType, typename... Arguments>
 	inline void Engine::RaiseEvent(Arguments... arguments)
 	{
-		events.insert(EventType::id);
+		eventIds.insert(EventType::id);
 
-		EventType event = EventType(arguments...);
+		events[EventType::id] = new EventType(arguments...);
 
 		for (auto callback : eventCallbacks[typeid(EventType)])
-			callback(&event);
+			callback(events[EventType::id]);
 	}
 
 	template<typename EventType, typename>
 	inline bool Engine::CheckEvent()
 	{
-		return events.count(EventType::id);
+		return eventIds.count(EventType::id);
+	}
+
+	template<typename EventType, typename>
+	inline EventType* Engine::GetEvent()
+	{
+		if (CheckEvent<EventType>())
+			return dynamic_cast<EventType*>(events[EventType::id]);
+		return nullptr;
+	}
+
+	template<typename EventType, typename>
+	inline void Engine::ClearEvent()
+	{
+		if (CheckEvent<EventType>())
+		{
+			eventIds.erase(EventType::id);
+			delete events[EventType::id];
+			events.erase(EventType::id);
+		}
 	}
 
 	template<typename EventType, typename>

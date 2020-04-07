@@ -106,7 +106,7 @@
       <CompileAsManaged>false</CompileAsManaged>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>Args-Core.lib;Args-Physics.lib;Args-Window.lib;Args-Rendering.lib;Args-Input.lib;Args-Audio.lib;IrrKlang\irrKlang.lib;GLFW\glfw3.lib;GLFW\glfw3dll.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Args-Core.lib;Args-Physics.lib;Args-Window.lib;Args-Rendering.lib;Args-Input.lib;Args-Audio.lib;GLFW\glfw3.lib;GLFW\glfw3dll.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)Resources\Lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
@@ -119,7 +119,7 @@
       <CompileAsManaged>false</CompileAsManaged>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>Args-Core.lib;Args-Physics.lib;Args-Window.lib;Args-Rendering.lib;Args-Input.lib;Args-Audio.lib;IrrKlang\irrKlang.lib;GLFW\glfw3.lib;GLFW\glfw3dll.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Args-Core.lib;Args-Physics.lib;Args-Window.lib;Args-Rendering.lib;Args-Input.lib;Args-Audio.lib;GLFW\glfw3.lib;GLFW\glfw3dll.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)Resources\Lib\;</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
@@ -131,7 +131,7 @@
       <CompileAsManaged>false</CompileAsManaged>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>Args-Core.lib;Args-Physics.lib;Args-Window.lib;Args-Rendering.lib;Args-Input.lib;Args-Audio.lib;IrrKlang\irrKlang.lib;GLFW\glfw3.lib;GLFW\glfw3dll.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Args-Core.lib;Args-Physics.lib;Args-Window.lib;Args-Rendering.lib;Args-Input.lib;Args-Audio.lib;GLFW\glfw3.lib;GLFW\glfw3dll.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)Resources\Lib\;</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
@@ -143,52 +143,22 @@
       <CompileAsManaged>false</CompileAsManaged>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>Args-Core.lib;Args-Physics.lib;Args-Window.lib;Args-Rendering.lib;Args-Input.lib;Args-Audio.lib;IrrKlang\irrKlang.lib;GLFW\glfw3.lib;GLFW\glfw3dll.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Args-Core.lib;Args-Physics.lib;Args-Window.lib;Args-Rendering.lib;Args-Input.lib;Args-Audio.lib;GLFW\glfw3.lib;GLFW\glfw3dll.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)Resources\Lib\;</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source\Components\Movement2Component.cpp" />
-    <ClCompile Include="Source\Module\GamePlayModule.cpp" />
-    <ClCompile Include="Source\Systems\CameraMovementSystem.cpp" />
     <ClCompile Include="Source\Module\TestModule.cpp" />
     <ClCompile Include="Source\Source.cpp" />
-    <ClCompile Include="Source\Systems\DoorSystem.cpp" />
-    <ClCompile Include="Source\Systems\EndPointSystem.cpp" />
-    <ClCompile Include="Source\Systems\Movement1System.cpp" />
-    <ClCompile Include="Source\Systems\Movement2System.cpp" />
-    <ClCompile Include="Source\Systems\PickupSystem.cpp" />
-    <ClCompile Include="Source\Systems\PushSystem.cpp" />
     <ClCompile Include="Source\Systems\TestMonoUpdateSystem.cpp" />
     <ClCompile Include="Source\Systems\TestSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header\Components\ButtonTriggerComponent.h" />
-    <ClInclude Include="Header\Components\CameraMovementComponent.h" />
-    <ClInclude Include="Header\Components\CheckGroundComponent.h" />
-    <ClInclude Include="Header\Components\DoorTriggerComponent.h" />
-    <ClInclude Include="Header\Components\EndPointComponent.h" />
-    <ClInclude Include="Header\Components\Movement1Component.h" />
-    <ClInclude Include="Header\Components\Movement2Component.h" />
-    <ClInclude Include="Header\Components\PickupAbleComponent.h" />
-    <ClInclude Include="Header\Components\PickupComponent.h" />
-    <ClInclude Include="Header\Components\PlayerComponent.h" />
-    <ClInclude Include="Header\Components\PressureTriggerComponent.h" />
-    <ClInclude Include="Header\Components\PushAbleComponent.h" />
-    <ClInclude Include="Header\Components\PushComponent.h" />
     <ClInclude Include="Header\Components\TestComponent.h" />
-    <ClInclude Include="Header\Module\GamePlayModule.h" />
     <ClInclude Include="Header\Module\TestModule.h" />
-    <ClInclude Include="Header\Systems\CameraMovementSystem.h" />
-    <ClInclude Include="Header\Systems\DoorSystem.h" />
-    <ClInclude Include="Header\Systems\EndPointSystem.h" />
-    <ClInclude Include="Header\Systems\Movement1System.h" />
-    <ClInclude Include="Header\Systems\Movement2System.h" />
-    <ClInclude Include="Header\Systems\PickupSystem.h" />
     <ClInclude Include="Header\Systems\TestMonoUpdateSystem.h" />
     <ClInclude Include="Header\Components\TestGlobalComponent.h" />
     <ClInclude Include="Header\Systems\TestSystem.h" />
-    <ClInclude Include="Header\Systems\PushSystem.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

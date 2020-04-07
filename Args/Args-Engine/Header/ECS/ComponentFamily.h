@@ -27,6 +27,7 @@ namespace Args
 		virtual uint32 GetComponentTypeID(uint32 componentID) = 0;
 		virtual std::unordered_map<uint32, std::vector<IComponent*>> GetComponents() = 0;
 		virtual std::vector<IComponent*> GetComponentsList() = 0;
+		virtual size_t GetComponentCount() = 0;
 		virtual void CleanUp() = 0;
 	};
 
@@ -111,6 +112,11 @@ namespace Args
 				ret.push_back(&(components[i]));
 
 			return ret;
+		}
+
+		virtual size_t GetComponentCount() override
+		{
+			return components.size();
 		}
 
 		virtual IComponent* GetComponent(uint32 entityId, size_t index = 0) override

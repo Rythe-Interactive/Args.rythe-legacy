@@ -62,6 +62,10 @@ void Args::Renderer::Init()
 
 void Args::Renderer::Render(float deltaTime)
 {
+	if (GetComponentCountOfType<Camera>() == 0)
+		return;
+
+	//glClearColor(0.3f, 0.5f, 1.0f, 1.0f);
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 	glClearDepth(0.0f);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -82,7 +86,6 @@ void Args::Renderer::Render(float deltaTime)
 	//Clock renderClock;
 	//renderClock.Start();
 
-	//glClearColor(0.3f, 0.5f, 1.0f, 1.0f);
 
 	std::vector<LightData> lights;
 	for (auto light : GetComponentsOfType<Light>())

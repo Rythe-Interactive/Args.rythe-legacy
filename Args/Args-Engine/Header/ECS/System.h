@@ -90,6 +90,12 @@ namespace Args
 		}
 
 		template<typename ComponentType, INHERITS_FROM(ComponentType, IComponent)>
+		size_t GetComponentCountOfType()
+		{
+			return componentManager->GetComponentCountOfType<ComponentType>();
+		}
+
+		template<typename ComponentType, INHERITS_FROM(ComponentType, IComponent)>
 		std::vector<ComponentType*> GetComponentsOfType()
 		{
 			return componentManager->GetComponentsOfType<ComponentType>();

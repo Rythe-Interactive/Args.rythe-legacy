@@ -6,8 +6,8 @@ using namespace Args;
 void TestMonoUpdateSystem::Init()
 {
 	BindForUpdate(std::bind(&TestMonoUpdateSystem::Update, this, std::placeholders::_1));
-	BindForFixedUpdate(2.f, std::bind(&TestMonoUpdateSystem::Print, this, std::placeholders::_1));
-	BindForFixedUpdate(3600.f, std::bind(&TestMonoUpdateSystem::Shutdown, this, std::placeholders::_1));
+	BindForFixedUpdate(1.f, std::bind(&TestMonoUpdateSystem::Print, this, std::placeholders::_1));
+	BindForFixedUpdate(15.f, std::bind(&TestMonoUpdateSystem::Shutdown, this, std::placeholders::_1));
 
 	GetGlobalComponent<Args::Input>()->BindAction("Exit", std::bind(&TestMonoUpdateSystem::Exit, this, std::placeholders::_1, std::placeholders::_2));
 
@@ -47,15 +47,15 @@ void TestMonoUpdateSystem::Print(float deltaTime)
 
 void TestMonoUpdateSystem::Shutdown(float deltaTime)
 {
-	/*Debug::Success(DebugInfo, "Elapsed Time: %f", elapsedTime);
-	Engine::RaiseEvent<Events::Exit>();*/
+	Debug::Success(DebugInfo, "Elapsed Time: %f", elapsedTime);
+	Engine::RaiseEvent<Events::Exit>();
 }
 
 void TestMonoUpdateSystem::Exit(Args::ControllerID controller, Args::ActionState action)
 {
 	if (action == Args::ActionState::PRESS)
 	{
-		/*Debug::Success(DebugInfo, "Elapsed Time: %f", elapsedTime);
-		Engine::RaiseEvent<Events::Exit>();*/
+		Debug::Success(DebugInfo, "Elapsed Time: %f", elapsedTime);
+		Engine::RaiseEvent<Events::Exit>();
 	}
 }
