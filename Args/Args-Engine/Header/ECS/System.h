@@ -20,7 +20,7 @@ namespace Args
 		bool enabled = true;
 
 	protected:
-		float lastDeltaTime;
+		float lastDeltaTime = 0.f;
 
 		ComponentManager* componentManager = nullptr;
 
@@ -33,7 +33,7 @@ namespace Args
 	public:
 		virtual void Init() = 0;
 		virtual void UpdateSystem(float deltaTime) = 0;
-		virtual std::set<uint32> GetComponentRequirements() = 0;
+		virtual std::set<uint32>* GetComponentRequirements() = 0;
 
 		template<typename ComponentType>
 		ComponentType* GetGlobalComponent();
@@ -67,9 +67,9 @@ namespace Args
 		}
 
 	public:
-		virtual std::set<uint32> GetComponentRequirements() override
+		virtual std::set<uint32>* GetComponentRequirements() override
 		{
-			return componentRequirements;
+			return &componentRequirements;
 		}
 
 	protected:
@@ -168,7 +168,7 @@ namespace Args
 		void GetComponentsInternal(std::unordered_map<std::type_index, uint32>& typeCount, ComponentType** component);
 
 	public:
-		virtual std::set<uint32> GetComponentRequirements() override;
+		virtual std::set<uint32>* GetComponentRequirements() override;
 
 	protected:
 		EntitySystem();
@@ -272,9 +272,9 @@ namespace Args
 	}
 
 	template<class Self, class ...Components>
-	inline std::set<uint32> EntitySystem<Self, Components...>::GetComponentRequirements()
+	inline std::set<uint32>* EntitySystem<Self, Components...>::GetComponentRequirements()
 	{
-		return componentRequirements;
+		return &componentRequirements;
 	}
 
 	template<class Self, class ...Components>

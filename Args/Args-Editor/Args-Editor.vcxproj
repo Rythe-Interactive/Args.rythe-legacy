@@ -108,6 +108,7 @@
     <Link>
       <AdditionalDependencies>Args-Core.lib;Args-Physics.lib;Args-Window.lib;Args-Rendering.lib;Args-Input.lib;Args-Audio.lib;GLFW\glfw3.lib;GLFW\glfw3dll.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)Resources\Lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <Profile>true</Profile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -121,6 +122,7 @@
     <Link>
       <AdditionalDependencies>Args-Core.lib;Args-Physics.lib;Args-Window.lib;Args-Rendering.lib;Args-Input.lib;Args-Audio.lib;GLFW\glfw3.lib;GLFW\glfw3dll.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)Resources\Lib\;</AdditionalLibraryDirectories>
+      <Profile>true</Profile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -148,12 +150,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Systems\ECSTestSystem.cpp" />
+    <ClCompile Include="Source\Components\TestComponents.cpp" />
     <ClCompile Include="Source\Module\TestModule.cpp" />
     <ClCompile Include="Source\Source.cpp" />
     <ClCompile Include="Source\Systems\TestMonoUpdateSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Header\Components\TestComponents.h" />
     <ClInclude Include="Header\Module\TestModule.h" />
+    <ClInclude Include="Header\Systems\ECSTestSystem.h" />
     <ClInclude Include="Header\Systems\TestMonoUpdateSystem.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

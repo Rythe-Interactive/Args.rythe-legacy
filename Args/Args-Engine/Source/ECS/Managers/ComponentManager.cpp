@@ -5,17 +5,17 @@
 #include "ECS/Entity.h"
 
 
-bool Args::ComponentManager::SetOverlaps(const std::set<uint32>& systemRequirements, const std::set<uint32>& entityComponents)
+bool Args::ComponentManager::SetOverlaps(const std::set<uint32>* systemRequirements, const std::set<uint32>* entityComponents)
 {
-	if (systemRequirements.empty())
+	if (systemRequirements->empty())
 		return true;
 
-	if (entityComponents.empty() || entityComponents.size() < systemRequirements.size())
+	if (entityComponents->empty() || entityComponents->size() < systemRequirements->size())
 		return false;
 
 	bool overlap = true;
-	for (auto& x : systemRequirements)
-		overlap = overlap && entityComponents.count(x);
+	for (auto& x : *systemRequirements)
+		overlap = overlap && entityComponents->count(x);
 
 	return overlap;
 }
@@ -25,13 +25,13 @@ void Args::ComponentManager::UpdateEntityList(uint32 entityID, uint32 componentT
 	if (systems)
 		for (auto& systemData : *systems)
 		{
-			if (!systemData.second.get()->GetComponentRequirements().count(componentTypeId))
+			if (!systemData.second.get()->GetComponentRequirements()->count(componentTypeId))
 				continue;
 
 			if (entityLists[systemData.first].count(entityID))
 				entityLists[systemData.first].erase(entityID);
 
-			if (SetOverlaps(systemData.second.get()->GetComponentRequirements(), entities[entityID]))
+			if (SetOverlaps(systemData.second.get()->GetComponentRequirements(), &entities[entityID]))
 				entityLists[systemData.first].insert(entityID);
 		}
 }
@@ -84,7 +84,7 @@ Args::Entity* Args::ComponentManager::GetEntityProxy(uint32 entityId)
 
 Args::uint32 Args::ComponentManager::AddComponent(std::string typeName, Args::uint32 entityID)
 {
-	if (componentFamilies[typeName])
+	if (componentFamilies.count(typeName) && componentFamilies[typeName])
 	{
 		auto componentID = componentFamilies[typeName]->CreateComponent(entityProxies[entityID]);
 		if (componentID)
@@ -95,6 +95,7 @@ Args::uint32 Args::ComponentManager::AddComponent(std::string typeName, Args::ui
 		}
 		return componentID;
 	}
+	Debug::Warning(DebugInfo, "ComponentType %s is unknown.", typeName.c_str());
 	return 0;
 }
 

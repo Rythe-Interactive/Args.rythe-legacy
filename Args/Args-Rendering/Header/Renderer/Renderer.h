@@ -10,6 +10,7 @@ namespace Args
 	{
 	private:
 		Clock cpuClock;
+		Clock renderClock;
 
 		float vertices[12] {
 			-1.f, -1.f, 0.f,

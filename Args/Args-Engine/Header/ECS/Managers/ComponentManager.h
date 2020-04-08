@@ -27,7 +27,7 @@ namespace Args
 
 		std::unordered_map<std::type_index, std::unique_ptr<ISystem>>* systems = nullptr;
 
-		bool SetOverlaps(const std::set<uint32>& lhs, const std::set<uint32>& rhs);
+		bool SetOverlaps(const std::set<uint32>* lhs, const std::set<uint32>* rhs);
 
 		void UpdateEntityList(uint32 entityID, uint32 componentTypeId);
 
@@ -211,7 +211,7 @@ namespace Args
 	{
 		std::string typeName = GetTypeName<ComponentType>();
 		if (staticComponents.find(typeName) != staticComponents.end())
-			return dynamic_cast<ComponentType*>(staticComponents[typeName].get());
+			return static_cast<ComponentType*>(staticComponents[typeName].get());
 
 		Debug::Error(DebugInfo, "Static component %s does not exist.", typeName.c_str());
 		return nullptr;
@@ -220,18 +220,22 @@ namespace Args
 	template<typename ComponentType, typename>
 	inline ComponentType* ComponentManager::GetComponent(uint32 entityId, size_t index)
 	{
+#ifdef _DEBUG
 		if (componentFamilies.count(GetTypeName<ComponentType>()))
-			return dynamic_cast<ComponentType*>(componentFamilies[GetTypeName<ComponentType>()].get()->GetComponent(entityId, index));
+			return static_cast<ComponentType*>(componentFamilies[GetTypeName<ComponentType>()].get()->GetComponent(entityId, index));
 
 		Debug::Error(DebugInfo, "ComponentType %s was never registered", GetTypeName<ComponentType>().c_str());
 
 		return nullptr;
+#else
+		return static_cast<ComponentType*>(componentFamilies[GetTypeName<ComponentType>()].get()->GetComponent(entityId, index));
+#endif // _DEBUG
 	}
 
 	template<typename ComponentType, typename>
 	inline ComponentType* ComponentManager::GetComponentByID(uint32 componentId)
 	{
-		return dynamic_cast<ComponentType*>(componentFamilies[GetTypeName<ComponentType>()].get()->GetComponentByID(componentId));
+		return static_cast<ComponentType*>(componentFamilies[GetTypeName<ComponentType>()].get()->GetComponentByID(componentId));
 	}
 
 	template<typename ComponentType, typename>
@@ -262,7 +266,7 @@ namespace Args
 
 		std::vector<ComponentType*> ret;
 		for (IComponent* component : componentFamilies[typeName].get()->GetComponentsList())
-			ret.push_back(dynamic_cast<ComponentType*>(component));
+			ret.push_back(static_cast<ComponentType*>(component));
 		return ret;
 	}
 
@@ -272,7 +276,7 @@ namespace Args
 		std::vector<ComponentType*> ret;
 		auto components = componentFamilies[GetTypeName<ComponentType>()].get()->GetComponents()[entityId];
 		for (auto ptr : components)
-			ret.push_back(dynamic_cast<ComponentType*>(ptr));
+			ret.push_back(static_cast<ComponentType*>(ptr));
 		return ret;
 	}
 

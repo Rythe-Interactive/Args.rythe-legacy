@@ -16,7 +16,7 @@ namespace Args
 		
 		std::set<uint32> entitiesToIgnore;
 
-		Rigidbody(Entity* entity) : Component<Rigidbody>(entity), velocity(), forces(), impulses(), restitution(0.5f)
+		Rigidbody(Entity* entity) : Component<Rigidbody>(entity), velocity(), forces(), impulses(), restitution(0.5f), prevPos()
 		{
 			//forces.push_back(Vector3(0, -4.905f, 0));
 			forces.push_back(Vector3(0, -9.81f, 0));

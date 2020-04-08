@@ -15,14 +15,9 @@ namespace Args
 		std::vector<uint32> children;
 
 	public:
-		Transform(Entity* entity) : Component<Transform>(entity), parent(0), children(), matrix()
-		{
-			scaledRotationX = Vector3(1, 0, 0);
-			scaledRotationY = Vector3(0, 1, 0);
-			scaledRotationZ = Vector3(0, 0, 1);
-			position = Vector3(0, 0, 0);
-			one = 1;
-		}
+		//using Component<Transform>::Component;
+
+		Transform(Entity* entity) : Component<Transform>(entity), parent(0), children(), matrix(1.0f){}
 
 		union
 		{

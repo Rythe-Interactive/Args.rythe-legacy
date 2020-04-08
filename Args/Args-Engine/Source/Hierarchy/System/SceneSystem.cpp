@@ -260,8 +260,7 @@ void Args::SceneSystem::LoadScene(std::string fileName)
 				}
 				else
 				{
-					//This will be used to create other known scripts
-					Debug::Warning(DebugInfo, "Unsupported Script");
+					componentManager->AddComponent(name, entity);
 				}
 			}
 		}
@@ -424,8 +423,7 @@ void Args::SceneSystem::LoadScene(std::string fileName)
 					}
 					else
 					{
-						//This will be used to create other known scripts
-						Debug::Warning(DebugInfo, "Unsupported Script");
+						componentManager->AddComponent(name, entity);
 					}
 				}
 			}

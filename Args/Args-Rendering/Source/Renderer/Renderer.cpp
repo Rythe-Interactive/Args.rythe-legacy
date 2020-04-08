@@ -112,11 +112,10 @@ void Args::Renderer::Render(float deltaTime)
 		return;
 	}
 
-	//float cpuTime = cpuClock.End().Milliseconds();
-	//Debug::Log(DebugInfo, "CPU time: %fms", cpuTime);
+	/*float cpuTime = cpuClock.End().Milliseconds();
+	Debug::Log(DebugInfo, "CPU time: %fms", cpuTime);
 
-	//Clock renderClock;
-	//renderClock.Start();
+	renderClock.Start();*/
 
 
 	std::vector<LightData> lights;
@@ -139,11 +138,7 @@ void Args::Renderer::Render(float deltaTime)
 			std::vector<Matrix4> modelMatrices = std::vector<Matrix4>();
 
 			for (Entity* instance : materialGroup.second)
-			{
-				Transform* transform = instance->GetComponent<Transform>();
-				transform->Rotate(Args::up, 0.0001f);
-				modelMatrices.push_back(transform->GetWorldTransform());
-			}
+				modelMatrices.push_back(instance->GetComponent<Transform>()->GetWorldTransform());
 
 			material->Render(modelMatrices, mesh, camera);
 
@@ -190,10 +185,10 @@ void Args::Renderer::Render(float deltaTime)
 
 	GetGlobalComponent<Window>()->Display();
 
-	//float renderTime = renderClock.End().Milliseconds();
-	//Debug::Log(DebugInfo, "Render time: %fms", renderTime);
-	//Debug::Log(DebugInfo, "Combined time: %fms", cpuTime + renderTime);
-	//cpuClock.Start();
+	/*float renderTime = renderClock.End().Milliseconds();
+	Debug::Log(DebugInfo, "Render time: %fms", renderTime);
+	Debug::Log(DebugInfo, "Combined time: %fms", cpuTime + renderTime);
+	cpuClock.Start();*/
 }
 
 void Args::Renderer::RenderLoadScreen(const std::string& texName)

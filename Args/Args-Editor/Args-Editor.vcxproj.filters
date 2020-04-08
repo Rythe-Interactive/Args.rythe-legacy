@@ -24,12 +24,24 @@
     <ClCompile Include="Source\Systems\TestMonoUpdateSystem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Components\TestComponents.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Systems\ECSTestSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header\Module\TestModule.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Header\Systems\TestMonoUpdateSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Components\TestComponents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Systems\ECSTestSystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

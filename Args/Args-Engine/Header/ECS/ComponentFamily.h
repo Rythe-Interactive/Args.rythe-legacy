@@ -119,11 +119,15 @@ namespace Args
 			return components.size();
 		}
 
-		virtual IComponent* GetComponent(uint32 entityId, size_t index = 0) override
+		virtual inline IComponent* GetComponent(uint32 entityId, size_t index = 0) override
 		{
+#ifdef _DEBUG
 			if (entityToComponentId.count(entityId))
 				return &(components[componentIndices[entityToComponentId[entityId][index] - 1]]);
 			return nullptr;
+#else
+			return &(components[componentIndices[entityToComponentId[entityId][index] - 1]]);
+#endif
 		}
 
 		virtual uint32 GetComponentTypeID(uint32 componentID) override
@@ -145,8 +149,9 @@ namespace Args
 
 		virtual void DestroyComponent(uint32 entityId, size_t index = 0) override
 		{
-			componentIndexPool.push(entityToComponentId[entityId][index]);
-			componentIdPool.push(entityToComponentId[entityId][index]);
+			uint32 id = entityToComponentId[entityId][index];
+			componentIndexPool.push(componentIndices[id-1]);
+			componentIdPool.push(id);
 			entityToComponentId[entityId].erase(entityToComponentId[entityId].begin() + index);
 		}
 

@@ -5,7 +5,10 @@ namespace Args
 {
 	struct Camera : public Component<Camera>
 	{
-		Camera(Entity* entity) : Component(entity) {}
+		Camera(Entity* entity) : Component(entity), projection(0.974279f, 0.0f,		 0.0f, 0.0f,
+															   0.0f,	  1.732051f, 0.0f, 0.0f,
+															   0.0f,	  0.0f,		 0.0f, 1.0f,
+															   0.0f,	  0.0f,		 0.1f, 0.0f) {}
 
 		Matrix4 projection;
 

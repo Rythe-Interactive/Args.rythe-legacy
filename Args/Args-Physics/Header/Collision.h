@@ -13,7 +13,7 @@ namespace Args
 		Vector3 normal;
 		float penetration;
 
-		Collision() : other(nullptr) {}
+		Collision() : other(nullptr), self(nullptr), impulse(), normal(), penetration(0) {}
 
 		operator bool()
 		{

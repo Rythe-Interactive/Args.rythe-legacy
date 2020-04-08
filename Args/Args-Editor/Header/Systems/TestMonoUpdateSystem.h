@@ -12,6 +12,10 @@ private:
 	float elapsedTime = 0;
 
 public:
+	static float tortureTime;
+	static float queryTime;
+	static int torturedComponents;
+
 	TestMonoUpdateSystem() : Args::MonoUpdateSystem<TestMonoUpdateSystem>() {}
 
 	virtual void Init() override;

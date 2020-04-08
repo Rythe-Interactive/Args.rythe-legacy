@@ -96,7 +96,7 @@ namespace Args
 	inline EventType* Engine::GetEvent()
 	{
 		if (CheckEvent<EventType>())
-			return dynamic_cast<EventType*>(events[EventType::id]);
+			return static_cast<EventType*>(events[EventType::id]);
 		return nullptr;
 	}
 

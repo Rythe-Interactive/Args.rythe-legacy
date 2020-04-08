@@ -34,7 +34,8 @@ void Args::WindowSystem::Init()
 	glfwWindowHint(GLFW_SAMPLES, 4);
 
 	//window->Create(800, 450, "<Args> Test-Project");
-	window->Create(1280, 720, "<Args> Test-Project");
+	//window->Create(1280, 720, "<Args> Test-Project");
+	window->Create(1920, 1080, "<Args> Test-Project");
 
 	int major = glfwGetWindowAttrib(window->handle, GLFW_CONTEXT_VERSION_MAJOR);
 	int minor = glfwGetWindowAttrib(window->handle, GLFW_CONTEXT_VERSION_MINOR);
