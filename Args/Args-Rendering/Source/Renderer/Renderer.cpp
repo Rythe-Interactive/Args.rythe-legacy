@@ -54,8 +54,40 @@ void Args::Renderer::Init()
 
 	Debug::Success(DebugInfo, ss.str(), vendor, renderer, version, glslVersion);
 
-	Texture::CreateTexture("loadscreen", "loadscreen.png");
+	Texture::CreateTexture("loadscreen", "Args-splashscreen.png");
 	RenderLoadScreen("loadscreen");
+
+#pragma region Default Materials
+	Texture::CreateTexture("Default", "Default/default-albedo.png");
+
+	Texture::CreateTexture("DefaultAlbedo", "Default/default-albedo.png");
+	Texture::CreateTexture("DefaultAo", "Default/default-ao.png");
+	Texture::CreateTexture("DefaultHeight", "Default/default-height.png");
+	Texture::CreateTexture("DefaultMetal", "Default/default-metal.png");
+	Texture::CreateTexture("DefaultNormal", "Default/default-normal.png");
+	Texture::CreateTexture("DefaultRoughness", "Default/default-roughness.png");
+	Texture::CreateTexture("DefaultEmissive", "Default/default-emissive.png");
+
+	Shader::CreateShader("PBRShader", "PBR.vert", "PBR.frag");
+
+	Material* defaultMaterial = Material::CreateMaterial("Default", Shader::GetShader("PBRShader"));
+	defaultMaterial->SetTexture("albedoMap", "DefaultAlbedo");
+	defaultMaterial->SetTexture("aoMap", "DefaultAo");
+	defaultMaterial->SetTexture("heightMap", "DefaultHeight");
+	defaultMaterial->SetTexture("metalMap", "DefaultMetal");
+	defaultMaterial->SetTexture("normalMap", "DefaultNormal");
+	defaultMaterial->SetTexture("roughnessMap", "DefaultRoughness");
+	defaultMaterial->SetTexture("emissiveMap", "DefaultEmissive");
+	defaultMaterial->SetParam<float>("heightScale", 1.f);
+
+	Mesh::CreateMesh("Cube", "Cube.obj");
+	Mesh::CreateMesh("Plane", "plane.obj");
+	Mesh::CreateMesh("Sphere", "Sphere.obj");
+
+	Shader::CreateShader("ColorShader", "color.vert", "color.frag");
+	Material* colorMaterial = Material::CreateMaterial("Color", Shader::GetShader("ColorShader"));
+	colorMaterial->SetParam<Vector4>("diffuseColor", Vector4(0.f, 1.f, 0.f, 1.f));
+#pragma endregion
 
 	cpuClock.Start();
 }
@@ -74,7 +106,7 @@ void Args::Renderer::Render(float deltaTime)
 	glDepthFunc(GL_GREATER);
 
 	SceneComponent* sceneManager = GetGlobalComponent<SceneComponent>();
-	if (sceneManager->nextScene != "null")
+	if (sceneManager->nextScene != "")
 	{
 		//RenderLoadScreen("loadscreen");
 		return;
@@ -107,14 +139,18 @@ void Args::Renderer::Render(float deltaTime)
 			std::vector<Matrix4> modelMatrices = std::vector<Matrix4>();
 
 			for (Entity* instance : materialGroup.second)
-				modelMatrices.push_back(instance->GetComponent<Transform>()->GetWorldTransform());
+			{
+				Transform* transform = instance->GetComponent<Transform>();
+				transform->Rotate(Args::up, 0.0001f);
+				modelMatrices.push_back(transform->GetWorldTransform());
+			}
 
 			material->Render(modelMatrices, mesh, camera);
 
 			material->Release(mesh);
 		}
 	}
-	
+
 	for (auto collider : GetComponentsOfType<Collider>())
 		if (collider->debugRender)
 		{

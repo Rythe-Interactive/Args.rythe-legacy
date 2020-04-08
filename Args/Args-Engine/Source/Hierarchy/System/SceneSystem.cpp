@@ -17,91 +17,36 @@ Args::SceneSystem::SceneSystem()
 void Args::SceneSystem::Update(float deltaTime)
 {
 	SceneComponent* sceneManager = GetGlobalComponent<SceneComponent>();
-	if (sceneManager->nextScene != "null")
+	if (sceneManager->nextScene != "")
 	{
 		LoadScene(sceneManager->nextScene);
-		sceneManager->nextScene = "null";
+		sceneManager->nextScene = "";
 	}
 }
 
 void Args::SceneSystem::Init()
 {
-#pragma region Material things
-	Args::Texture::CreateTexture("Default", "Default/default-albedo.png");
-
-	Args::Texture::CreateTexture("DefaultAlbedo", "Default/default-albedo.png");
-	Args::Texture::CreateTexture("DefaultAo", "Default/default-ao.png");
-	Args::Texture::CreateTexture("DefaultHeight", "Default/default-height.png");
-	Args::Texture::CreateTexture("DefaultMetal", "Default/default-metal.png");
-	Args::Texture::CreateTexture("DefaultNormal", "Default/default-normal.png");
-	Args::Texture::CreateTexture("DefaultRoughness", "Default/default-roughness.png");
-	Args::Texture::CreateTexture("DefaultEmissive", "Default/default-emissive.png");
-
-	//Args::Texture::CreateTexture("GigbitAlbedo", "Gigbit/Gigbit_Model_1001_BaseColor.png");
-	//Args::Texture::CreateTexture("GigbitAo", "Gigbit/Gigbit_Model_1001_Ao.png");
-	//Args::Texture::CreateTexture("GigbitHeight", "Gigbit/Gigbit_Model_1001_Height.png");
-	//Args::Texture::CreateTexture("GigbitMetal", "Gigbit/Gigbit_Model_1001_Metallic.png");
-	//Args::Texture::CreateTexture("GigbitNormal", "Gigbit/Gigbit_Model_1001_Normal.png");
-	//Args::Texture::CreateTexture("GigbitRoughness", "Gigbit/Gigbit_Model_1001_Roughness.png");
-	//Args::Texture::CreateTexture("GigbitEmissive", "Gigbit/Gigbit_Model_1001_Emissive.png");
-
-	Args::Shader::CreateShader("PBRShader", "PBR.vert", "PBR.frag");
-
-
-	/*Args::Material* gigbitMaterial = Args::Material::CreateMaterial("GigbitMat", Args::Shader::GetShader("PBRShader"));
-	gigbitMaterial->SetTexture("albedoMap", "GigbitAlbedo");
-	gigbitMaterial->SetTexture("aoMap", "GigbitAo");
-	gigbitMaterial->SetTexture("heightMap", "GigbitHeight");
-	gigbitMaterial->SetTexture("metalMap", "GigbitMetal");
-	gigbitMaterial->SetTexture("normalMap", "GigbitNormal");
-	gigbitMaterial->SetTexture("roughnessMap", "GigbitRoughness");
-	gigbitMaterial->SetTexture("emissiveMap", "GigbitEmissive");
-	gigbitMaterial->SetParam<float>("heightScale", 1.f);*/
-
-	Args::Material* pbrMaterial = Args::Material::CreateMaterial("PBRMat", Args::Shader::GetShader("PBRShader"));
-	pbrMaterial->SetTexture("albedoMap", "DefaultAlbedo");
-	pbrMaterial->SetTexture("aoMap", "DefaultAo");
-	pbrMaterial->SetTexture("heightMap", "DefaultHeight");
-	pbrMaterial->SetTexture("metalMap", "DefaultMetal");
-	pbrMaterial->SetTexture("normalMap", "DefaultNormal");
-	pbrMaterial->SetTexture("roughnessMap", "DefaultRoughness");
-	pbrMaterial->SetTexture("emissiveMap", "DefaultEmissive");
-	pbrMaterial->SetParam<float>("heightScale", 1.f);
-
-	Args::Mesh::CreateMesh("TestMesh", "Cube.obj");
-	Args::Mesh::CreateMesh("Plane", "plane.obj");
-	Args::Mesh::CreateMesh("TestMeshSphere", "UVSphereSmooth.obj");
-	Args::Mesh::CreateMesh("Gigbit", "Gigbit_model/Gigbit_model.obj");
-
-	Args::Shader::CreateShader("ColorShader", "color.vert", "color.frag");
-	Args::Material* testMaterial = Args::Material::CreateMaterial("testMaterial", Args::Shader::GetShader("ColorShader"));
-	testMaterial->SetParam<Args::Vector4>("diffuseColor", Args::Vector4(0.f, 1.f, 0.f, 1.f));
-
-#pragma endregion
-
 	BindForUpdate(std::bind(&SceneSystem::Update, this, std::placeholders::_1));
 
 	SceneComponent* sceneManager = GetGlobalComponent<SceneComponent>();
-	sceneManager->nextScene = "null";
-	//LoadScene("SampleScene");
-	//LoadScene("OtherScene");
-	LoadScene("Level 1");
+	sceneManager->nextScene = "";
 }
 
 void Args::SceneSystem::LoadScene(std::string fileName)
 {
 	Debug::Log(DebugInfo, "Loading Scene");
 	SceneComponent* sceneManager = GetGlobalComponent<SceneComponent>();
-	std::string json = sceneManager->jsonLoader.LoadSceneFile(fileName);
-	Document dom;
-	dom.Parse(json.c_str());
+
+	Document dom = sceneManager->jsonLoader.LoadFile(SceneDir + fileName + ".scene");
 
 	Debug::Log(DebugInfo, "Aserting...");
-	assert(dom["Scene"].IsArray());
+	assert(dom.HasMember("scene"));
+	assert(dom["scene"].IsArray());
 	Debug::Log(DebugInfo, "...Done!");
 
-	const Value& Scene = dom["Scene"].GetArray();
+	const Value& Scene = dom["scene"].GetArray();
 	SizeType index = 0;
+	int entityCount = 0, componentCount = 0;
 	while (index < Scene.Size())
 	{
 		const Value& object = Scene[index];
@@ -110,6 +55,7 @@ void Args::SceneSystem::LoadScene(std::string fileName)
 		{
 			Debug::Log(DebugInfo, "Name: %s", object["name"].GetString());
 			//set name to proper object
+			entityCount++;
 		}
 		if (object["components"].IsArray())
 		{
@@ -118,6 +64,7 @@ void Args::SceneSystem::LoadScene(std::string fileName)
 			//create components
 			for (SizeType i = 0; i < components.Size(); i++)
 			{
+				componentCount++;
 				Debug::Log(DebugInfo, "\t\t%s", components[i]["name"].GetString());
 				std::string name = components[i]["name"].GetString();
 				if (name._Equal("Transform"))
@@ -168,49 +115,91 @@ void Args::SceneSystem::LoadScene(std::string fileName)
 					Args::Renderable* renderable;
 					componentManager->AddComponent<Args::Renderable>(entity, &renderable);
 					assert(components[i]["mesh"].IsString());
-					Debug::Log(DebugInfo, "Components[%i] Mesh mesh is string", i);
-					std::string meshName = components[i]["mesh"].GetString();
-					Args::Mesh::CreateMesh(meshName, meshName + "/" + meshName + ".obj");
+
+					std::string meshFile = components[i]["mesh"].GetString();
+
+					size_t nameIndex = 0;
+					if (meshFile.find('/') != std::string::npos)
+						nameIndex = meshFile.find_last_of('/');
+
+					std::string meshName = meshFile.substr(nameIndex);
+
+					if (meshName.find('.') != std::string::npos)
+						meshName = meshFile.substr(nameIndex, meshFile.find_last_of('.') - nameIndex);
+
+					Args::Mesh::CreateMesh(meshName, meshFile);
 					renderable->SetMesh(meshName);
 
-					assert(components[i]["material"].IsString());
-					Debug::Log(DebugInfo, "Components[%i] Mesh material is string", i);
+					std::string matName = "Default";
 
-					std::string matName = components[i]["material"].GetString();
+					if (components[i].HasMember("material"))
+					{
+						assert(components[i]["material"].IsString());
+						Debug::Log(DebugInfo, "Components[%i] Mesh material is string", i);
 
-					std::string albedoName = components[i]["albedo"].GetString();
-					std::string aoName = components[i]["ao"].GetString();
-					std::string heightName = components[i]["height"].GetString();
-					std::string metalName = components[i]["metal"].GetString();
-					std::string normalName = components[i]["normal"].GetString();
-					std::string roughnessName = components[i]["roughness"].GetString();
-					std::string emissiveName = components[i]["emissive"].GetString();
+						matName = components[i]["material"].GetString();
 
-					Debug::Log(DEBUG_BLUE, DebugInfo, "%s", albedoName.c_str());
-					Debug::Log(DEBUG_BLUE, DebugInfo, "%s", aoName.c_str());
-					Debug::Log(DEBUG_BLUE, DebugInfo, "%s", heightName.c_str());
-					Debug::Log(DEBUG_BLUE, DebugInfo, "%s", metalName.c_str());
-					Debug::Log(DEBUG_BLUE, DebugInfo, "%s", normalName.c_str());
-					Debug::Log(DEBUG_BLUE, DebugInfo, "%s", roughnessName.c_str());
-					Debug::Log(DEBUG_BLUE, DebugInfo, "%s", emissiveName.c_str());
+						Args::Material* pbrMaterial = Args::Material::CreateMaterial(matName, Args::Shader::GetShader("PBRShader"));
 
-					Args::Texture::CreateTexture(albedoName, meshName + "/" + albedoName + ".png");
-					Args::Texture::CreateTexture(aoName, meshName + "/" + aoName + ".png");
-					Args::Texture::CreateTexture(heightName, meshName + "/" + heightName + ".png");
-					Args::Texture::CreateTexture(metalName, meshName + "/" + metalName + ".png");
-					Args::Texture::CreateTexture(normalName, meshName + "/" + normalName + ".png");
-					Args::Texture::CreateTexture(roughnessName, meshName + "/" + roughnessName + ".png");
-					Args::Texture::CreateTexture(emissiveName, meshName + "/" + emissiveName + ".png");
+						if (components[i].HasMember("albedo"))
+						{
+							std::string albedoName = components[i]["albedo"].GetString();
+							Debug::Log(DEBUG_BLUE, DebugInfo, "%s", albedoName.c_str());
+							Args::Texture::CreateTexture(albedoName, meshName + "/" + albedoName + ".png");
+							pbrMaterial->SetTexture("albedoMap", albedoName);
+						}
 
-					Args::Material* pbrMaterial = Args::Material::CreateMaterial(matName, Args::Shader::GetShader("PBRShader"));
-					pbrMaterial->SetTexture("albedoMap", albedoName);
-					pbrMaterial->SetTexture("aoMap", aoName);
-					pbrMaterial->SetTexture("heightMap", heightName);
-					pbrMaterial->SetTexture("metalMap", metalName);
-					pbrMaterial->SetTexture("normalMap", normalName);
-					pbrMaterial->SetTexture("roughnessMap", roughnessName);
-					pbrMaterial->SetTexture("emissiveMap", emissiveName);
-					pbrMaterial->SetParam<float>("heightScale", 1.f);
+						if (components[i].HasMember("ao"))
+						{
+							std::string aoName = components[i]["ao"].GetString();
+							Debug::Log(DEBUG_BLUE, DebugInfo, "%s", aoName.c_str());
+							Args::Texture::CreateTexture(aoName, meshName + "/" + aoName + ".png");
+							pbrMaterial->SetTexture("aoMap", aoName);
+						}
+
+						if (components[i].HasMember("height"))
+						{
+							std::string heightName = components[i]["height"].GetString();
+							Debug::Log(DEBUG_BLUE, DebugInfo, "%s", heightName.c_str());
+							Args::Texture::CreateTexture(heightName, meshName + "/" + heightName + ".png");
+							pbrMaterial->SetTexture("heightMap", heightName);
+						}
+
+						if (components[i].HasMember("metal"))
+						{
+							std::string metalName = components[i]["metal"].GetString();
+							Debug::Log(DEBUG_BLUE, DebugInfo, "%s", metalName.c_str());
+							Args::Texture::CreateTexture(metalName, meshName + "/" + metalName + ".png");
+							pbrMaterial->SetTexture("metalMap", metalName);
+						}
+
+						if (components[i].HasMember("normal"))
+						{
+							std::string normalName = components[i]["normal"].GetString();
+							Debug::Log(DEBUG_BLUE, DebugInfo, "%s", normalName.c_str());
+							Args::Texture::CreateTexture(normalName, meshName + "/" + normalName + ".png");
+							pbrMaterial->SetTexture("normalMap", normalName);
+						}
+
+						if (components[i].HasMember("roughness"))
+						{
+							std::string roughnessName = components[i]["roughness"].GetString();
+							Debug::Log(DEBUG_BLUE, DebugInfo, "%s", roughnessName.c_str());
+							Args::Texture::CreateTexture(roughnessName, meshName + "/" + roughnessName + ".png");
+							pbrMaterial->SetTexture("roughnessMap", roughnessName);
+						}
+
+						if (components[i].HasMember("emissive"))
+						{
+							std::string emissiveName = components[i]["emissive"].GetString();
+							Debug::Log(DEBUG_BLUE, DebugInfo, "%s", emissiveName.c_str());
+							Args::Texture::CreateTexture(emissiveName, meshName + "/" + emissiveName + ".png");
+							pbrMaterial->SetTexture("emissiveMap", emissiveName);
+						}
+
+						if (components[i].HasMember("heightScale"))
+							pbrMaterial->SetParam<float>("heightScale", 1.f);
+					}
 
 					renderable->SetMaterial(matName);
 				}
@@ -229,8 +218,8 @@ void Args::SceneSystem::LoadScene(std::string fileName)
 					x = components[i]["center"]["x"].GetFloat();
 					y = components[i]["center"]["y"].GetFloat();
 					z = components[i]["center"]["z"].GetFloat();
-					collider->origin = Args::Vector3(x,y,z);
-					collider->size = Args::Vector3(components[i]["radius"].GetFloat(),0.f,0.f);
+					collider->origin = Args::Vector3(x, y, z);
+					collider->size = Args::Vector3(components[i]["radius"].GetFloat(), 0.f, 0.f);
 				}
 				else if (name._Equal("BoxCollider"))
 				{
@@ -247,37 +236,32 @@ void Args::SceneSystem::LoadScene(std::string fileName)
 				else if (name._Equal("Light"))
 				{
 					//Create Light
-					//Args::Light* light;
-					//componentManager->AddComponent<Args::Light>(entity, &light);
-					//light->SetColour(Args::Vector3(1.0));
-					////Get Light type
-					//assert(components[i]["type"].IsInt());
-					////Debug::Log(DebugInfo, "Components[%i] Light type is int", i);
-					//int type = components[i]["type"].GetInt();
-					//switch (type)
-					//{
-					//case 0:
-					//	light->SetType(Args::LightType::POINT);
-					//	break;
-					//case 1:
-					//	light->SetType(Args::LightType::DIRECTIONAL);
-					//	break;
-					//case 2:
-					//	light->SetType(Args::LightType::SPOT);
-					//	break;
-					//}
+					Args::Light* light;
+					componentManager->AddComponent<Args::Light>(entity, &light);
+					light->SetColour(Args::Vector3(1.0));
+					//Get Light type
+					assert(components[i]["type"].IsString());
+
+					std::string type = components[i]["type"].GetString();
+
+					if (type == "point")
+						light->SetType(LightType::POINT);
+					else if (type == "directional")
+						light->SetType(LightType::DIRECTIONAL);
+					else if (type == "spot")
+						light->SetType(LightType::SPOT);
 				}
-				else if (components[i]["name"].GetString() == "Camera")
+				else if (name._Equal("Camera"))
 				{
 					//Create Camera
 					Args::Camera* camera;
 					componentManager->AddComponent<Args::Camera>(entity, &camera);
-					camera->projection = Args::perspective(90.f, 1920.f / 1080.f, 0.001f, 1000.f);
+					camera->SetProjection(Args::radians(60.f), 1920.f / 1080.f, 0.001f);
 				}
 				else
 				{
 					//This will be used to create other known scripts
-					Debug::Warning(DebugInfo, "Unsupported Script, Please contact your local developer at +31 0618829295");
+					Debug::Warning(DebugInfo, "Unsupported Script");
 				}
 			}
 		}
@@ -441,7 +425,7 @@ void Args::SceneSystem::LoadScene(std::string fileName)
 					else
 					{
 						//This will be used to create other known scripts
-						Debug::Warning(DebugInfo, "Unsupported Script, Please contact your local developer at +31 0618829295");
+						Debug::Warning(DebugInfo, "Unsupported Script");
 					}
 				}
 			}
@@ -450,6 +434,8 @@ void Args::SceneSystem::LoadScene(std::string fileName)
 		//add object to scene
 		index++;
 	}
+
+	Debug::Success(DebugInfo, "Loaded %i entities, with a total of %i components.", entityCount, componentCount);
 }
 
 void Args::SceneSystem::UnloadScene()

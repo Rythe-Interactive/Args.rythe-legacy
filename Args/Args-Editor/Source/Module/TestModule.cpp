@@ -1,19 +1,12 @@
 #include "Module/TestModule.h"
-#include "Components/TestComponent.h"
-#include "Components/TestGlobalComponent.h"
-#include "Systems/TestSystem.h"
 #include "Systems/TestMonoUpdateSystem.h"
 
 
 void TestModule::InitComponents(const std::set<std::string>& arguments)
 {
-	RegisterComponentType<TestComponentA>();
-	RegisterComponentType<TestComponentB>();
-	RegisterGlobalComponentType<TestGlobalComponent>();
 }
 
 void TestModule::InitSystems(const std::set<std::string>& arguments)
 {
-	RegisterSystem<TestSystem>();
 	RegisterSystem<TestMonoUpdateSystem>();
 }

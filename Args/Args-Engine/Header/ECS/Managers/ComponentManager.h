@@ -246,7 +246,7 @@ namespace Args
 		std::string typeName = GetTypeName<ComponentType>();
 		if (!componentFamilies.count(typeName))
 		{
-			Debug::Error(DebugInfo, "Component type: \"%s\" does not exist or wasn't registered in the engine.", typeName);
+			Debug::Error(DebugInfo, "Component type: \"%s\" does not exist or wasn't registered in the engine.", typeName.c_str());
 			return 0;
 		}
 
@@ -258,10 +258,7 @@ namespace Args
 	{
 		std::string typeName = GetTypeName<ComponentType>();
 		if (GetComponentCountOfType<ComponentType>() == 0)
-		{
-			Debug::Warning(DebugInfo, "0 instances found of type: \"%s\"", typeName);
 			return std::vector<ComponentType*>();
-		}
 
 		std::vector<ComponentType*> ret;
 		for (IComponent* component : componentFamilies[typeName].get()->GetComponentsList())

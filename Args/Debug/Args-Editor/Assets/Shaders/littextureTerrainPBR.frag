@@ -228,6 +228,9 @@ void main( void )
  	roughness = MixLayers(roughnessMap, parallaxOffset, surfacePosition, surfaceNormal, weights).r;
  	metallic = MixLayers(metalMap, parallaxOffset, surfacePosition, surfaceNormal, weights).r;
  	ao = MixLayers(aoMap, parallaxOffset, surfacePosition, surfaceNormal, weights).r;
+
+	// Assumption that dielectrics all have a fresnell reflectance at 0° of about 4%
+	// of course not accurate for some dielectrics like water.
  	F0 = mix(vec3(0.04), albedo.rgb, metallic.xxx);
 
 	vec3 lighting = vec3(0.0);

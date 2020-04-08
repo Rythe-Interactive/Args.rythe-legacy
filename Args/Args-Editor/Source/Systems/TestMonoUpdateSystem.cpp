@@ -1,5 +1,4 @@
 #include "Systems/TestMonoUpdateSystem.h"
-#include "Components/TestGlobalComponent.h"
 
 using namespace Args;
 
@@ -7,26 +6,21 @@ void TestMonoUpdateSystem::Init()
 {
 	BindForUpdate(std::bind(&TestMonoUpdateSystem::Update, this, std::placeholders::_1));
 	BindForFixedUpdate(1.f, std::bind(&TestMonoUpdateSystem::Print, this, std::placeholders::_1));
-	BindForFixedUpdate(15.f, std::bind(&TestMonoUpdateSystem::Shutdown, this, std::placeholders::_1));
+	BindForFixedUpdate(60.f, std::bind(&TestMonoUpdateSystem::Shutdown, this, std::placeholders::_1));
 
 	GetGlobalComponent<Args::Input>()->BindAction("Exit", std::bind(&TestMonoUpdateSystem::Exit, this, std::placeholders::_1, std::placeholders::_2));
 
 	Debug::Success(DebugInfo, "Initialised TestMonoUpdateSystem");
+
+	GetGlobalComponent<Args::SceneComponent>()->nextScene = "testScene";
 }
 
 void TestMonoUpdateSystem::Start()
 {
-	testInt = 0;
 }
 
 void TestMonoUpdateSystem::Update(float deltaTime)
 {
-	TestGlobalComponent* testComponent = GetGlobalComponent<TestGlobalComponent>();
-
-	testComponent->value++;
-
-	testInt++;
-
 	updatesSincePrint++;
 	accumDeltaTime += deltaTime;
 	elapsedTime += deltaTime;

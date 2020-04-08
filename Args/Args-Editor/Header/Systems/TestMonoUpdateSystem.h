@@ -7,7 +7,6 @@ using namespace std;
 class TestMonoUpdateSystem : public Args::MonoUpdateSystem<TestMonoUpdateSystem>
 {
 private:
-	int testInt = 0;
 	float accumDeltaTime = 0;
 	int updatesSincePrint = 0;
 	float elapsedTime = 0;

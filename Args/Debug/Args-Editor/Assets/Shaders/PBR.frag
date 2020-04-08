@@ -41,7 +41,6 @@ in vec2 texCoord;
 in vec3 surfacePosition;
 in vec3 surfaceNormal;
 in mat3 tbnMatrix;
-//in float flogz;
 
 out vec4 fragment_color;
 
@@ -56,6 +55,7 @@ vec3 CalculateNormal(sampler2D map, vec2 uv, mat3 tbn)
 {
 	return normalize(tbn * normalize(texture(map, uv).xyz * 2.0 - 1.0));
 }
+
 float length2(vec3 v)
 {
     return v.x*v.x + v.y*v.y + v.z*v.z;
@@ -70,11 +70,18 @@ float CalculateAttenuation(vec3 fragmentPosition, vec3 lightPosition, float atte
 
 //// PBR FUNCTIONS ////
 
+// Fresnel reflection function
+// Simple interpolation between 1 (ultimate metal fresnel reflection) and
+// the fresnel approximation function: (1-cos(θᵢ))⁵
+//
 vec3 fresnelSchlick(float cosTheta, vec3 F0)
 {
     return F0 + (1.0 - F0) * pow(1.0 - cosTheta, 5.0);
 }
 
+// GX normal distribution
+// Calculates the partition of the microfacet normals that align with the halfway vector to reflect
+// the light into the view direction
 float DistributionGGX(vec3 N, vec3 H, float R)
 {
     float a      = R * R;
@@ -111,14 +118,20 @@ float GeometrySmith(vec3 N, vec3 V, vec3 L, float R)
 }
 
 vec3 viewDirection;
-vec2 textureCoords;
-vec3 albedo;
 vec3 fragmentNormal;
+
+vec2 textureCoords;
+
+// material properties
+vec3 albedo;
 float roughness;
 float metallic;
 vec3 emissive;
 float ao;
+
+// Fresnel reflection color at an angle of incidence of 0°
 vec3 F0;
+
 float ambientIntensity;
 
 vec3 ApplyLight(Light light)
@@ -159,37 +172,38 @@ vec3 ApplyLight(Light light)
 		return vec3(0);
 
 	vec3 radiance = lightColor * attenuation;
+
+	// Microfacet normal that will reflect the incoming light into the viewing direction.
+	// Technically only applies if the nanogeometry is perfectly smooth, but due to the inherent
+	// inaccuracy of working with fragments as the smallest size of measurement we can ignore
+	// nanogeometry for now.
 	vec3 halfwayVector = normalize(lightDirection + viewDirection);
 
 	// cook-torrance brdf
-	vec3 F = fresnelSchlick(max(dot(halfwayVector, viewDirection), 0.0), F0);
-	float NDF = DistributionGGX(normal, halfwayVector, roughness);
-	float G = GeometrySmith(normal, viewDirection, lightDirection, roughness);
+	vec3 fresnelReflection = fresnelSchlick(max(dot(halfwayVector, viewDirection), 0.0), F0);
+	float normalDistribution = DistributionGGX(normal, halfwayVector, roughness);
+	float geometryAttenuation = GeometrySmith(normal, viewDirection, lightDirection, roughness);
 
-	vec3 kS = F;
+	// Start magic
+	vec3 kS = fresnelReflection;
 	vec3 kD = vec3(1.0) - kS;
 	kD *= 1.0 - metallic;
 
-	vec3 numerator = NDF * G * F;
+	vec3 numerator = normalDistribution * geometryAttenuation * fresnelReflection;
 	float denominator = 4.0 * max(dot(normal, viewDirection), 0.0) * max(dot(normal, lightDirection), 0.0);
 	vec3 specular = numerator / max(denominator, 0.001);
 
 	float normalDotLightDir = max(dot(normal, lightDirection), 0.0);
-	return (kD * albedo / PI + specular) * radiance * normalDotLightDir;// vec3(length(light.position - surfacePosition)/50);
+	return (kD * albedo / PI + specular) * radiance * normalDotLightDir;
+	// End magic
 }
 
 
 // MAIN
 void main( void )
 {
-	// float Fcoef = 2.0 / log2(far + 1.0);
-	// gl_FragDepth = log2(flogz) * Fcoef * 0.5;
-
 	viewDirection = normalize(cameraPosition - surfacePosition);
 	textureCoords = ParallaxMap(heightMap, heightScale * 0.015, texCoord, transpose(tbnMatrix) * viewDirection);
-
-	// if(textureCoords.x > 1.0 || textureCoords.y > 1.0 || textureCoords.x < 0.0 || textureCoords.y < 0.0)
-    // 	discard;
 
  	albedo = pow(texture(albedoMap, textureCoords).rgb, vec3(2.2));
  	fragmentNormal = CalculateNormal(normalMap, textureCoords, tbnMatrix);
@@ -197,6 +211,11 @@ void main( void )
  	metallic = texture(metalMap, textureCoords).r;
 	emissive = texture(emissiveMap, textureCoords).rgb;
  	ao = texture(aoMap, textureCoords).r;
+
+	// Assumption that dielectrics all have a fresnell reflectance at 0° of about 4%
+	// of course not accurate for some dielectrics like water (2%),
+	// crystals (5-8%) and diamond like materials (10-20%).
+	// Semi-conductors also have other values (20-40%)
  	F0 = mix(vec3(0.04), albedo, metallic.xxx);
 
 	vec3 lighting = vec3(0.0);

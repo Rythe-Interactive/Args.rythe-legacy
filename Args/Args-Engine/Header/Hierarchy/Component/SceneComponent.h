@@ -17,7 +17,6 @@ namespace Args
 	struct SceneComponent : public GlobalComponent<SceneComponent>
 	{
 	public:
-
 		JSONLoader jsonLoader;
 
 		std::string nextScene;

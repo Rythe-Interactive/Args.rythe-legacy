@@ -1,0 +1,69 @@
+{
+"scene":[
+	{
+		"name": "camera",
+		"components":[
+			{
+				"name": "Transform",
+				"position":{"x":0.0,"y":0.0,"z":0.0},
+				"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":0.0},
+				"scale":{"x":1.0,"y":1.0,"z":1.0},
+				"children":[]
+			},
+			{
+				"name": "Camera"
+			}
+		]
+	},
+	{
+		"name": "light",
+		"components":[
+			{
+				"name": "Transform",
+				"position":{"x":0.0,"y":0.0,"z":0.0},
+				"rotation":{"x":-135.0,"y":45.0,"z":0.0,"w":0.0},
+				"scale":{"x":1.0,"y":1.0,"z":1.0},
+				"children":[]
+			},
+			{
+				"name": "Light",
+				"type": "directional"
+			}
+		]
+	},
+	{
+		"name": "testObject0",
+		"components":[
+			{
+				"name": "Transform",
+				"position":{"x":-2.0,"y":0.0,"z":6.0},
+				"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":0.0},
+				"scale":{"x":1.0,"y":1.0,"z":1.0},
+				"children":[]
+			},
+			{
+				"name": "Renderable",
+				"mesh": "Cube",
+				"material": "Default"
+			}
+		]
+	},
+	{
+		"name": "testObject1",
+		"components":[
+			{
+				"name": "Transform",
+				"position":{"x":2.0,"y":0.0,"z":6.0},
+				"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":0.0},
+				"scale":{"x":1.0,"y":1.0,"z":1.0},
+				"children":[]
+			},
+			{
+				"name": "Renderable",
+				"mesh": "Sphere",
+				"material": "Default"
+			}
+		]
+	}
+]
+}

@@ -14,53 +14,34 @@ using namespace rapidjson;
 
 Args::JSONLoader::JSONLoader()
 {
-	filePath = "Assets/JSON/";
 }
 
-Args::JSONLoader::JSONLoader(std::string path)
+Document Args::JSONLoader::LoadFile(std::string fileName)
 {
-	filePath = path;
-}
-
-std::string Args::JSONLoader::LoadSceneFile(std::string fileName)
-{
-	std::fstream inFile;
+	std::fstream file(fileName, std::ios::in);
 	std::string json;
-	inFile.open(filePath + "JSONScenes/" + fileName + ".JSON");
-	if (!inFile)
+	if (file.is_open())
 	{
-		Debug::Error(DebugInfo, "Unable to open file: %s", fileName.c_str());
-		return "";
+		std::string line = "";
+
+		while (getline(file, line))
+			json += line + '\n';
+
+		file.close();
 	}
-	if (inFile.is_open())
+	else
 	{
-		getline(inFile, json);
+		Debug::Error(DebugInfo, "Error reading file %s", fileName.c_str());
+		return Document();
 	}
-	inFile.close();
 
-	return json;
-}
+	Document dom;
+	dom.Parse(json.c_str());
 
+	if (dom.IsObject())
+		return dom;
 
-void Args::JSONLoader::LoadSetupSettings(std::string fileName)
-{
-}
-
-std::string Args::JSONLoader::LoadKeyMap(std::string fileName/*,InputSystem inputSys*/)
-{
-	std::fstream inFile;
-	std::string json;
-	inFile.open(filePath + "JSONKeymap/" + fileName);
-	if (!inFile)
-	{
-		Debug::Error(DebugInfo, "Unable to open file: %s", fileName.c_str());
-		return "";
-	}
-	if (inFile.is_open())
-	{
-		getline(inFile, json);
-	}
-	inFile.close();
-	return json;
+	Debug::Error(DebugInfo, "Internals of file %s are incorrect.", fileName.c_str());
+	return Document();
 }
 

@@ -62,6 +62,8 @@ void Args::Engine::Initialise()
 void Args::Engine::Run()
 {
 	Debug::Log(DebugInfo, "Started running engine with %i initial entities", (int)ecs->GetEntityCount());
+
+#ifndef _DEBUG
 	try
 	{
 		while (!CheckEvent<Events::Exit>())
@@ -69,10 +71,17 @@ void Args::Engine::Run()
 			ecs->UpdateSystems();
 		}
 	}
-	catch (std::logic_error e)
+	catch (std::exception e)
 	{
+		Debug::Error(DebugInfo, e.what());
 		Args::Engine::RaiseEvent<Args::Events::Exit>(-1);
 	}
+#else
+	while (!CheckEvent<Events::Exit>())
+	{
+		ecs->UpdateSystems();
+	}
+#endif
 
 	delete ecs;
 	ecs = nullptr;
