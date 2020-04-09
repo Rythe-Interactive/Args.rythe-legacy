@@ -29,7 +29,7 @@ namespace Args
 
 		bool SetOverlaps(const std::set<uint32>* lhs, const std::set<uint32>* rhs);
 
-		void UpdateEntityList(uint32 entityID, uint32 componentTypeId);
+		void UpdateEntityList(uint32 entityID, uint32 componentTypeId, bool erased);
 
 		void Destroy();
 
@@ -75,9 +75,9 @@ namespace Args
 		void DestroyEntity(uint32 entityId);
 
 		template<class SystemType, INHERITS_FROM(SystemType, ISystem)>
-		std::set<uint32> GetEntityList();
+		const std::set<uint32>& GetEntityList();
 
-		std::set<uint32> GetEntityList(std::type_index systemType);
+		const std::set<uint32>& GetEntityList(std::type_index systemType);
 
 		template<typename ComponentType, INHERITS_FROM(ComponentType, IGlobalComponent)>
 		ComponentType* GetGlobalComponent();
@@ -103,7 +103,7 @@ namespace Args
 		template<typename ComponentType, typename... Components>
 		std::unordered_map<std::type_index, std::vector<IComponent*>> GetComponents(uint32 entityId)
 		{
-			std::unordered_map<uint32, std::vector<IComponent*>> componentsPerEntity = componentFamilies[GetTypeName<ComponentType>()].get()->GetComponents();
+			std::unordered_map<uint32, std::vector<IComponent*>> componentsPerEntity = componentFamilies[GetTypeName<ComponentType>()]->GetComponents();
 
 			std::unordered_map<std::type_index, std::unordered_map<uint32, std::vector<IComponent*>>> components;
 
@@ -116,7 +116,7 @@ namespace Args
 		template<typename ComponentType, typename... Components>
 		std::unordered_map<std::type_index, std::unordered_map<uint32, std::vector<IComponent*>>> GetComponents(char(*)[(-(int)sizeof...(Components)) + 1] = 0)
 		{
-			std::unordered_map<uint32, std::vector<IComponent*>> componentsPerEntity = componentFamilies[GetTypeName<ComponentType>()].get()->GetComponents();
+			std::unordered_map<uint32, std::vector<IComponent*>> componentsPerEntity = componentFamilies[GetTypeName<ComponentType>()]->GetComponents();
 
 			std::unordered_map<std::type_index, std::unordered_map<uint32, std::vector<IComponent*>>> components;
 
@@ -130,7 +130,7 @@ namespace Args
 		template<typename ComponentType, typename... Components>
 		std::unordered_map<std::type_index, std::unordered_map<uint32, std::vector<IComponent*>>> GetComponents(char(*)[sizeof...(Components)] = 0)
 		{
-			std::unordered_map<uint32, std::vector<IComponent*>> componentsPerEntity = componentFamilies[GetTypeName<ComponentType>()].get()->GetComponents();
+			std::unordered_map<uint32, std::vector<IComponent*>> componentsPerEntity = componentFamilies[GetTypeName<ComponentType>()]->GetComponents();
 
 			std::unordered_map<std::type_index, std::unordered_map<uint32, std::vector<IComponent*>>> components = GetComponents<Components...>();
 
@@ -176,8 +176,8 @@ namespace Args
 	template<typename ComponentType, typename>
 	uint32 ComponentManager::AddComponent(uint32 entityID)
 	{
-		std::string typeName = GetTypeName<ComponentType>();
-		return AddComponent(typeName, entityID);
+		std::string typeName = GetTypeName<ComponentType>(); // oof loads of time
+		return AddComponent(typeName, entityID); // more pain in here
 	}
 
 	template<typename ComponentType, typename>
@@ -201,7 +201,7 @@ namespace Args
 	}
 
 	template<class SystemType, typename>
-	std::set<uint32> ComponentManager::GetEntityList()
+	const std::set<uint32>& ComponentManager::GetEntityList()
 	{
 		return entityLists[typeid(SystemType)];
 	}
@@ -220,28 +220,33 @@ namespace Args
 	template<typename ComponentType, typename>
 	inline ComponentType* ComponentManager::GetComponent(uint32 entityId, size_t index)
 	{
+		std::string typeName = GetTypeName<ComponentType>();
 #ifdef _DEBUG
-		if (componentFamilies.count(GetTypeName<ComponentType>()))
-			return static_cast<ComponentType*>(componentFamilies[GetTypeName<ComponentType>()].get()->GetComponent(entityId, index));
+		if (componentFamilies.count(typeName)) //GetTypeName is BIG oof
+		{
+			auto& componentFamily = componentFamilies[typeName];
+			if (componentFamily)
+				return static_cast<ComponentType*>(componentFamily->GetComponent(entityId, index));
+		}
 
-		Debug::Error(DebugInfo, "ComponentType %s was never registered", GetTypeName<ComponentType>().c_str());
+		Debug::Error(DebugInfo, "ComponentType %s was never registered", typeName.c_str());
 
 		return nullptr;
 #else
-		return static_cast<ComponentType*>(componentFamilies[GetTypeName<ComponentType>()].get()->GetComponent(entityId, index));
+		return static_cast<ComponentType*>(componentFamilies[typeName]->GetComponent(entityId, index));
 #endif // _DEBUG
-	}
+		}
 
 	template<typename ComponentType, typename>
 	inline ComponentType* ComponentManager::GetComponentByID(uint32 componentId)
 	{
-		return static_cast<ComponentType*>(componentFamilies[GetTypeName<ComponentType>()].get()->GetComponentByID(componentId));
+		return static_cast<ComponentType*>(componentFamilies[GetTypeName<ComponentType>()]->GetComponentByID(componentId));
 	}
 
 	template<typename ComponentType, typename>
 	inline size_t ComponentManager::GetComponentCount(uint32 entityId)
 	{
-		return componentFamilies[GetTypeName<ComponentType>()].get()->GetComponentCount(entityId);
+		return componentFamilies[GetTypeName<ComponentType>()]->GetComponentCount(entityId);
 	}
 
 	template<typename ComponentType, typename>
@@ -254,7 +259,7 @@ namespace Args
 			return 0;
 		}
 
-		return componentFamilies[typeName].get()->GetComponentCount();
+		return componentFamilies[typeName]->GetComponentCount();
 	}
 
 	template<typename ComponentType, typename>
@@ -265,7 +270,7 @@ namespace Args
 			return std::vector<ComponentType*>();
 
 		std::vector<ComponentType*> ret;
-		for (IComponent* component : componentFamilies[typeName].get()->GetComponentsList())
+		for (IComponent* component : componentFamilies[typeName]->GetComponentsList())
 			ret.push_back(static_cast<ComponentType*>(component));
 		return ret;
 	}
@@ -274,10 +279,10 @@ namespace Args
 	inline std::vector<ComponentType*> ComponentManager::GetComponentsOfType(uint32 entityId)
 	{
 		std::vector<ComponentType*> ret;
-		auto components = componentFamilies[GetTypeName<ComponentType>()].get()->GetComponents()[entityId];
+		auto components = componentFamilies[GetTypeName<ComponentType>()]->GetComponents()[entityId];
 		for (auto ptr : components)
 			ret.push_back(static_cast<ComponentType*>(ptr));
 		return ret;
 	}
 
-}
+	}

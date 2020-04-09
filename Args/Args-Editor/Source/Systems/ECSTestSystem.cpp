@@ -3,43 +3,56 @@
 
 using namespace Args;
 
-void ECSTestSystemA::Init()
+void ECSTestSystem::Init()
 {
-	BindForUpdate(std::bind(&ECSTestSystemA::Update, this, std::placeholders::_1));
+	BindForUpdate(std::bind(&ECSTestSystem::Update, this, std::placeholders::_1));
 }
 
-void ECSTestSystemA::Update(float deltaTime)
+void ECSTestSystem::Update(float deltaTime)
 {
-	clock.Start();
-	Transform* transform = entity->GetComponent<Transform>();
-	TestMonoUpdateSystem::queryTime += clock.End().Milliseconds();
+	Transform* transform;
+	float time;
+
+	for (int i = 0; i < 10; i++)
+	{
+		clock.Start();
+		transform = entity->GetComponent<Transform>();
+		time = clock.End().Milliseconds();
+
+		if (time < TestMonoUpdateSystem::lowestQuery)
+			TestMonoUpdateSystem::lowestQuery = time;
+		if (time > TestMonoUpdateSystem::highestQuery)
+			TestMonoUpdateSystem::highestQuery = time;
+
+		TestMonoUpdateSystem::queryTime += time;
+	}
 
 	transform->Rotate(up, deltaTime);
 
-	clock.Start();
-	entity->DestroyComponent<TestComponentA>();
-	entity->AddComponent<TestComponentB>();
-	
-	TestMonoUpdateSystem::tortureTime += clock.End().Milliseconds();
-	TestMonoUpdateSystem::torturedComponents++;
-}
+	for (int i = 0; i < 10; i++)
+	{
+		clock.Start();
+		entity->AddComponent<TestComponent>();
+		time = clock.End().Milliseconds();
 
-void ECSTestSystemB::Init()
-{
-	BindForUpdate(std::bind(&ECSTestSystemB::Update, this, std::placeholders::_1));
-}
+		if (time < TestMonoUpdateSystem::lowestAdd)
+			TestMonoUpdateSystem::lowestAdd = time;
+		if (time > TestMonoUpdateSystem::highestAdd)
+			TestMonoUpdateSystem::highestAdd = time;
 
-void ECSTestSystemB::Update(float deltaTime)
-{
-	clock.Start();
-	Transform* transform = entity->GetComponent<Transform>();
-	transform->Rotate(up, deltaTime);
-	TestMonoUpdateSystem::queryTime += clock.End().Milliseconds();
+		TestMonoUpdateSystem::addTime += time;
 
-	clock.Start();
-	entity->AddComponent<TestComponentA>();
-	entity->DestroyComponent<TestComponentB>();
+		clock.Start();
+		entity->DestroyComponent<TestComponent>();
+		time = clock.End().Milliseconds();
 
-	TestMonoUpdateSystem::tortureTime += clock.End().Milliseconds();
-	TestMonoUpdateSystem::torturedComponents++;
+		if (time < TestMonoUpdateSystem::lowestRemove)
+			TestMonoUpdateSystem::lowestRemove = time;
+		if (time > TestMonoUpdateSystem::highestRemove)
+			TestMonoUpdateSystem::highestRemove = time;
+
+		TestMonoUpdateSystem::removeTime += time;
+	}
+
+	TestMonoUpdateSystem::torturedComponents += 10;
 }

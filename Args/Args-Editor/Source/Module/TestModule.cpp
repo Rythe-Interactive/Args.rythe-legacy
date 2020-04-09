@@ -6,13 +6,11 @@
 
 void TestModule::InitComponents(const std::set<std::string>& arguments)
 {
-	RegisterComponentType<TestComponentA>();
-	RegisterComponentType<TestComponentB>();
+	RegisterComponentType<TestComponent>();
 }
 
 void TestModule::InitSystems(const std::set<std::string>& arguments)
 {
 	RegisterSystem<TestMonoUpdateSystem>();
-	RegisterSystem<ECSTestSystemA>();
-	RegisterSystem<ECSTestSystemB>();
+	RegisterSystem<ECSTestSystem>();
 }

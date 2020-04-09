@@ -89,7 +89,7 @@ void Args::Renderer::Init()
 	colorMaterial->SetParam<Vector4>("diffuseColor", Vector4(0.f, 1.f, 0.f, 1.f));
 #pragma endregion
 
-	cpuClock.Start();
+	//cpuClock.Start();
 }
 
 void Args::Renderer::Render(float deltaTime)
@@ -112,10 +112,10 @@ void Args::Renderer::Render(float deltaTime)
 		return;
 	}
 
-	/*float cpuTime = cpuClock.End().Milliseconds();
-	Debug::Log(DebugInfo, "CPU time: %fms", cpuTime);
+	//float cpuTime = cpuClock.End().Milliseconds();
+	//Debug::Log(DebugInfo, "CPU time: %fms", cpuTime);
 
-	renderClock.Start();*/
+	//renderClock.Start();
 
 
 	std::vector<LightData> lights;
@@ -185,10 +185,10 @@ void Args::Renderer::Render(float deltaTime)
 
 	GetGlobalComponent<Window>()->Display();
 
-	/*float renderTime = renderClock.End().Milliseconds();
-	Debug::Log(DebugInfo, "Render time: %fms", renderTime);
-	Debug::Log(DebugInfo, "Combined time: %fms", cpuTime + renderTime);
-	cpuClock.Start();*/
+	//float renderTime = renderClock.End().Milliseconds();
+	//Debug::Log(DebugInfo, "Render time: %fms", renderTime);
+	//Debug::Log(DebugInfo, "Combined time: %fms", cpuTime + renderTime);
+	//cpuClock.Start();
 }
 
 void Args::Renderer::RenderLoadScreen(const std::string& texName)

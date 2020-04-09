@@ -2,22 +2,10 @@
 #include <Args-Core.h>
 #include "Components/TestComponents.h"
 
-class ECSTestSystemA : public Args::EntitySystem<ECSTestSystemA, Args::Transform, TestComponentA>
+class ECSTestSystem : public Args::EntitySystem<ECSTestSystem, Args::Transform, TestComponent>
 {
-	using Args::EntitySystem<ECSTestSystemA, Args::Transform, TestComponentA>::EntitySystem;
+	using Args::EntitySystem<ECSTestSystem, Args::Transform, TestComponent>::EntitySystem;
 	
-	Args::Clock clock;
-
-	virtual void Init() override;
-
-	void Update(float deltaTime);
-};
-
-
-class ECSTestSystemB : public Args::EntitySystem<ECSTestSystemB, Args::Transform, TestComponentB>
-{
-	using Args::EntitySystem<ECSTestSystemB, Args::Transform, TestComponentB>::EntitySystem;
-
 	Args::Clock clock;
 
 	virtual void Init() override;

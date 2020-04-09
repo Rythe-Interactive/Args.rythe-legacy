@@ -57,7 +57,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject0"
 	},
@@ -88,7 +88,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject1"
 	},
@@ -119,7 +119,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject2"
 	},
@@ -150,7 +150,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject3"
 	},
@@ -181,7 +181,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject4"
 	},
@@ -212,7 +212,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject5"
 	},
@@ -243,7 +243,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject6"
 	},
@@ -274,7 +274,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject7"
 	},
@@ -305,7 +305,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject8"
 	},
@@ -336,7 +336,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject9"
 	},
@@ -367,7 +367,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject10"
 	},
@@ -398,7 +398,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject11"
 	},
@@ -429,7 +429,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject12"
 	},
@@ -460,7 +460,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject13"
 	},
@@ -491,7 +491,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject14"
 	},
@@ -522,7 +522,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject15"
 	},
@@ -553,7 +553,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject16"
 	},
@@ -584,7 +584,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject17"
 	},
@@ -615,7 +615,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject18"
 	},
@@ -646,7 +646,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject19"
 	},
@@ -677,7 +677,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject20"
 	},
@@ -708,7 +708,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject21"
 	},
@@ -739,7 +739,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject22"
 	},
@@ -770,7 +770,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject23"
 	},
@@ -801,7 +801,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject24"
 	},
@@ -832,7 +832,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject25"
 	},
@@ -863,7 +863,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject26"
 	},
@@ -894,7 +894,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject27"
 	},
@@ -925,7 +925,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject28"
 	},
@@ -956,7 +956,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject29"
 	},
@@ -987,7 +987,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject30"
 	},
@@ -1018,7 +1018,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject31"
 	},
@@ -1049,7 +1049,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject32"
 	},
@@ -1080,7 +1080,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject33"
 	},
@@ -1111,7 +1111,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject34"
 	},
@@ -1142,7 +1142,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject35"
 	},
@@ -1173,7 +1173,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject36"
 	},
@@ -1204,7 +1204,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject37"
 	},
@@ -1235,7 +1235,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject38"
 	},
@@ -1266,7 +1266,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject39"
 	},
@@ -1297,7 +1297,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject40"
 	},
@@ -1328,7 +1328,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject41"
 	},
@@ -1359,7 +1359,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject42"
 	},
@@ -1390,7 +1390,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject43"
 	},
@@ -1421,7 +1421,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject44"
 	},
@@ -1452,7 +1452,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject45"
 	},
@@ -1483,7 +1483,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject46"
 	},
@@ -1514,7 +1514,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject47"
 	},
@@ -1545,7 +1545,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject48"
 	},
@@ -1576,7 +1576,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject49"
 	},
@@ -1607,7 +1607,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject50"
 	},
@@ -1638,7 +1638,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject51"
 	},
@@ -1669,7 +1669,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject52"
 	},
@@ -1700,7 +1700,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject53"
 	},
@@ -1731,7 +1731,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject54"
 	},
@@ -1762,7 +1762,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject55"
 	},
@@ -1793,7 +1793,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject56"
 	},
@@ -1824,7 +1824,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject57"
 	},
@@ -1855,7 +1855,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject58"
 	},
@@ -1886,7 +1886,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject59"
 	},
@@ -1917,7 +1917,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject60"
 	},
@@ -1948,7 +1948,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject61"
 	},
@@ -1979,7 +1979,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject62"
 	},
@@ -2010,7 +2010,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject63"
 	},
@@ -2041,7 +2041,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject64"
 	},
@@ -2072,7 +2072,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject65"
 	},
@@ -2103,7 +2103,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject66"
 	},
@@ -2134,7 +2134,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject67"
 	},
@@ -2165,7 +2165,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject68"
 	},
@@ -2196,7 +2196,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject69"
 	},
@@ -2227,7 +2227,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject70"
 	},
@@ -2258,7 +2258,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject71"
 	},
@@ -2289,7 +2289,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject72"
 	},
@@ -2320,7 +2320,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject73"
 	},
@@ -2351,7 +2351,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject74"
 	},
@@ -2382,7 +2382,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject75"
 	},
@@ -2413,7 +2413,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject76"
 	},
@@ -2444,7 +2444,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject77"
 	},
@@ -2475,7 +2475,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject78"
 	},
@@ -2506,7 +2506,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject79"
 	},
@@ -2537,7 +2537,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject80"
 	},
@@ -2568,7 +2568,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject81"
 	},
@@ -2599,7 +2599,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject82"
 	},
@@ -2630,7 +2630,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject83"
 	},
@@ -2661,7 +2661,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject84"
 	},
@@ -2692,7 +2692,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject85"
 	},
@@ -2723,7 +2723,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject86"
 	},
@@ -2754,7 +2754,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject87"
 	},
@@ -2785,7 +2785,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject88"
 	},
@@ -2816,7 +2816,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject89"
 	},
@@ -2847,7 +2847,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject90"
 	},
@@ -2878,7 +2878,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject91"
 	},
@@ -2909,7 +2909,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject92"
 	},
@@ -2940,7 +2940,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject93"
 	},
@@ -2971,7 +2971,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject94"
 	},
@@ -3002,7 +3002,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject95"
 	},
@@ -3033,7 +3033,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject96"
 	},
@@ -3064,7 +3064,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject97"
 	},
@@ -3095,7 +3095,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject98"
 	},
@@ -3126,7 +3126,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject99"
 	},
@@ -3157,7 +3157,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject100"
 	},
@@ -3188,7 +3188,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject101"
 	},
@@ -3219,7 +3219,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject102"
 	},
@@ -3250,7 +3250,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject103"
 	},
@@ -3281,7 +3281,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject104"
 	},
@@ -3312,7 +3312,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject105"
 	},
@@ -3343,7 +3343,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject106"
 	},
@@ -3374,7 +3374,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject107"
 	},
@@ -3405,7 +3405,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject108"
 	},
@@ -3436,7 +3436,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject109"
 	},
@@ -3467,7 +3467,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject110"
 	},
@@ -3498,7 +3498,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject111"
 	},
@@ -3529,7 +3529,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject112"
 	},
@@ -3560,7 +3560,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject113"
 	},
@@ -3591,7 +3591,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject114"
 	},
@@ -3622,7 +3622,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject115"
 	},
@@ -3653,7 +3653,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject116"
 	},
@@ -3684,7 +3684,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject117"
 	},
@@ -3715,7 +3715,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject118"
 	},
@@ -3746,7 +3746,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject119"
 	},
@@ -3777,7 +3777,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject120"
 	},
@@ -3808,7 +3808,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject121"
 	},
@@ -3839,7 +3839,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject122"
 	},
@@ -3870,7 +3870,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject123"
 	},
@@ -3901,7 +3901,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject124"
 	},
@@ -3932,7 +3932,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject125"
 	},
@@ -3963,7 +3963,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject126"
 	},
@@ -3994,7 +3994,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject127"
 	},
@@ -4025,7 +4025,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject128"
 	},
@@ -4056,7 +4056,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject129"
 	},
@@ -4087,7 +4087,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject130"
 	},
@@ -4118,7 +4118,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject131"
 	},
@@ -4149,7 +4149,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject132"
 	},
@@ -4180,7 +4180,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject133"
 	},
@@ -4211,7 +4211,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject134"
 	},
@@ -4242,7 +4242,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject135"
 	},
@@ -4273,7 +4273,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject136"
 	},
@@ -4304,7 +4304,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject137"
 	},
@@ -4335,7 +4335,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject138"
 	},
@@ -4366,7 +4366,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject139"
 	},
@@ -4397,7 +4397,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject140"
 	},
@@ -4428,7 +4428,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject141"
 	},
@@ -4459,7 +4459,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject142"
 	},
@@ -4490,7 +4490,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject143"
 	},
@@ -4521,7 +4521,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject144"
 	},
@@ -4552,7 +4552,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject145"
 	},
@@ -4583,7 +4583,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject146"
 	},
@@ -4614,7 +4614,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject147"
 	},
@@ -4645,7 +4645,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject148"
 	},
@@ -4676,7 +4676,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject149"
 	},
@@ -4707,7 +4707,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject150"
 	},
@@ -4738,7 +4738,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject151"
 	},
@@ -4769,7 +4769,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject152"
 	},
@@ -4800,7 +4800,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject153"
 	},
@@ -4831,7 +4831,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject154"
 	},
@@ -4862,7 +4862,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject155"
 	},
@@ -4893,7 +4893,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject156"
 	},
@@ -4924,7 +4924,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject157"
 	},
@@ -4955,7 +4955,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject158"
 	},
@@ -4986,7 +4986,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject159"
 	},
@@ -5017,7 +5017,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject160"
 	},
@@ -5048,7 +5048,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject161"
 	},
@@ -5079,7 +5079,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject162"
 	},
@@ -5110,7 +5110,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject163"
 	},
@@ -5141,7 +5141,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject164"
 	},
@@ -5172,7 +5172,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject165"
 	},
@@ -5203,7 +5203,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject166"
 	},
@@ -5234,7 +5234,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject167"
 	},
@@ -5265,7 +5265,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject168"
 	},
@@ -5296,7 +5296,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject169"
 	},
@@ -5327,7 +5327,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject170"
 	},
@@ -5358,7 +5358,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject171"
 	},
@@ -5389,7 +5389,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject172"
 	},
@@ -5420,7 +5420,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject173"
 	},
@@ -5451,7 +5451,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject174"
 	},
@@ -5482,7 +5482,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject175"
 	},
@@ -5513,7 +5513,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject176"
 	},
@@ -5544,7 +5544,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject177"
 	},
@@ -5575,7 +5575,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject178"
 	},
@@ -5606,7 +5606,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject179"
 	},
@@ -5637,7 +5637,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject180"
 	},
@@ -5668,7 +5668,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject181"
 	},
@@ -5699,7 +5699,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject182"
 	},
@@ -5730,7 +5730,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject183"
 	},
@@ -5761,7 +5761,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject184"
 	},
@@ -5792,7 +5792,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject185"
 	},
@@ -5823,7 +5823,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject186"
 	},
@@ -5854,7 +5854,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject187"
 	},
@@ -5885,7 +5885,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject188"
 	},
@@ -5916,7 +5916,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject189"
 	},
@@ -5947,7 +5947,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject190"
 	},
@@ -5978,7 +5978,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject191"
 	},
@@ -6009,7 +6009,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject192"
 	},
@@ -6040,7 +6040,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject193"
 	},
@@ -6071,7 +6071,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject194"
 	},
@@ -6102,7 +6102,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject195"
 	},
@@ -6133,7 +6133,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject196"
 	},
@@ -6164,7 +6164,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject197"
 	},
@@ -6195,7 +6195,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject198"
 	},
@@ -6226,7 +6226,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject199"
 	},
@@ -6257,7 +6257,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject200"
 	},
@@ -6288,7 +6288,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject201"
 	},
@@ -6319,7 +6319,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject202"
 	},
@@ -6350,7 +6350,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject203"
 	},
@@ -6381,7 +6381,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject204"
 	},
@@ -6412,7 +6412,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject205"
 	},
@@ -6443,7 +6443,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject206"
 	},
@@ -6474,7 +6474,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject207"
 	},
@@ -6505,7 +6505,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject208"
 	},
@@ -6536,7 +6536,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject209"
 	},
@@ -6567,7 +6567,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject210"
 	},
@@ -6598,7 +6598,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject211"
 	},
@@ -6629,7 +6629,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject212"
 	},
@@ -6660,7 +6660,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject213"
 	},
@@ -6691,7 +6691,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject214"
 	},
@@ -6722,7 +6722,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject215"
 	},
@@ -6753,7 +6753,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject216"
 	},
@@ -6784,7 +6784,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject217"
 	},
@@ -6815,7 +6815,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject218"
 	},
@@ -6846,7 +6846,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject219"
 	},
@@ -6877,7 +6877,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject220"
 	},
@@ -6908,7 +6908,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject221"
 	},
@@ -6939,7 +6939,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject222"
 	},
@@ -6970,7 +6970,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject223"
 	},
@@ -7001,7 +7001,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject224"
 	},
@@ -7032,7 +7032,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject225"
 	},
@@ -7063,7 +7063,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject226"
 	},
@@ -7094,7 +7094,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject227"
 	},
@@ -7125,7 +7125,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject228"
 	},
@@ -7156,7 +7156,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject229"
 	},
@@ -7187,7 +7187,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject230"
 	},
@@ -7218,7 +7218,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject231"
 	},
@@ -7249,7 +7249,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject232"
 	},
@@ -7280,7 +7280,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject233"
 	},
@@ -7311,7 +7311,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject234"
 	},
@@ -7342,7 +7342,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject235"
 	},
@@ -7373,7 +7373,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject236"
 	},
@@ -7404,7 +7404,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject237"
 	},
@@ -7435,7 +7435,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject238"
 	},
@@ -7466,7 +7466,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject239"
 	},
@@ -7497,7 +7497,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject240"
 	},
@@ -7528,7 +7528,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject241"
 	},
@@ -7559,7 +7559,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject242"
 	},
@@ -7590,7 +7590,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject243"
 	},
@@ -7621,7 +7621,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject244"
 	},
@@ -7652,7 +7652,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject245"
 	},
@@ -7683,7 +7683,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject246"
 	},
@@ -7714,7 +7714,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject247"
 	},
@@ -7745,7 +7745,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject248"
 	},
@@ -7776,7 +7776,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject249"
 	},
@@ -7807,7 +7807,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject250"
 	},
@@ -7838,7 +7838,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject251"
 	},
@@ -7869,7 +7869,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject252"
 	},
@@ -7900,7 +7900,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject253"
 	},
@@ -7931,7 +7931,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject254"
 	},
@@ -7962,7 +7962,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject255"
 	},
@@ -7993,7 +7993,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject256"
 	},
@@ -8024,7 +8024,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject257"
 	},
@@ -8055,7 +8055,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject258"
 	},
@@ -8086,7 +8086,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject259"
 	},
@@ -8117,7 +8117,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject260"
 	},
@@ -8148,7 +8148,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject261"
 	},
@@ -8179,7 +8179,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject262"
 	},
@@ -8210,7 +8210,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject263"
 	},
@@ -8241,7 +8241,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject264"
 	},
@@ -8272,7 +8272,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject265"
 	},
@@ -8303,7 +8303,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject266"
 	},
@@ -8334,7 +8334,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject267"
 	},
@@ -8365,7 +8365,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject268"
 	},
@@ -8396,7 +8396,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject269"
 	},
@@ -8427,7 +8427,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject270"
 	},
@@ -8458,7 +8458,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject271"
 	},
@@ -8489,7 +8489,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject272"
 	},
@@ -8520,7 +8520,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject273"
 	},
@@ -8551,7 +8551,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject274"
 	},
@@ -8582,7 +8582,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject275"
 	},
@@ -8613,7 +8613,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject276"
 	},
@@ -8644,7 +8644,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject277"
 	},
@@ -8675,7 +8675,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject278"
 	},
@@ -8706,7 +8706,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject279"
 	},
@@ -8737,7 +8737,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject280"
 	},
@@ -8768,7 +8768,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject281"
 	},
@@ -8799,7 +8799,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject282"
 	},
@@ -8830,7 +8830,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject283"
 	},
@@ -8861,7 +8861,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject284"
 	},
@@ -8892,7 +8892,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject285"
 	},
@@ -8923,7 +8923,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject286"
 	},
@@ -8954,7 +8954,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject287"
 	},
@@ -8985,7 +8985,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject288"
 	},
@@ -9016,7 +9016,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject289"
 	},
@@ -9047,7 +9047,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject290"
 	},
@@ -9078,7 +9078,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject291"
 	},
@@ -9109,7 +9109,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject292"
 	},
@@ -9140,7 +9140,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject293"
 	},
@@ -9171,7 +9171,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject294"
 	},
@@ -9202,7 +9202,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject295"
 	},
@@ -9233,7 +9233,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject296"
 	},
@@ -9264,7 +9264,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject297"
 	},
@@ -9295,7 +9295,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject298"
 	},
@@ -9326,7 +9326,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject299"
 	},
@@ -9357,7 +9357,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject300"
 	},
@@ -9388,7 +9388,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject301"
 	},
@@ -9419,7 +9419,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject302"
 	},
@@ -9450,7 +9450,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject303"
 	},
@@ -9481,7 +9481,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject304"
 	},
@@ -9512,7 +9512,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject305"
 	},
@@ -9543,7 +9543,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject306"
 	},
@@ -9574,7 +9574,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject307"
 	},
@@ -9605,7 +9605,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject308"
 	},
@@ -9636,7 +9636,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject309"
 	},
@@ -9667,7 +9667,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject310"
 	},
@@ -9698,7 +9698,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject311"
 	},
@@ -9729,7 +9729,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject312"
 	},
@@ -9760,7 +9760,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject313"
 	},
@@ -9791,7 +9791,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject314"
 	},
@@ -9822,7 +9822,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject315"
 	},
@@ -9853,7 +9853,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject316"
 	},
@@ -9884,7 +9884,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject317"
 	},
@@ -9915,7 +9915,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject318"
 	},
@@ -9946,7 +9946,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject319"
 	},
@@ -9977,7 +9977,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject320"
 	},
@@ -10008,7 +10008,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject321"
 	},
@@ -10039,7 +10039,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject322"
 	},
@@ -10070,7 +10070,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject323"
 	},
@@ -10101,7 +10101,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject324"
 	},
@@ -10132,7 +10132,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject325"
 	},
@@ -10163,7 +10163,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject326"
 	},
@@ -10194,7 +10194,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject327"
 	},
@@ -10225,7 +10225,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject328"
 	},
@@ -10256,7 +10256,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject329"
 	},
@@ -10287,7 +10287,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject330"
 	},
@@ -10318,7 +10318,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject331"
 	},
@@ -10349,7 +10349,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject332"
 	},
@@ -10380,7 +10380,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject333"
 	},
@@ -10411,7 +10411,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject334"
 	},
@@ -10442,7 +10442,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject335"
 	},
@@ -10473,7 +10473,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject336"
 	},
@@ -10504,7 +10504,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject337"
 	},
@@ -10535,7 +10535,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject338"
 	},
@@ -10566,7 +10566,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject339"
 	},
@@ -10597,7 +10597,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject340"
 	},
@@ -10628,7 +10628,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject341"
 	},
@@ -10659,7 +10659,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject342"
 	},
@@ -10690,7 +10690,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject343"
 	},
@@ -10721,7 +10721,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject344"
 	},
@@ -10752,7 +10752,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject345"
 	},
@@ -10783,7 +10783,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject346"
 	},
@@ -10814,7 +10814,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject347"
 	},
@@ -10845,7 +10845,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject348"
 	},
@@ -10876,7 +10876,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject349"
 	},
@@ -10907,7 +10907,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject350"
 	},
@@ -10938,7 +10938,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject351"
 	},
@@ -10969,7 +10969,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject352"
 	},
@@ -11000,7 +11000,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject353"
 	},
@@ -11031,7 +11031,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject354"
 	},
@@ -11062,7 +11062,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject355"
 	},
@@ -11093,7 +11093,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject356"
 	},
@@ -11124,7 +11124,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject357"
 	},
@@ -11155,7 +11155,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject358"
 	},
@@ -11186,7 +11186,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject359"
 	},
@@ -11217,7 +11217,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject360"
 	},
@@ -11248,7 +11248,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject361"
 	},
@@ -11279,7 +11279,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject362"
 	},
@@ -11310,7 +11310,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject363"
 	},
@@ -11341,7 +11341,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject364"
 	},
@@ -11372,7 +11372,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject365"
 	},
@@ -11403,7 +11403,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject366"
 	},
@@ -11434,7 +11434,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject367"
 	},
@@ -11465,7 +11465,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject368"
 	},
@@ -11496,7 +11496,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject369"
 	},
@@ -11527,7 +11527,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject370"
 	},
@@ -11558,7 +11558,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject371"
 	},
@@ -11589,7 +11589,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject372"
 	},
@@ -11620,7 +11620,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject373"
 	},
@@ -11651,7 +11651,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject374"
 	},
@@ -11682,7 +11682,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject375"
 	},
@@ -11713,7 +11713,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject376"
 	},
@@ -11744,7 +11744,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject377"
 	},
@@ -11775,7 +11775,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject378"
 	},
@@ -11806,7 +11806,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject379"
 	},
@@ -11837,7 +11837,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject380"
 	},
@@ -11868,7 +11868,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject381"
 	},
@@ -11899,7 +11899,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject382"
 	},
@@ -11930,7 +11930,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject383"
 	},
@@ -11961,7 +11961,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject384"
 	},
@@ -11992,7 +11992,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject385"
 	},
@@ -12023,7 +12023,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject386"
 	},
@@ -12054,7 +12054,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject387"
 	},
@@ -12085,7 +12085,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject388"
 	},
@@ -12116,7 +12116,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject389"
 	},
@@ -12147,7 +12147,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject390"
 	},
@@ -12178,7 +12178,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject391"
 	},
@@ -12209,7 +12209,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject392"
 	},
@@ -12240,7 +12240,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject393"
 	},
@@ -12271,7 +12271,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject394"
 	},
@@ -12302,7 +12302,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject395"
 	},
@@ -12333,7 +12333,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject396"
 	},
@@ -12364,7 +12364,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject397"
 	},
@@ -12395,7 +12395,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject398"
 	},
@@ -12426,7 +12426,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject399"
 	},
@@ -12457,7 +12457,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject400"
 	},
@@ -12488,7 +12488,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject401"
 	},
@@ -12519,7 +12519,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject402"
 	},
@@ -12550,7 +12550,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject403"
 	},
@@ -12581,7 +12581,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject404"
 	},
@@ -12612,7 +12612,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject405"
 	},
@@ -12643,7 +12643,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject406"
 	},
@@ -12674,7 +12674,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject407"
 	},
@@ -12705,7 +12705,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject408"
 	},
@@ -12736,7 +12736,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject409"
 	},
@@ -12767,7 +12767,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject410"
 	},
@@ -12798,7 +12798,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject411"
 	},
@@ -12829,7 +12829,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject412"
 	},
@@ -12860,7 +12860,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject413"
 	},
@@ -12891,7 +12891,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject414"
 	},
@@ -12922,7 +12922,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject415"
 	},
@@ -12953,7 +12953,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject416"
 	},
@@ -12984,7 +12984,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject417"
 	},
@@ -13015,7 +13015,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject418"
 	},
@@ -13046,7 +13046,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject419"
 	},
@@ -13077,7 +13077,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject420"
 	},
@@ -13108,7 +13108,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject421"
 	},
@@ -13139,7 +13139,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject422"
 	},
@@ -13170,7 +13170,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject423"
 	},
@@ -13201,7 +13201,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject424"
 	},
@@ -13232,7 +13232,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject425"
 	},
@@ -13263,7 +13263,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject426"
 	},
@@ -13294,7 +13294,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject427"
 	},
@@ -13325,7 +13325,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject428"
 	},
@@ -13356,7 +13356,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject429"
 	},
@@ -13387,7 +13387,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject430"
 	},
@@ -13418,7 +13418,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject431"
 	},
@@ -13449,7 +13449,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject432"
 	},
@@ -13480,7 +13480,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject433"
 	},
@@ -13511,7 +13511,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject434"
 	},
@@ -13542,7 +13542,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject435"
 	},
@@ -13573,7 +13573,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject436"
 	},
@@ -13604,7 +13604,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject437"
 	},
@@ -13635,7 +13635,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject438"
 	},
@@ -13666,7 +13666,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject439"
 	},
@@ -13697,7 +13697,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject440"
 	},
@@ -13728,7 +13728,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject441"
 	},
@@ -13759,7 +13759,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject442"
 	},
@@ -13790,7 +13790,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject443"
 	},
@@ -13821,7 +13821,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject444"
 	},
@@ -13852,7 +13852,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject445"
 	},
@@ -13883,7 +13883,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject446"
 	},
@@ -13914,7 +13914,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject447"
 	},
@@ -13945,7 +13945,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject448"
 	},
@@ -13976,7 +13976,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject449"
 	},
@@ -14007,7 +14007,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject450"
 	},
@@ -14038,7 +14038,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject451"
 	},
@@ -14069,7 +14069,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject452"
 	},
@@ -14100,7 +14100,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject453"
 	},
@@ -14131,7 +14131,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject454"
 	},
@@ -14162,7 +14162,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject455"
 	},
@@ -14193,7 +14193,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject456"
 	},
@@ -14224,7 +14224,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject457"
 	},
@@ -14255,7 +14255,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject458"
 	},
@@ -14286,7 +14286,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject459"
 	},
@@ -14317,7 +14317,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject460"
 	},
@@ -14348,7 +14348,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject461"
 	},
@@ -14379,7 +14379,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject462"
 	},
@@ -14410,7 +14410,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject463"
 	},
@@ -14441,7 +14441,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject464"
 	},
@@ -14472,7 +14472,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject465"
 	},
@@ -14503,7 +14503,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject466"
 	},
@@ -14534,7 +14534,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject467"
 	},
@@ -14565,7 +14565,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject468"
 	},
@@ -14596,7 +14596,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject469"
 	},
@@ -14627,7 +14627,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject470"
 	},
@@ -14658,7 +14658,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject471"
 	},
@@ -14689,7 +14689,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject472"
 	},
@@ -14720,7 +14720,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject473"
 	},
@@ -14751,7 +14751,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject474"
 	},
@@ -14782,7 +14782,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject475"
 	},
@@ -14813,7 +14813,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject476"
 	},
@@ -14844,7 +14844,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject477"
 	},
@@ -14875,7 +14875,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject478"
 	},
@@ -14906,7 +14906,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject479"
 	},
@@ -14937,7 +14937,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject480"
 	},
@@ -14968,7 +14968,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject481"
 	},
@@ -14999,7 +14999,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject482"
 	},
@@ -15030,7 +15030,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject483"
 	},
@@ -15061,7 +15061,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject484"
 	},
@@ -15092,7 +15092,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject485"
 	},
@@ -15123,7 +15123,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject486"
 	},
@@ -15154,7 +15154,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject487"
 	},
@@ -15185,7 +15185,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject488"
 	},
@@ -15216,7 +15216,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject489"
 	},
@@ -15247,7 +15247,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject490"
 	},
@@ -15278,7 +15278,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject491"
 	},
@@ -15309,7 +15309,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject492"
 	},
@@ -15340,7 +15340,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject493"
 	},
@@ -15371,7 +15371,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject494"
 	},
@@ -15402,7 +15402,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject495"
 	},
@@ -15433,7 +15433,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject496"
 	},
@@ -15464,7 +15464,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject497"
 	},
@@ -15495,7 +15495,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject498"
 	},
@@ -15526,7 +15526,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject499"
 	},
@@ -15557,7 +15557,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject500"
 	},
@@ -15588,7 +15588,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject501"
 	},
@@ -15619,7 +15619,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject502"
 	},
@@ -15650,7 +15650,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject503"
 	},
@@ -15681,7 +15681,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject504"
 	},
@@ -15712,7 +15712,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject505"
 	},
@@ -15743,7 +15743,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject506"
 	},
@@ -15774,7 +15774,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject507"
 	},
@@ -15805,7 +15805,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject508"
 	},
@@ -15836,7 +15836,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject509"
 	},
@@ -15867,7 +15867,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject510"
 	},
@@ -15898,7 +15898,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject511"
 	},
@@ -15929,7 +15929,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject512"
 	},
@@ -15960,7 +15960,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject513"
 	},
@@ -15991,7 +15991,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject514"
 	},
@@ -16022,7 +16022,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject515"
 	},
@@ -16053,7 +16053,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject516"
 	},
@@ -16084,7 +16084,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject517"
 	},
@@ -16115,7 +16115,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject518"
 	},
@@ -16146,7 +16146,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject519"
 	},
@@ -16177,7 +16177,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject520"
 	},
@@ -16208,7 +16208,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject521"
 	},
@@ -16239,7 +16239,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject522"
 	},
@@ -16270,7 +16270,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject523"
 	},
@@ -16301,7 +16301,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject524"
 	},
@@ -16332,7 +16332,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject525"
 	},
@@ -16363,7 +16363,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject526"
 	},
@@ -16394,7 +16394,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject527"
 	},
@@ -16425,7 +16425,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject528"
 	},
@@ -16456,7 +16456,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject529"
 	},
@@ -16487,7 +16487,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject530"
 	},
@@ -16518,7 +16518,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject531"
 	},
@@ -16549,7 +16549,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject532"
 	},
@@ -16580,7 +16580,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject533"
 	},
@@ -16611,7 +16611,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject534"
 	},
@@ -16642,7 +16642,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject535"
 	},
@@ -16673,7 +16673,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject536"
 	},
@@ -16704,7 +16704,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject537"
 	},
@@ -16735,7 +16735,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject538"
 	},
@@ -16766,7 +16766,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject539"
 	},
@@ -16797,7 +16797,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject540"
 	},
@@ -16828,7 +16828,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject541"
 	},
@@ -16859,7 +16859,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject542"
 	},
@@ -16890,7 +16890,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject543"
 	},
@@ -16921,7 +16921,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject544"
 	},
@@ -16952,7 +16952,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject545"
 	},
@@ -16983,7 +16983,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject546"
 	},
@@ -17014,7 +17014,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject547"
 	},
@@ -17045,7 +17045,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject548"
 	},
@@ -17076,7 +17076,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject549"
 	},
@@ -17107,7 +17107,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject550"
 	},
@@ -17138,7 +17138,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject551"
 	},
@@ -17169,7 +17169,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject552"
 	},
@@ -17200,7 +17200,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject553"
 	},
@@ -17231,7 +17231,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject554"
 	},
@@ -17262,7 +17262,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject555"
 	},
@@ -17293,7 +17293,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject556"
 	},
@@ -17324,7 +17324,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject557"
 	},
@@ -17355,7 +17355,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject558"
 	},
@@ -17386,7 +17386,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject559"
 	},
@@ -17417,7 +17417,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject560"
 	},
@@ -17448,7 +17448,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject561"
 	},
@@ -17479,7 +17479,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject562"
 	},
@@ -17510,7 +17510,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject563"
 	},
@@ -17541,7 +17541,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject564"
 	},
@@ -17572,7 +17572,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject565"
 	},
@@ -17603,7 +17603,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject566"
 	},
@@ -17634,7 +17634,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject567"
 	},
@@ -17665,7 +17665,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject568"
 	},
@@ -17696,7 +17696,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject569"
 	},
@@ -17727,7 +17727,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject570"
 	},
@@ -17758,7 +17758,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject571"
 	},
@@ -17789,7 +17789,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject572"
 	},
@@ -17820,7 +17820,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject573"
 	},
@@ -17851,7 +17851,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject574"
 	},
@@ -17882,7 +17882,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject575"
 	},
@@ -17913,7 +17913,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject576"
 	},
@@ -17944,7 +17944,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject577"
 	},
@@ -17975,7 +17975,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject578"
 	},
@@ -18006,7 +18006,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject579"
 	},
@@ -18037,7 +18037,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject580"
 	},
@@ -18068,7 +18068,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject581"
 	},
@@ -18099,7 +18099,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject582"
 	},
@@ -18130,7 +18130,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject583"
 	},
@@ -18161,7 +18161,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject584"
 	},
@@ -18192,7 +18192,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject585"
 	},
@@ -18223,7 +18223,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject586"
 	},
@@ -18254,7 +18254,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject587"
 	},
@@ -18285,7 +18285,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject588"
 	},
@@ -18316,7 +18316,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject589"
 	},
@@ -18347,7 +18347,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject590"
 	},
@@ -18378,7 +18378,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject591"
 	},
@@ -18409,7 +18409,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject592"
 	},
@@ -18440,7 +18440,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject593"
 	},
@@ -18471,7 +18471,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject594"
 	},
@@ -18502,7 +18502,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject595"
 	},
@@ -18533,7 +18533,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject596"
 	},
@@ -18564,7 +18564,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject597"
 	},
@@ -18595,7 +18595,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject598"
 	},
@@ -18626,7 +18626,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject599"
 	},
@@ -18657,7 +18657,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject600"
 	},
@@ -18688,7 +18688,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject601"
 	},
@@ -18719,7 +18719,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject602"
 	},
@@ -18750,7 +18750,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject603"
 	},
@@ -18781,7 +18781,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject604"
 	},
@@ -18812,7 +18812,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject605"
 	},
@@ -18843,7 +18843,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject606"
 	},
@@ -18874,7 +18874,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject607"
 	},
@@ -18905,7 +18905,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject608"
 	},
@@ -18936,7 +18936,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject609"
 	},
@@ -18967,7 +18967,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject610"
 	},
@@ -18998,7 +18998,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject611"
 	},
@@ -19029,7 +19029,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject612"
 	},
@@ -19060,7 +19060,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject613"
 	},
@@ -19091,7 +19091,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject614"
 	},
@@ -19122,7 +19122,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject615"
 	},
@@ -19153,7 +19153,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject616"
 	},
@@ -19184,7 +19184,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject617"
 	},
@@ -19215,7 +19215,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject618"
 	},
@@ -19246,7 +19246,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject619"
 	},
@@ -19277,7 +19277,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject620"
 	},
@@ -19308,7 +19308,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject621"
 	},
@@ -19339,7 +19339,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject622"
 	},
@@ -19370,7 +19370,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject623"
 	},
@@ -19401,7 +19401,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject624"
 	},
@@ -19432,7 +19432,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject625"
 	},
@@ -19463,7 +19463,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject626"
 	},
@@ -19494,7 +19494,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject627"
 	},
@@ -19525,7 +19525,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject628"
 	},
@@ -19556,7 +19556,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject629"
 	},
@@ -19587,7 +19587,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject630"
 	},
@@ -19618,7 +19618,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject631"
 	},
@@ -19649,7 +19649,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject632"
 	},
@@ -19680,7 +19680,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject633"
 	},
@@ -19711,7 +19711,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject634"
 	},
@@ -19742,7 +19742,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject635"
 	},
@@ -19773,7 +19773,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject636"
 	},
@@ -19804,7 +19804,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject637"
 	},
@@ -19835,7 +19835,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject638"
 	},
@@ -19866,7 +19866,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject639"
 	},
@@ -19897,7 +19897,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject640"
 	},
@@ -19928,7 +19928,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject641"
 	},
@@ -19959,7 +19959,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject642"
 	},
@@ -19990,7 +19990,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject643"
 	},
@@ -20021,7 +20021,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject644"
 	},
@@ -20052,7 +20052,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject645"
 	},
@@ -20083,7 +20083,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject646"
 	},
@@ -20114,7 +20114,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject647"
 	},
@@ -20145,7 +20145,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject648"
 	},
@@ -20176,7 +20176,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject649"
 	},
@@ -20207,7 +20207,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject650"
 	},
@@ -20238,7 +20238,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject651"
 	},
@@ -20269,7 +20269,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject652"
 	},
@@ -20300,7 +20300,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject653"
 	},
@@ -20331,7 +20331,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject654"
 	},
@@ -20362,7 +20362,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject655"
 	},
@@ -20393,7 +20393,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject656"
 	},
@@ -20424,7 +20424,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject657"
 	},
@@ -20455,7 +20455,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject658"
 	},
@@ -20486,7 +20486,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject659"
 	},
@@ -20517,7 +20517,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject660"
 	},
@@ -20548,7 +20548,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject661"
 	},
@@ -20579,7 +20579,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject662"
 	},
@@ -20610,7 +20610,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject663"
 	},
@@ -20641,7 +20641,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject664"
 	},
@@ -20672,7 +20672,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject665"
 	},
@@ -20703,7 +20703,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject666"
 	},
@@ -20734,7 +20734,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject667"
 	},
@@ -20765,7 +20765,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject668"
 	},
@@ -20796,7 +20796,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject669"
 	},
@@ -20827,7 +20827,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject670"
 	},
@@ -20858,7 +20858,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject671"
 	},
@@ -20889,7 +20889,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject672"
 	},
@@ -20920,7 +20920,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject673"
 	},
@@ -20951,7 +20951,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject674"
 	},
@@ -20982,7 +20982,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject675"
 	},
@@ -21013,7 +21013,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject676"
 	},
@@ -21044,7 +21044,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject677"
 	},
@@ -21075,7 +21075,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject678"
 	},
@@ -21106,7 +21106,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject679"
 	},
@@ -21137,7 +21137,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject680"
 	},
@@ -21168,7 +21168,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject681"
 	},
@@ -21199,7 +21199,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject682"
 	},
@@ -21230,7 +21230,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject683"
 	},
@@ -21261,7 +21261,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject684"
 	},
@@ -21292,7 +21292,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject685"
 	},
@@ -21323,7 +21323,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject686"
 	},
@@ -21354,7 +21354,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject687"
 	},
@@ -21385,7 +21385,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject688"
 	},
@@ -21416,7 +21416,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject689"
 	},
@@ -21447,7 +21447,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject690"
 	},
@@ -21478,7 +21478,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject691"
 	},
@@ -21509,7 +21509,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject692"
 	},
@@ -21540,7 +21540,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject693"
 	},
@@ -21571,7 +21571,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject694"
 	},
@@ -21602,7 +21602,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject695"
 	},
@@ -21633,7 +21633,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject696"
 	},
@@ -21664,7 +21664,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject697"
 	},
@@ -21695,7 +21695,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject698"
 	},
@@ -21726,7 +21726,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject699"
 	},
@@ -21757,7 +21757,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject700"
 	},
@@ -21788,7 +21788,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject701"
 	},
@@ -21819,7 +21819,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject702"
 	},
@@ -21850,7 +21850,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject703"
 	},
@@ -21881,7 +21881,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject704"
 	},
@@ -21912,7 +21912,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject705"
 	},
@@ -21943,7 +21943,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject706"
 	},
@@ -21974,7 +21974,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject707"
 	},
@@ -22005,7 +22005,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject708"
 	},
@@ -22036,7 +22036,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject709"
 	},
@@ -22067,7 +22067,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject710"
 	},
@@ -22098,7 +22098,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject711"
 	},
@@ -22129,7 +22129,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject712"
 	},
@@ -22160,7 +22160,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject713"
 	},
@@ -22191,7 +22191,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject714"
 	},
@@ -22222,7 +22222,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject715"
 	},
@@ -22253,7 +22253,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject716"
 	},
@@ -22284,7 +22284,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject717"
 	},
@@ -22315,7 +22315,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject718"
 	},
@@ -22346,7 +22346,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject719"
 	},
@@ -22377,7 +22377,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject720"
 	},
@@ -22408,7 +22408,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject721"
 	},
@@ -22439,7 +22439,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject722"
 	},
@@ -22470,7 +22470,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject723"
 	},
@@ -22501,7 +22501,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject724"
 	},
@@ -22532,7 +22532,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject725"
 	},
@@ -22563,7 +22563,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject726"
 	},
@@ -22594,7 +22594,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject727"
 	},
@@ -22625,7 +22625,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject728"
 	},
@@ -22656,7 +22656,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject729"
 	},
@@ -22687,7 +22687,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject730"
 	},
@@ -22718,7 +22718,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject731"
 	},
@@ -22749,7 +22749,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject732"
 	},
@@ -22780,7 +22780,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject733"
 	},
@@ -22811,7 +22811,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject734"
 	},
@@ -22842,7 +22842,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject735"
 	},
@@ -22873,7 +22873,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject736"
 	},
@@ -22904,7 +22904,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject737"
 	},
@@ -22935,7 +22935,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject738"
 	},
@@ -22966,7 +22966,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject739"
 	},
@@ -22997,7 +22997,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject740"
 	},
@@ -23028,7 +23028,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject741"
 	},
@@ -23059,7 +23059,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject742"
 	},
@@ -23090,7 +23090,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject743"
 	},
@@ -23121,7 +23121,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject744"
 	},
@@ -23152,7 +23152,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject745"
 	},
@@ -23183,7 +23183,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject746"
 	},
@@ -23214,7 +23214,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject747"
 	},
@@ -23245,7 +23245,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject748"
 	},
@@ -23276,7 +23276,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject749"
 	},
@@ -23307,7 +23307,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject750"
 	},
@@ -23338,7 +23338,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject751"
 	},
@@ -23369,7 +23369,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject752"
 	},
@@ -23400,7 +23400,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject753"
 	},
@@ -23431,7 +23431,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject754"
 	},
@@ -23462,7 +23462,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject755"
 	},
@@ -23493,7 +23493,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject756"
 	},
@@ -23524,7 +23524,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject757"
 	},
@@ -23555,7 +23555,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject758"
 	},
@@ -23586,7 +23586,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject759"
 	},
@@ -23617,7 +23617,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject760"
 	},
@@ -23648,7 +23648,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject761"
 	},
@@ -23679,7 +23679,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject762"
 	},
@@ -23710,7 +23710,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject763"
 	},
@@ -23741,7 +23741,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject764"
 	},
@@ -23772,7 +23772,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject765"
 	},
@@ -23803,7 +23803,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject766"
 	},
@@ -23834,7 +23834,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject767"
 	},
@@ -23865,7 +23865,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject768"
 	},
@@ -23896,7 +23896,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject769"
 	},
@@ -23927,7 +23927,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject770"
 	},
@@ -23958,7 +23958,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject771"
 	},
@@ -23989,7 +23989,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject772"
 	},
@@ -24020,7 +24020,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject773"
 	},
@@ -24051,7 +24051,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject774"
 	},
@@ -24082,7 +24082,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject775"
 	},
@@ -24113,7 +24113,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject776"
 	},
@@ -24144,7 +24144,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject777"
 	},
@@ -24175,7 +24175,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject778"
 	},
@@ -24206,7 +24206,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject779"
 	},
@@ -24237,7 +24237,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject780"
 	},
@@ -24268,7 +24268,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject781"
 	},
@@ -24299,7 +24299,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject782"
 	},
@@ -24330,7 +24330,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject783"
 	},
@@ -24361,7 +24361,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject784"
 	},
@@ -24392,7 +24392,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject785"
 	},
@@ -24423,7 +24423,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject786"
 	},
@@ -24454,7 +24454,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject787"
 	},
@@ -24485,7 +24485,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject788"
 	},
@@ -24516,7 +24516,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject789"
 	},
@@ -24547,7 +24547,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject790"
 	},
@@ -24578,7 +24578,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject791"
 	},
@@ -24609,7 +24609,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject792"
 	},
@@ -24640,7 +24640,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject793"
 	},
@@ -24671,7 +24671,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject794"
 	},
@@ -24702,7 +24702,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject795"
 	},
@@ -24733,7 +24733,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject796"
 	},
@@ -24764,7 +24764,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject797"
 	},
@@ -24795,7 +24795,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject798"
 	},
@@ -24826,7 +24826,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject799"
 	},
@@ -24857,7 +24857,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject800"
 	},
@@ -24888,7 +24888,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject801"
 	},
@@ -24919,7 +24919,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject802"
 	},
@@ -24950,7 +24950,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject803"
 	},
@@ -24981,7 +24981,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject804"
 	},
@@ -25012,7 +25012,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject805"
 	},
@@ -25043,7 +25043,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject806"
 	},
@@ -25074,7 +25074,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject807"
 	},
@@ -25105,7 +25105,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject808"
 	},
@@ -25136,7 +25136,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject809"
 	},
@@ -25167,7 +25167,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject810"
 	},
@@ -25198,7 +25198,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject811"
 	},
@@ -25229,7 +25229,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject812"
 	},
@@ -25260,7 +25260,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject813"
 	},
@@ -25291,7 +25291,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject814"
 	},
@@ -25322,7 +25322,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject815"
 	},
@@ -25353,7 +25353,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject816"
 	},
@@ -25384,7 +25384,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject817"
 	},
@@ -25415,7 +25415,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject818"
 	},
@@ -25446,7 +25446,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject819"
 	},
@@ -25477,7 +25477,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject820"
 	},
@@ -25508,7 +25508,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject821"
 	},
@@ -25539,7 +25539,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject822"
 	},
@@ -25570,7 +25570,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject823"
 	},
@@ -25601,7 +25601,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject824"
 	},
@@ -25632,7 +25632,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject825"
 	},
@@ -25663,7 +25663,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject826"
 	},
@@ -25694,7 +25694,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject827"
 	},
@@ -25725,7 +25725,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject828"
 	},
@@ -25756,7 +25756,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject829"
 	},
@@ -25787,7 +25787,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject830"
 	},
@@ -25818,7 +25818,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject831"
 	},
@@ -25849,7 +25849,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject832"
 	},
@@ -25880,7 +25880,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject833"
 	},
@@ -25911,7 +25911,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject834"
 	},
@@ -25942,7 +25942,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject835"
 	},
@@ -25973,7 +25973,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject836"
 	},
@@ -26004,7 +26004,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject837"
 	},
@@ -26035,7 +26035,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject838"
 	},
@@ -26066,7 +26066,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject839"
 	},
@@ -26097,7 +26097,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject840"
 	},
@@ -26128,7 +26128,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject841"
 	},
@@ -26159,7 +26159,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject842"
 	},
@@ -26190,7 +26190,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject843"
 	},
@@ -26221,7 +26221,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject844"
 	},
@@ -26252,7 +26252,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject845"
 	},
@@ -26283,7 +26283,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject846"
 	},
@@ -26314,7 +26314,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject847"
 	},
@@ -26345,7 +26345,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject848"
 	},
@@ -26376,7 +26376,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject849"
 	},
@@ -26407,7 +26407,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject850"
 	},
@@ -26438,7 +26438,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject851"
 	},
@@ -26469,7 +26469,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject852"
 	},
@@ -26500,7 +26500,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject853"
 	},
@@ -26531,7 +26531,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject854"
 	},
@@ -26562,7 +26562,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject855"
 	},
@@ -26593,7 +26593,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject856"
 	},
@@ -26624,7 +26624,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject857"
 	},
@@ -26655,7 +26655,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject858"
 	},
@@ -26686,7 +26686,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject859"
 	},
@@ -26717,7 +26717,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject860"
 	},
@@ -26748,7 +26748,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject861"
 	},
@@ -26779,7 +26779,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject862"
 	},
@@ -26810,7 +26810,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject863"
 	},
@@ -26841,7 +26841,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject864"
 	},
@@ -26872,7 +26872,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject865"
 	},
@@ -26903,7 +26903,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject866"
 	},
@@ -26934,7 +26934,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject867"
 	},
@@ -26965,7 +26965,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject868"
 	},
@@ -26996,7 +26996,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject869"
 	},
@@ -27027,7 +27027,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject870"
 	},
@@ -27058,7 +27058,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject871"
 	},
@@ -27089,7 +27089,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject872"
 	},
@@ -27120,7 +27120,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject873"
 	},
@@ -27151,7 +27151,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject874"
 	},
@@ -27182,7 +27182,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject875"
 	},
@@ -27213,7 +27213,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject876"
 	},
@@ -27244,7 +27244,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject877"
 	},
@@ -27275,7 +27275,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject878"
 	},
@@ -27306,7 +27306,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject879"
 	},
@@ -27337,7 +27337,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject880"
 	},
@@ -27368,7 +27368,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject881"
 	},
@@ -27399,7 +27399,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject882"
 	},
@@ -27430,7 +27430,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject883"
 	},
@@ -27461,7 +27461,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject884"
 	},
@@ -27492,7 +27492,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject885"
 	},
@@ -27523,7 +27523,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject886"
 	},
@@ -27554,7 +27554,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject887"
 	},
@@ -27585,7 +27585,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject888"
 	},
@@ -27616,7 +27616,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject889"
 	},
@@ -27647,7 +27647,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject890"
 	},
@@ -27678,7 +27678,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject891"
 	},
@@ -27709,7 +27709,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject892"
 	},
@@ -27740,7 +27740,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject893"
 	},
@@ -27771,7 +27771,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject894"
 	},
@@ -27802,7 +27802,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject895"
 	},
@@ -27833,7 +27833,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject896"
 	},
@@ -27864,7 +27864,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject897"
 	},
@@ -27895,7 +27895,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject898"
 	},
@@ -27926,7 +27926,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject899"
 	},
@@ -27957,7 +27957,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject900"
 	},
@@ -27988,7 +27988,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject901"
 	},
@@ -28019,7 +28019,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject902"
 	},
@@ -28050,7 +28050,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject903"
 	},
@@ -28081,7 +28081,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject904"
 	},
@@ -28112,7 +28112,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject905"
 	},
@@ -28143,7 +28143,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject906"
 	},
@@ -28174,7 +28174,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject907"
 	},
@@ -28205,7 +28205,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject908"
 	},
@@ -28236,7 +28236,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject909"
 	},
@@ -28267,7 +28267,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject910"
 	},
@@ -28298,7 +28298,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject911"
 	},
@@ -28329,7 +28329,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject912"
 	},
@@ -28360,7 +28360,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject913"
 	},
@@ -28391,7 +28391,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject914"
 	},
@@ -28422,7 +28422,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject915"
 	},
@@ -28453,7 +28453,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject916"
 	},
@@ -28484,7 +28484,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject917"
 	},
@@ -28515,7 +28515,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject918"
 	},
@@ -28546,7 +28546,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject919"
 	},
@@ -28577,7 +28577,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject920"
 	},
@@ -28608,7 +28608,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject921"
 	},
@@ -28639,7 +28639,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject922"
 	},
@@ -28670,7 +28670,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject923"
 	},
@@ -28701,7 +28701,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject924"
 	},
@@ -28732,7 +28732,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject925"
 	},
@@ -28763,7 +28763,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject926"
 	},
@@ -28794,7 +28794,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject927"
 	},
@@ -28825,7 +28825,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject928"
 	},
@@ -28856,7 +28856,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject929"
 	},
@@ -28887,7 +28887,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject930"
 	},
@@ -28918,7 +28918,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject931"
 	},
@@ -28949,7 +28949,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject932"
 	},
@@ -28980,7 +28980,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject933"
 	},
@@ -29011,7 +29011,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject934"
 	},
@@ -29042,7 +29042,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject935"
 	},
@@ -29073,7 +29073,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject936"
 	},
@@ -29104,7 +29104,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject937"
 	},
@@ -29135,7 +29135,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject938"
 	},
@@ -29166,7 +29166,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject939"
 	},
@@ -29197,7 +29197,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject940"
 	},
@@ -29228,7 +29228,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject941"
 	},
@@ -29259,7 +29259,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject942"
 	},
@@ -29290,7 +29290,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject943"
 	},
@@ -29321,7 +29321,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject944"
 	},
@@ -29352,7 +29352,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject945"
 	},
@@ -29383,7 +29383,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject946"
 	},
@@ -29414,7 +29414,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject947"
 	},
@@ -29445,7 +29445,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject948"
 	},
@@ -29476,7 +29476,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject949"
 	},
@@ -29507,7 +29507,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject950"
 	},
@@ -29538,7 +29538,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject951"
 	},
@@ -29569,7 +29569,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject952"
 	},
@@ -29600,7 +29600,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject953"
 	},
@@ -29631,7 +29631,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject954"
 	},
@@ -29662,7 +29662,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject955"
 	},
@@ -29693,7 +29693,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject956"
 	},
@@ -29724,7 +29724,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject957"
 	},
@@ -29755,7 +29755,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject958"
 	},
@@ -29786,7 +29786,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject959"
 	},
@@ -29817,7 +29817,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject960"
 	},
@@ -29848,7 +29848,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject961"
 	},
@@ -29879,7 +29879,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject962"
 	},
@@ -29910,7 +29910,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject963"
 	},
@@ -29941,7 +29941,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject964"
 	},
@@ -29972,7 +29972,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject965"
 	},
@@ -30003,7 +30003,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject966"
 	},
@@ -30034,7 +30034,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject967"
 	},
@@ -30065,7 +30065,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject968"
 	},
@@ -30096,7 +30096,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject969"
 	},
@@ -30127,7 +30127,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject970"
 	},
@@ -30158,7 +30158,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject971"
 	},
@@ -30189,7 +30189,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject972"
 	},
@@ -30220,7 +30220,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject973"
 	},
@@ -30251,7 +30251,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject974"
 	},
@@ -30282,7 +30282,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject975"
 	},
@@ -30313,7 +30313,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject976"
 	},
@@ -30344,7 +30344,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject977"
 	},
@@ -30375,7 +30375,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject978"
 	},
@@ -30406,7 +30406,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject979"
 	},
@@ -30437,7 +30437,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject980"
 	},
@@ -30468,7 +30468,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject981"
 	},
@@ -30499,7 +30499,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject982"
 	},
@@ -30530,7 +30530,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject983"
 	},
@@ -30561,7 +30561,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject984"
 	},
@@ -30592,7 +30592,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject985"
 	},
@@ -30623,7 +30623,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject986"
 	},
@@ -30654,7 +30654,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject987"
 	},
@@ -30685,7 +30685,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject988"
 	},
@@ -30716,7 +30716,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject989"
 	},
@@ -30747,7 +30747,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject990"
 	},
@@ -30778,7 +30778,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject991"
 	},
@@ -30809,7 +30809,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject992"
 	},
@@ -30840,7 +30840,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject993"
 	},
@@ -30871,7 +30871,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject994"
 	},
@@ -30902,7 +30902,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject995"
 	},
@@ -30933,7 +30933,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject996"
 	},
@@ -30964,7 +30964,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject997"
 	},
@@ -30995,7 +30995,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject998"
 	},
@@ -31026,7 +31026,7 @@
 		"name": "Renderable",
 		"mesh": "Sphere"
 	  },
-	  {"name": "TestComponentA"}
+	  {"name": "TestComponent"}
 	],
 	"name": "testObject999"
 	}
