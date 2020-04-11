@@ -2,7 +2,7 @@
 
 #include <memory>
 #include <array>
-#include <set>
+#include <Algorithms-DataStructures/sparse_set.h>
 #include <functional>
 #include "Utils/Common.h"
 #include "ECS/Component.h"
@@ -33,7 +33,7 @@ namespace Args
 	public:
 		virtual void Init() = 0;
 		virtual void UpdateSystem(float deltaTime) = 0;
-		virtual std::set<uint32>* GetComponentRequirements() = 0;
+		virtual stl::sparse_set<uint32>* GetComponentRequirements() = 0;
 
 		template<typename ComponentType>
 		ComponentType* GetGlobalComponent();
@@ -53,7 +53,7 @@ namespace Args
 	{
 	private:
 		// TO DO: add actual component requirements
-		static std::set<uint32> componentRequirements;
+		static stl::sparse_set<uint32> componentRequirements;
 
 		template<bool activate>
 		void SetComponentRequirements() {}
@@ -67,7 +67,7 @@ namespace Args
 		}
 
 	public:
-		virtual std::set<uint32>* GetComponentRequirements() override
+		virtual stl::sparse_set<uint32>* GetComponentRequirements() override
 		{
 			return &componentRequirements;
 		}
@@ -78,7 +78,7 @@ namespace Args
 			SetComponentRequirements<sizeof...(Components) == 0>();
 		};
 
-		std::set<uint32> GetEntityList()
+		stl::sparse_set<uint32> GetEntityList()
 		{
 			return componentManager->GetEntityList<Self>();
 		}
@@ -149,7 +149,7 @@ namespace Args
 	};
 
 	template<class Self, class... Components>
-	std::set<uint32> MonoUpdateSystem<Self, Components...>::componentRequirements;
+	stl::sparse_set<uint32> MonoUpdateSystem<Self, Components...>::componentRequirements;
 
 #pragma endregion
 
@@ -159,7 +159,7 @@ namespace Args
 	class EntitySystem : public ISystem
 	{
 	private:
-		static std::set<uint32> componentRequirements;
+		static stl::sparse_set<uint32> componentRequirements;
 
 		template<class ComponentType, class... ComponentTypes>
 		void GetComponentsInternal(std::unordered_map<std::type_index, uint32>& typeCount, ComponentType** component, ComponentTypes**... components);
@@ -168,12 +168,12 @@ namespace Args
 		void GetComponentsInternal(std::unordered_map<std::type_index, uint32>& typeCount, ComponentType** component);
 
 	public:
-		virtual std::set<uint32>* GetComponentRequirements() override;
+		virtual stl::sparse_set<uint32>* GetComponentRequirements() override;
 
 	protected:
 		EntitySystem();
 
-		std::set<uint32> GetEntityList()
+		stl::sparse_set<uint32> GetEntityList()
 		{
 			return componentManager->GetEntityList<Self>();
 		}
@@ -220,7 +220,7 @@ namespace Args
 	};
 
 	template<class Self, class... Components>
-	std::set<uint32> EntitySystem<Self, Components...>::componentRequirements;
+	stl::sparse_set<uint32> EntitySystem<Self, Components...>::componentRequirements;
 
 	template<class Self, class... Components>
 	EntitySystem<Self, Components...>::EntitySystem()
@@ -235,7 +235,7 @@ namespace Args
 	{
 		lastDeltaTime = deltaTime;
 
-		std::set<uint32> entities = componentManager->GetEntityList<Self>();
+		stl::sparse_set<uint32> entities = componentManager->GetEntityList<Self>();
 
 		for (auto& [interval, timeBuffer, function] : updateCallbacks)
 		{
@@ -272,7 +272,7 @@ namespace Args
 	}
 
 	template<class Self, class ...Components>
-	inline std::set<uint32>* EntitySystem<Self, Components...>::GetComponentRequirements()
+	inline stl::sparse_set<uint32>* EntitySystem<Self, Components...>::GetComponentRequirements()
 	{
 		return &componentRequirements;
 	}

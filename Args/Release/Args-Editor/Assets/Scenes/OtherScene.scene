@@ -1,0 +1,52 @@
+{
+"scene":[
+	{
+		"name": "camera",
+		"components":[
+			{
+				"name": "Transform",
+				"position":{"x":0.0,"y":0.0,"z":-1.0},
+				"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":0.0},
+				"scale":{"x":1.0,"y":1.0,"z":1.0},
+				"children":[]
+			},
+			{
+				"name": "Camera"
+			}
+		]
+	},
+	{
+		"name": "light",
+		"components":[
+			{
+				"name": "Transform",
+				"position":{"x":0.0,"y":0.0,"z":0.0},
+				"rotation":{"x":42.1808472,"y":315.922455,"z":8.539376,"w":0.0},
+				"scale":{"x":1.0,"y":1.0,"z":1.0},
+				"children":[]
+			},
+			{
+				"name": "Light",
+				"type": "directional"
+			}
+		]
+	},
+	{
+		"name": "testObject0",
+		"components":[
+			{
+				"name": "Transform",
+				"position":{"x":0.0,"y":0.0,"z":0.0},
+				"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":0.0},
+				"scale":{"x":1.0,"y":1.0,"z":1.0},
+				"children":[]
+			},
+			{
+				"name": "Renderable",
+				"mesh": "Sphere",
+				"material": "Default"
+			}
+		]
+	}
+]
+}

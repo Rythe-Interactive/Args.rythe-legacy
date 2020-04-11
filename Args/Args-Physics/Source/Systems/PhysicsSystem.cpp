@@ -17,7 +17,7 @@ void Args::PhysicsSystem::ResolveCollisions(float deltaTime)
 	if (framecount < 160)
 		return;
 
-	std::set<uint32> entities = GetEntityList();
+	stl::sparse_set<uint32> entities = GetEntityList();
 
 	//Collision Resolution
 	for (auto entity : entities)

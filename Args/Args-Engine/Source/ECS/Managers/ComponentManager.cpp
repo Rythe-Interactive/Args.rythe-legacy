@@ -5,7 +5,7 @@
 #include "ECS/Entity.h"
 
 
-bool Args::ComponentManager::SetOverlaps(const std::set<uint32>* systemRequirements, const std::set<uint32>* entityComponents)
+bool Args::ComponentManager::SetOverlaps(const stl::sparse_set<uint32>* systemRequirements, const stl::sparse_set<uint32>* entityComponents)
 {
 	if (systemRequirements->empty())
 		return true;
@@ -161,7 +161,7 @@ void Args::ComponentManager::DestroyEntity(uint32 entityId)
 		}
 }
 
-const std::set<Args::uint32>& Args::ComponentManager::GetEntityList(std::type_index systemType)
+const Args::stl::sparse_set<Args::uint32>& Args::ComponentManager::GetEntityList(std::type_index systemType)
 {
 	return entityLists[systemType];
 }

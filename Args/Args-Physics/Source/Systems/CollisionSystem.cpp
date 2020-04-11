@@ -46,7 +46,7 @@ void Args::CollisionSystem::UpdateColliders(float deltaTime)
 			colliders.push_back(GetComponent<Collider>(entity, i));
 	}
 
-	std::unordered_map<uint32, std::set<uint32>> checkedPairs;
+	std::unordered_map<uint32, stl::sparse_set<uint32>> checkedPairs;
 
 	for (auto collider : colliders)
 	{

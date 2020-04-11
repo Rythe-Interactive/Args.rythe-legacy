@@ -3,7 +3,7 @@
 #include <queue>
 #include <stack>
 #include <memory>
-#include <set>
+#include <Algorithms-DataStructures/sparse_set.h>
 #include <string>
 #include <rapidjson/document.h>
 #include "ECS/System.h"
