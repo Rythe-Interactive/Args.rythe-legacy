@@ -15,7 +15,7 @@ namespace Args
 		ColliderType colliderType;
 		Vec3 size;
 		std::unordered_map<uint32, Collision> collisions;
-		std::set<uint32> collidedWith;
+		std::unordered_set<uint32> collidedWith;
 		bool isTrigger;
 		bool debugRender;
 		std::vector<std::function<void(const Collision&)>> OnCollisionCallback;

@@ -11,9 +11,9 @@ namespace Args
 		SceneModule(ECS& ecs) : Module(ecs) {}
 
 		// Inherited via Module
-		virtual void InitSystems(const std::set<std::string>& arguments) override;
+		virtual void InitSystems(const std::unordered_set<std::string>& arguments) override;
 
 		// Inherited via Module
-		virtual void InitComponents(const std::set<std::string>& arguments) override;
+		virtual void InitComponents(const std::unordered_set<std::string>& arguments) override;
 	};
 }

@@ -6,7 +6,7 @@
 
 std::vector<Args::Mesh> Args::Mesh::meshes;
 std::unordered_map<std::string, size_t> Args::Mesh::meshIndices;
-std::set<std::string> Args::Mesh::containedModels;
+std::unordered_set<std::string> Args::Mesh::containedModels;
 
 Args::Mesh::Mesh() : indexBufferId(0), vertexBufferId(0), normalBufferId(0), uvBufferId(0), vertices(), normals(), uvs(), indices()
 {

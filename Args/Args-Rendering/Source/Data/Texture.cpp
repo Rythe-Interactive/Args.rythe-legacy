@@ -4,7 +4,7 @@
 #include <stb/stb_image.h>
 
 std::unordered_map<std::string, Args::Texture> Args::Texture::textures;
-std::set<std::string> Args::Texture::containedTextures;
+std::unordered_set<std::string> Args::Texture::containedTextures;
 
 void Args::Texture::Load(const std::string& filename)
 {

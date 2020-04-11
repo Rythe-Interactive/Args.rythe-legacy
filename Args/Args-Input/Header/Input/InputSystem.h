@@ -188,7 +188,7 @@ namespace Args
         void RetrieveInput();
         bool isConnected = false;
         bool wasPressed = false;
-        std::map<int,std::set<int>> keyPressed;
+        std::map<int,std::unordered_set<int>> keyPressed;
         std::map<int, Key> glfwToKey = {std::pair<int,Key>(0,DIGITAL0),std::pair<int,Key>(1,DIGITAL1),std::pair<int,Key>(2,DIGITAL2), 
                                                             std::pair<int,Key>(3,DIGITAL3),std::pair<int,Key>(4,DIGITAL4),std::pair<int,Key>(5,DIGITAL5),
                                                             std::pair<int,Key>(6,DIGITAL6),std::pair<int,Key>(7,DIGITAL7),std::pair<int,Key>(8,DIGITAL8),

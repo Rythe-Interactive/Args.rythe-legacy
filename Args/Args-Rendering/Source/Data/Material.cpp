@@ -1,7 +1,7 @@
 #include "Data/Material.h"
 
 std::unordered_map<std::string, Args::Material> Args::Material::materials;
-std::set<std::string> Args::Material::containedMaterials;
+std::unordered_set<std::string> Args::Material::containedMaterials;
 
 void Args::Material::Init(Shader* shader)
 {

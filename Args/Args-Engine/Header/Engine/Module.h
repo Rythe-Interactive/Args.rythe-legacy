@@ -1,5 +1,5 @@
 #pragma once
-#include <set>
+#include <unordered_set>
 #include <string>
 #include <ECS/Managers/ECS.h>
 
@@ -23,9 +23,9 @@ namespace Args
 	public:
 		Module(ECS& ecs) : ecs(ecs) {}
 
-		virtual void InitComponents(const std::set<std::string>& arguments) = 0;
+		virtual void InitComponents(const std::unordered_set<std::string>& arguments) = 0;
 
-		virtual void InitSystems(const std::set<std::string>& arguments) = 0;
+		virtual void InitSystems(const std::unordered_set<std::string>& arguments) = 0;
 
 	};
 

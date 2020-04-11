@@ -18,7 +18,7 @@ namespace Args
 		//Texture(int width, int height);
 
 		static std::unordered_map<std::string, Texture> textures;
-		static std::set<std::string> containedTextures;
+		static std::unordered_set<std::string> containedTextures;
 	public:
 
 		static Texture* CreateTexture(const std::string& name, const std::string& filename);

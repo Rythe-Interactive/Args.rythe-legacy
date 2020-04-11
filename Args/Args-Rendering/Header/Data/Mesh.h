@@ -34,7 +34,7 @@ namespace Args
 
 		static std::vector<Mesh> meshes;
 		static std::unordered_map<std::string, size_t> meshIndices;
-		static std::set<std::string> containedModels;
+		static std::unordered_set<std::string> containedModels;
 
 		std::string name;
 	protected:

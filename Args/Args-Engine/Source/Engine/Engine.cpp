@@ -8,7 +8,7 @@ __declspec(dllexport) DWORD NvOptimusEnablement = 0x0000001;
 __declspec(dllexport) int AmdPowerXpressRequestHighPerformance = 1;
 #endif
 
-std::set<Args::uint32> Args::Engine::eventIds;
+std::unordered_set<Args::uint32> Args::Engine::eventIds;
 std::unordered_map<Args::uint32, Args::IEvent*> Args::Engine::events;
 std::unordered_map<std::type_index, std::vector<std::function<void(Args::IEvent*)>>> Args::Engine::eventCallbacks;
 

@@ -5,7 +5,7 @@
 #include "Components/Light.h"
 #include "Renderer/Renderer.h"
 
-void Args::RenderingModule::InitComponents(const std::set<std::string>& arguments)
+void Args::RenderingModule::InitComponents(const std::unordered_set<std::string>& arguments)
 {
 	RegisterComponentType<Renderable>();
 	RegisterComponentType<Camera>();
@@ -13,7 +13,7 @@ void Args::RenderingModule::InitComponents(const std::set<std::string>& argument
 	RegisterGlobalComponentType<RenderData>();
 }
 
-void Args::RenderingModule::InitSystems(const std::set<std::string>& arguments)
+void Args::RenderingModule::InitSystems(const std::unordered_set<std::string>& arguments)
 {
 	if (!arguments.count("norender") && !arguments.count("nowindow"))
 		RegisterSystem<Renderer>(1);

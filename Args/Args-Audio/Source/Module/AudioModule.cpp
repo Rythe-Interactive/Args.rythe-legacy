@@ -6,14 +6,14 @@
 #include "Systems/AudioSourceSystem.h"
 
 
-void Args::AudioModule::InitComponents(const std::set<std::string>& arguments)
+void Args::AudioModule::InitComponents(const std::unordered_set<std::string>& arguments)
 {
 	RegisterGlobalComponentType<AudioDevice>();
 	RegisterComponentType<AudioListener>();
 	RegisterComponentType<AudioSource>();
 }
 
-void Args::AudioModule::InitSystems(const std::set<std::string>& arguments)
+void Args::AudioModule::InitSystems(const std::unordered_set<std::string>& arguments)
 {
 	RegisterSystem<AudioListenerSystem>();
 	RegisterSystem<AudioSourceSystem>();

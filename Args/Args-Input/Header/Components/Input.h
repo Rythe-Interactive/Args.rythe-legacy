@@ -29,9 +29,9 @@ namespace Args
 		std::unordered_map<InputCode, EventID> actionMapping;
 		std::unordered_map<InputCode, std::pair<EventID, AxisValue>> axisMapping;
 
-		std::set<ControllerID> controllers;
+		std::unordered_set<ControllerID> controllers;
 
-		std::unordered_map<ControllerID, std::set<InputCode>> registeredInputs;
+		std::unordered_map<ControllerID, std::unordered_set<InputCode>> registeredInputs;
 
 	public:
 

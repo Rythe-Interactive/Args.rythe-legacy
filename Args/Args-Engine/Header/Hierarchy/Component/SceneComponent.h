@@ -8,7 +8,7 @@
 #include <queue>
 #include <stack>
 #include <memory>
-#include <set>
+#include <unordered_set>
 #include <string>
 #include <rapidjson/document.h>
 #include <Serialisation/JSONLoader.h>

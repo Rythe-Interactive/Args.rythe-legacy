@@ -4,13 +4,13 @@
 #include "Systems/CollisionSystem.h"
 #include "Systems/PhysicsSystem.h"
 
-void Args::PhysicsModule::InitComponents(const std::set<std::string>& arguments)
+void Args::PhysicsModule::InitComponents(const std::unordered_set<std::string>& arguments)
 {
 	RegisterComponentType<Collider>();
 	RegisterComponentType<Rigidbody>();
 }
 
-void Args::PhysicsModule::InitSystems(const std::set<std::string>& arguments)
+void Args::PhysicsModule::InitSystems(const std::unordered_set<std::string>& arguments)
 {
 	RegisterSystem<CollisionSystem>();
 	RegisterSystem<PhysicsSystem>();

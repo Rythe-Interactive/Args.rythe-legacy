@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
 #include <memory>
-#include <set>
+#include <unordered_set>
 #include <functional>
 #include <unordered_map>
 #include <typeindex>
@@ -19,8 +19,8 @@ namespace Args
 		std::vector<std::unique_ptr<Module>> modules;
 		ECS* ecs;
 
-		std::set<std::string> commandlineArguments;
-		static std::set<uint32> eventIds;
+		std::unordered_set<std::string> commandlineArguments;
+		static std::unordered_set<uint32> eventIds;
 		static std::unordered_map<uint32, Args::IEvent*> events;
 		
 		static std::unordered_map<std::type_index, std::vector<std::function<void(Args::IEvent*)>>> eventCallbacks;

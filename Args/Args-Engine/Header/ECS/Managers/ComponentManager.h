@@ -1,6 +1,6 @@
 #pragma once
 #include <unordered_map>
-#include <set>
+#include <unordered_set>
 #include <memory>
 #include <typeindex>
 #include "Utils/Common.h"
@@ -21,13 +21,13 @@ namespace Args
 		std::unordered_map<std::string, std::unique_ptr<IGlobalComponent>> staticComponents;
 		std::unordered_map<uint32, std::string> staticComponentTypeIds;
 		std::unordered_map<uint32, std::string> componentTypeIds;
-		std::unordered_map<uint32, std::set<uint32>> entities;
+		std::unordered_map<uint32, std::unordered_set<uint32>> entities;
 		std::unordered_map<uint32, Entity*> entityProxies;
-		std::unordered_map<std::type_index, std::set<uint32>> entityLists;
+		std::unordered_map<std::type_index, std::unordered_set<uint32>> entityLists;
 
 		std::unordered_map<std::type_index, std::unique_ptr<ISystem>>* systems = nullptr;
 
-		bool SetOverlaps(const std::set<uint32>* lhs, const std::set<uint32>* rhs);
+		bool SetOverlaps(const std::unordered_set<uint32>* lhs, const std::unordered_set<uint32>* rhs);
 
 		void UpdateEntityList(uint32 entityID, uint32 componentTypeId, bool erased);
 
@@ -75,9 +75,9 @@ namespace Args
 		void DestroyEntity(uint32 entityId);
 
 		template<class SystemType, INHERITS_FROM(SystemType, ISystem)>
-		const std::set<uint32>& GetEntityList();
+		const std::unordered_set<uint32>& GetEntityList();
 
-		const std::set<uint32>& GetEntityList(std::type_index systemType);
+		const std::unordered_set<uint32>& GetEntityList(std::type_index systemType);
 
 		template<typename ComponentType, INHERITS_FROM(ComponentType, IGlobalComponent)>
 		ComponentType* GetGlobalComponent();
@@ -201,7 +201,7 @@ namespace Args
 	}
 
 	template<class SystemType, typename>
-	const std::set<uint32>& ComponentManager::GetEntityList()
+	const std::unordered_set<uint32>& ComponentManager::GetEntityList()
 	{
 		return entityLists[typeid(SystemType)];
 	}

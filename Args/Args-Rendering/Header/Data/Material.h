@@ -65,7 +65,7 @@ namespace Args
 	private:
 		Shader* shader;
 
-		static std::set<std::string> containedMaterials;
+		static std::unordered_set<std::string> containedMaterials;
 		static std::unordered_map<std::string, Material> materials;
 
 		void Init(Shader* shader);

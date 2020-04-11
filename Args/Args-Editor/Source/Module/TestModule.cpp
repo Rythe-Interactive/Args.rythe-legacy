@@ -4,12 +4,12 @@
 #include "Systems/ECSTestSystem.h"
 
 
-void TestModule::InitComponents(const std::set<std::string>& arguments)
+void TestModule::InitComponents(const std::unordered_set<std::string>& arguments)
 {
 	RegisterComponentType<TestComponent>();
 }
 
-void TestModule::InitSystems(const std::set<std::string>& arguments)
+void TestModule::InitSystems(const std::unordered_set<std::string>& arguments)
 {
 	RegisterSystem<TestMonoUpdateSystem>();
 	RegisterSystem<ECSTestSystem>();
