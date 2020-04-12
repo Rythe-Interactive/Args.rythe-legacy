@@ -239,7 +239,7 @@ namespace Args
 
 		for (auto& [interval, timeBuffer, function] : updateCallbacks)
 		{
-			if (interval <= 0.001f)
+			if (interval <= 0.001)
 			{
 				for (uint32 entityId : entities)
 				{

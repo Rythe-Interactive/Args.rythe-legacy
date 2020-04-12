@@ -67,27 +67,39 @@ void Args::ComponentManager::DestroyComponentByTypeID(uint32 typeId, uint32 comp
 	auto& componentFamily = componentFamilies[componentTypeIds[typeId]];
 	uint32 entityId = componentFamily->GetComponentByID(componentId)->ownerID;
 	componentFamily->DestroyComponentByID(componentId);
-	entities[entityId].erase(typeId);
-	UpdateEntityList(entityId, typeId, true);
+
+	if (componentFamily->GetComponentCount(entityId) == 0)
+	{
+		entities[entityId].erase(typeId);
+		UpdateEntityList(entityId, typeId, true);
+	}
 }
 
 void Args::ComponentManager::DestroyComponent(const std::string& typeName, uint32 componentId)
 {
 	auto& componentFamily = componentFamilies[typeName];
 	uint32 entityId = componentFamily->GetComponentByID(componentId)->ownerID;
-	uint32 typeId = componentFamily->GetComponentTypeID();
-	entities[entityId].erase(typeId);
-	UpdateEntityList(entityId, typeId, true);
 	componentFamily->DestroyComponentByID(componentId);
+
+	if (componentFamily->GetComponentCount(entityId) == 0)
+	{
+		uint32 typeId = componentFamily->GetComponentTypeID();
+		entities[entityId].erase(typeId);
+		UpdateEntityList(entityId, typeId, true);
+	}
 }
 
 void Args::ComponentManager::DestroyComponent(uint32 entityId, const std::string& typeName, size_t index)
 {
 	auto& componentFamily = componentFamilies[typeName];
-	uint32 typeId = componentFamily->GetComponentTypeID();
 	componentFamily->DestroyComponent(entityId, index);
-	entities[entityId].erase(typeId);
-	UpdateEntityList(entityId, typeId, true);
+
+	if (componentFamily->GetComponentCount(entityId) == 0)
+	{
+		uint32 typeId = componentFamily->GetComponentTypeID();
+		entities[entityId].erase(typeId);
+		UpdateEntityList(entityId, typeId, true);
+	}
 }
 
 size_t Args::ComponentManager::GetEntityCount()
@@ -108,7 +120,7 @@ Args::uint32 Args::ComponentManager::AddComponent(std::string typeName, Args::ui
 		if (componentFamily)
 		{
 			auto componentID = componentFamily->CreateComponent(entityProxies[entityID]);
-			if (componentID)
+			if (componentID && componentFamily->GetComponentCount(entityID) == 1)
 			{
 				uint32 typeId = componentFamily->GetComponentTypeID();
 				entities[entityID].insert(typeId);
@@ -123,9 +135,17 @@ Args::uint32 Args::ComponentManager::AddComponent(std::string typeName, Args::ui
 
 void Args::ComponentManager::DestroyComponent(IComponent* component)
 {
-	componentFamilies[componentTypeIds[component->typeID]]->DestroyComponent(component);
-	entities[component->ownerID].erase(component->typeID);
-	UpdateEntityList(component->ownerID, component->typeID, true);
+	auto& componentFamily = componentFamilies[componentTypeIds[component->typeID]];
+	uint32 entityId = component->ownerID;
+
+	componentFamily->DestroyComponent(component);
+
+	if (componentFamily->GetComponentCount(entityId) == 0)
+	{
+		uint32 typeId = component->typeID;
+		entities[entityId].erase(typeId);
+		UpdateEntityList(entityId, typeId, true);
+	}
 }
 
 Args::uint32 Args::ComponentManager::CreateEntity()
