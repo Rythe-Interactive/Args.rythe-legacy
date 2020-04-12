@@ -8,10 +8,10 @@ void ECSTestSystem::Init()
 	BindForUpdate(std::bind(&ECSTestSystem::Update, this, std::placeholders::_1));
 }
 
-void ECSTestSystem::Update(float deltaTime)
+void ECSTestSystem::Update(double deltaTime)
 {
 	Transform* transform;
-	float time;
+	double time;
 
 	for (int i = 0; i < 10; i++)
 	{
