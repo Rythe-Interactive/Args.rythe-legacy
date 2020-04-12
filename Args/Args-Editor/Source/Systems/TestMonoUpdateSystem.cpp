@@ -87,7 +87,7 @@ void TestMonoUpdateSystem::Print(double deltaTime)
 
 void TestMonoUpdateSystem::Shutdown(double deltaTime)
 {
-	float elapsedms = elapsedTime * 1000.f;
+	double elapsedms = elapsedTime * 1000.0;
 	std::string benchmarkFormat = "Benchmark Data\n";
 	benchmarkFormat += "---Querying---\n";
 	benchmarkFormat += "\t-Per Operation-\n";

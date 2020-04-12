@@ -27,7 +27,7 @@ void ECSTestSystem::Update(double deltaTime)
 		TestMonoUpdateSystem::queryTime += time;
 	}
 
-	transform->Rotate(up, deltaTime);
+	transform->Rotate(up, (float)deltaTime);
 
 	for (int i = 0; i < 10; i++)
 	{
