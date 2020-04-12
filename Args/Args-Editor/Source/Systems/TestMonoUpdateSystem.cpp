@@ -2,16 +2,16 @@
 
 using namespace Args;
 
-float TestMonoUpdateSystem::lowestQuery = FLT_MAX;
-float TestMonoUpdateSystem::highestQuery = 0.f;
-float TestMonoUpdateSystem::lowestAdd = FLT_MAX;
-float TestMonoUpdateSystem::highestAdd = 0.f;
-float TestMonoUpdateSystem::lowestRemove = FLT_MAX;
-float TestMonoUpdateSystem::highestRemove = 0.f;
+double TestMonoUpdateSystem::lowestQuery = DBL_MAX;
+double TestMonoUpdateSystem::highestQuery = 0.0;
+double TestMonoUpdateSystem::lowestAdd = DBL_MAX;
+double TestMonoUpdateSystem::highestAdd = 0.0;
+double TestMonoUpdateSystem::lowestRemove = DBL_MAX;
+double TestMonoUpdateSystem::highestRemove = 0.0;
 
-float TestMonoUpdateSystem::addTime = 0.f;
-float TestMonoUpdateSystem::removeTime = 0.f;
-float TestMonoUpdateSystem::queryTime = 0.f;
+double TestMonoUpdateSystem::addTime = 0.0;
+double TestMonoUpdateSystem::removeTime = 0.0;
+double TestMonoUpdateSystem::queryTime = 0.0;
 int TestMonoUpdateSystem::torturedComponents = 0;
 
 void TestMonoUpdateSystem::Init()
@@ -32,7 +32,7 @@ void TestMonoUpdateSystem::Start()
 {
 }
 
-void TestMonoUpdateSystem::Update(float deltaTime)
+void TestMonoUpdateSystem::Update(double deltaTime)
 {
 	totalQuery += queryTime;
 	totalAdd += addTime;
@@ -70,22 +70,22 @@ void TestMonoUpdateSystem::Update(float deltaTime)
 	elapsedTime += deltaTime;
 }
 
-void TestMonoUpdateSystem::Print(float deltaTime)
+void TestMonoUpdateSystem::Print(double deltaTime)
 {
 	if (updatesSincePrint == 0 && accumDeltaTime > 0)
-		Debug::Log(DEBUG_PURPLE, DebugInfo, "%fs since last update.\n", accumDeltaTime);
+		Debug::Log(DEBUG_PURPLE, DebugInfo, "%fs since last update.\n", (float)accumDeltaTime);
 	else if (updatesSincePrint > 0)
 	{
-		Debug::Log(DEBUG_PURPLE, DebugInfo, "%fs since last log.", accumDeltaTime);
+		Debug::Log(DEBUG_PURPLE, DebugInfo, "%fs since last log.", (float)accumDeltaTime);
 
-		double averageDeltaTime = ((double)accumDeltaTime) / updatesSincePrint;
-		Debug::Log(DEBUG_PURPLE, DebugInfo, "average delta time: %fs %fms\n\t\t\t\t\t average fps: %ffps\n", (float)averageDeltaTime, (float)(averageDeltaTime * 1000.f), 1.f / averageDeltaTime);
+		double averageDeltaTime = accumDeltaTime / updatesSincePrint;
+		Debug::Log(DEBUG_PURPLE, DebugInfo, "average delta time: %fs %fms\n\t\t\t\t\t average fps: %ffps\n", (float)averageDeltaTime, (float)(averageDeltaTime * 1000.0), (float)(1.0 / averageDeltaTime));
 		updatesSincePrint = 0;
 		accumDeltaTime = 0;
 	}
 }
 
-void TestMonoUpdateSystem::Shutdown(float deltaTime)
+void TestMonoUpdateSystem::Shutdown(double deltaTime)
 {
 	float elapsedms = elapsedTime * 1000.f;
 	std::string benchmarkFormat = "Benchmark Data\n";
@@ -109,18 +109,18 @@ void TestMonoUpdateSystem::Shutdown(float deltaTime)
 	benchmarkFormat += "Total Elapsed: %ims";
 
 	Debug::Log(DebugInfo, benchmarkFormat,
-		lowestQuery, highestQuery, totalQuery / totalTortured,
-		lowestQueryFrame, highestQueryFrame, totalQuery / totalFrames, (int)round(totalQuery), (totalQuery / elapsedms) * 100.f,
+		(float)lowestQuery, (float)highestQuery, (float)(totalQuery / totalTortured),
+		(float)lowestQueryFrame, (float)highestQueryFrame, (float)(totalQuery / totalFrames), (int)round(totalQuery), (float)((totalQuery / elapsedms) * 100.0),
 
-		lowestAdd, highestAdd, totalAdd / totalTortured,
-		lowestAddFrame, highestAddFrame, totalAdd / totalFrames, (int)round(totalAdd), (totalAdd / elapsedms) * 100.f,
+		(float)lowestAdd, (float)highestAdd, (float)(totalAdd / totalTortured),
+		(float)lowestAddFrame, (float)highestAddFrame, (float)(totalAdd / totalFrames), (int)round(totalAdd), (float)((totalAdd / elapsedms) * 100.0),
 
-		lowestRemove, highestRemove, totalRemove / totalTortured,
-		lowestRemoveFrame, highestRemoveFrame, totalRemove / totalFrames, (int)round(totalRemove), (totalRemove / elapsedms) * 100.f,
+		(float)lowestRemove, (float)highestRemove, (float)(totalRemove / totalTortured),
+		(float)lowestRemoveFrame, (float)highestRemoveFrame, (float)(totalRemove / totalFrames), (int)round(totalRemove), (float)((totalRemove / elapsedms) * 100.0),
 		(int)round(elapsedms)
 	);
 
-	Debug::Success(DebugInfo, "Elapsed Time: %f", elapsedTime);
+	Debug::Success(DebugInfo, "---Run data---\n\tElapsed time: %fs\n\tAverage frame time: %fms\n\tAverage frame rate: %ffps", (float)elapsedTime, (float)(elapsedms/totalFrames), (float)(totalFrames/elapsedTime));
 	Engine::RaiseEvent<Events::Exit>();
 }
 

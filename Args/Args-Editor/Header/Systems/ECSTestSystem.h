@@ -10,5 +10,5 @@ class ECSTestSystem : public Args::EntitySystem<ECSTestSystem, Args::Transform, 
 
 	virtual void Init() override;
 
-	void Update(float deltaTime);
+	void Update(double deltaTime);
 };
