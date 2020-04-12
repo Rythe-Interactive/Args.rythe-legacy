@@ -191,7 +191,7 @@ namespace Args
 	template<typename ComponentType, typename>
 	inline void ComponentManager::DestroyComponent(uint32 entityId, size_t index)
 	{
-		componentFamilies[GetTypeName<ComponentType>()]->DestroyComponent(entityId, index);
+		DestroyComponent(entityId, GetTypeName<ComponentType>(), index);
 	}
 
 	template<typename ComponentType, typename>

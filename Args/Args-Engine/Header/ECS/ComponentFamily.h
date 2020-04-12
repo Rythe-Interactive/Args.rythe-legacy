@@ -145,6 +145,8 @@ namespace Args
 
 		virtual size_t GetComponentCount(uint32 entityId) override
 		{
+			if (!entityToComponentId.count(entityId))
+				return 0;
 			return entityToComponentId[entityId].size();
 		}
 
