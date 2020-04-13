@@ -34,6 +34,9 @@ void Args::ComponentManager::UpdateEntityList(uint32 entityID, uint32 componentT
 			{
 				if (entityList->count(entityID))
 					entityList->erase(entityID);
+
+				if (SetOverlaps(systemRequirements, &entities[entityID]))
+					entityList->insert(entityID); // takes a lot of time
 			}
 			else
 				if (SetOverlaps(systemRequirements, &entities[entityID]))
@@ -68,11 +71,17 @@ void Args::ComponentManager::DestroyComponentByTypeID(uint32 typeId, uint32 comp
 	uint32 entityId = componentFamily->GetComponentByID(componentId)->ownerID;
 	componentFamily->DestroyComponentByID(componentId);
 
+	//if (componentFamily->GetComponentCount(entityId) == 0)
+	//{
+	//	entities[entityId].erase(typeId);
+	//	UpdateEntityList(entityId, typeId, true);
+	//}
 	if (componentFamily->GetComponentCount(entityId) == 0)
 	{
 		entities[entityId].erase(typeId);
-		UpdateEntityList(entityId, typeId, true);
 	}
+	UpdateEntityList(entityId, typeId, true);
+
 }
 
 void Args::ComponentManager::DestroyComponent(const std::string& typeName, uint32 componentId)
@@ -81,12 +90,18 @@ void Args::ComponentManager::DestroyComponent(const std::string& typeName, uint3
 	uint32 entityId = componentFamily->GetComponentByID(componentId)->ownerID;
 	componentFamily->DestroyComponentByID(componentId);
 
+	//if (componentFamily->GetComponentCount(entityId) == 0)
+	//{
+	//	uint32 typeId = componentFamily->GetComponentTypeID();
+	//	entities[entityId].erase(typeId);
+	//	UpdateEntityList(entityId, typeId, true);
+	//}
+	uint32 typeId = componentFamily->GetComponentTypeID();
 	if (componentFamily->GetComponentCount(entityId) == 0)
 	{
-		uint32 typeId = componentFamily->GetComponentTypeID();
 		entities[entityId].erase(typeId);
-		UpdateEntityList(entityId, typeId, true);
 	}
+	UpdateEntityList(entityId, typeId, true);
 }
 
 void Args::ComponentManager::DestroyComponent(uint32 entityId, const std::string& typeName, size_t index)
@@ -94,12 +109,18 @@ void Args::ComponentManager::DestroyComponent(uint32 entityId, const std::string
 	auto& componentFamily = componentFamilies[typeName];
 	componentFamily->DestroyComponent(entityId, index);
 
+	//if (componentFamily->GetComponentCount(entityId) == 0)
+	//{
+	//	uint32 typeId = componentFamily->GetComponentTypeID();
+	//	entities[entityId].erase(typeId);
+	//	UpdateEntityList(entityId, typeId, true);
+	//}
+	uint32 typeId = componentFamily->GetComponentTypeID();
 	if (componentFamily->GetComponentCount(entityId) == 0)
 	{
-		uint32 typeId = componentFamily->GetComponentTypeID();
 		entities[entityId].erase(typeId);
-		UpdateEntityList(entityId, typeId, true);
 	}
+	UpdateEntityList(entityId, typeId, true);
 }
 
 size_t Args::ComponentManager::GetEntityCount()
@@ -120,7 +141,7 @@ Args::uint32 Args::ComponentManager::AddComponent(std::string typeName, Args::ui
 		if (componentFamily)
 		{
 			auto componentID = componentFamily->CreateComponent(entityProxies[entityID]);
-			if (componentID && componentFamily->GetComponentCount(entityID) == 1)
+			if (componentID)//&& componentFamily->GetComponentCount(entityID) == 1)
 			{
 				uint32 typeId = componentFamily->GetComponentTypeID();
 				entities[entityID].insert(typeId);
@@ -140,12 +161,18 @@ void Args::ComponentManager::DestroyComponent(IComponent* component)
 
 	componentFamily->DestroyComponent(component);
 
+	//if (componentFamily->GetComponentCount(entityId) == 0)
+	//{
+	//	uint32 typeId = component->typeID;
+	//	entities[entityId].erase(typeId);
+	//	UpdateEntityList(entityId, typeId, true);
+	//}
+	uint32 typeId = component->typeID;
 	if (componentFamily->GetComponentCount(entityId) == 0)
 	{
-		uint32 typeId = component->typeID;
 		entities[entityId].erase(typeId);
-		UpdateEntityList(entityId, typeId, true);
 	}
+	UpdateEntityList(entityId, typeId, true);
 }
 
 Args::uint32 Args::ComponentManager::CreateEntity()

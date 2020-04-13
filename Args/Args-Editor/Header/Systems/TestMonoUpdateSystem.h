@@ -7,6 +7,8 @@ using namespace std;
 class TestMonoUpdateSystem : public Args::MonoUpdateSystem<TestMonoUpdateSystem>
 {
 private:
+	double lastDeltaTime = 0;
+	double accumDeviation = 0;
 	double accumDeltaTime = 0;
 	int updatesSincePrint = 0;
 	double elapsedTime = 0;
