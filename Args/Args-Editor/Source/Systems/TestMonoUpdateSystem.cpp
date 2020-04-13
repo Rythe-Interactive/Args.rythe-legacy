@@ -18,7 +18,7 @@ void TestMonoUpdateSystem::Init()
 {
 	BindForUpdate(std::bind(&TestMonoUpdateSystem::Update, this, std::placeholders::_1));
 	BindForFixedUpdate(1.f, std::bind(&TestMonoUpdateSystem::Print, this, std::placeholders::_1));
-	BindForFixedUpdate(300.f, std::bind(&TestMonoUpdateSystem::Shutdown, this, std::placeholders::_1));
+	BindForFixedUpdate(120.f, std::bind(&TestMonoUpdateSystem::Shutdown, this, std::placeholders::_1));
 	//BindForFixedUpdate(30.f, std::bind(&TestMonoUpdateSystem::Shutdown, this, std::placeholders::_1));
 
 	GetGlobalComponent<Args::Input>()->BindAction("Exit", std::bind(&TestMonoUpdateSystem::Exit, this, std::placeholders::_1, std::placeholders::_2));
@@ -34,6 +34,16 @@ void TestMonoUpdateSystem::Start()
 
 void TestMonoUpdateSystem::Update(double deltaTime)
 {
+	if (lastDeltaTime == 0)
+	{
+		lastDeltaTime = deltaTime * 1000.0;
+	}
+	else
+	{
+		accumDeviation += abs((deltaTime * 1000.0) - lastDeltaTime);
+		lastDeltaTime = deltaTime * 1000.0;
+	}
+
 	totalQuery += queryTime;
 	totalAdd += addTime;
 	totalRemove += removeTime;
@@ -120,7 +130,7 @@ void TestMonoUpdateSystem::Shutdown(double deltaTime)
 		(int)round(elapsedms)
 	);
 
-	Debug::Success(DebugInfo, "---Run data---\n\tElapsed time: %fs\n\tAverage frame time: %fms\n\tAverage frame rate: %ffps", (float)elapsedTime, (float)(elapsedms/totalFrames), (float)(totalFrames/elapsedTime));
+	Debug::Success(DebugInfo, "---Run data---\n\tElapsed time: %fs\n\tAverage frame time: %fms\n\tAverage frame rate: %ffps\n\tAverage deviation: %fms", (float)elapsedTime, (float)(elapsedms / totalFrames), (float)(totalFrames / elapsedTime), (float)(accumDeviation / (totalFrames - 1.0)));
 	Engine::RaiseEvent<Events::Exit>();
 }
 
