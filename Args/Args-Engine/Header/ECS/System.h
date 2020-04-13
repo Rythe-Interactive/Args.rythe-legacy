@@ -20,19 +20,19 @@ namespace Args
 		bool enabled = true;
 
 	protected:
-		double lastDeltaTime = 0.0;
+		float lastDeltaTime = 0.f;
 
 		ComponentManager* componentManager = nullptr;
 
-		std::vector<std::tuple<double, double, std::function<void(double)>>> updateCallbacks;
+		std::vector<std::tuple<float, float, std::function<void(float)>>> updateCallbacks;
 
-		virtual void BindForUpdate(std::function<void(double)> func) = 0;
-		virtual void BindForFixedUpdate(double interval, std::function<void(double)> func) = 0;
+		virtual void BindForUpdate(std::function<void(float)> func) = 0;
+		virtual void BindForFixedUpdate(float interval, std::function<void(float)> func) = 0;
 		virtual void Cleanup() {}
 
 	public:
 		virtual void Init() = 0;
-		virtual void UpdateSystem(double deltaTime) = 0;
+		virtual void UpdateSystem(float deltaTime) = 0;
 		virtual std::set<uint32>* GetComponentRequirements() = 0;
 
 		template<typename ComponentType>
@@ -113,23 +113,23 @@ namespace Args
 			return componentManager->GetComponentCount<ComponentType>(entityId);
 		}
 
-		virtual void BindForUpdate(std::function<void(double)> func) override
+		virtual void BindForUpdate(std::function<void(float)> func) override
 		{
 			updateCallbacks.push_back(std::make_tuple(0.f, 0.f, func));
 		}
 
-		virtual void BindForFixedUpdate(double interval, std::function<void(double)> func) override
+		virtual void BindForFixedUpdate(float interval, std::function<void(float)> func) override
 		{
 			updateCallbacks.push_back(std::make_tuple(interval, 0.f, func));
 		}
 
-		virtual void UpdateSystem(double deltaTime) override
+		virtual void UpdateSystem(float deltaTime) override
 		{
 			lastDeltaTime = deltaTime;
 
 			for (auto& [interval, timeBuffer, function] : updateCallbacks)
 			{
-				if (interval <= 0.001)
+				if (interval <= 0.001f)
 				{
 					function(deltaTime);
 
@@ -210,13 +210,13 @@ namespace Args
 			return componentManager->GetComponentsOfType<ComponentType>();
 		}
 
-		virtual void BindForUpdate(std::function<void(double)> func) override;
-		virtual void BindForFixedUpdate(double interval, std::function<void(double)> func) override;
+		virtual void BindForUpdate(std::function<void(float)> func) override;
+		virtual void BindForFixedUpdate(float interval, std::function<void(float)> func) override;
 
 		uint32 currentEntityID = 0;
 		Entity* entity;
 
-		virtual void UpdateSystem(double deltaTime) override;
+		virtual void UpdateSystem(float deltaTime) override;
 	};
 
 	template<class Self, class... Components>
@@ -231,7 +231,7 @@ namespace Args
 	}
 
 	template<class Self, class ...Components>
-	void EntitySystem<Self, Components...>::UpdateSystem(double deltaTime)
+	void EntitySystem<Self, Components...>::UpdateSystem(float deltaTime)
 	{
 		lastDeltaTime = deltaTime;
 
@@ -291,13 +291,13 @@ namespace Args
 	}
 
 	template<class Self, class ...Components>
-	void EntitySystem<Self, Components...>::BindForUpdate(std::function<void(double)> func)
+	void EntitySystem<Self, Components...>::BindForUpdate(std::function<void(float)> func)
 	{
 		updateCallbacks.push_back(std::make_tuple(0.f, 0.f, func));
 	}
 
 	template<class Self, class ...Components>
-	void EntitySystem<Self, Components...>::BindForFixedUpdate(double interval, std::function<void(double)> func)
+	void EntitySystem<Self, Components...>::BindForFixedUpdate(float interval, std::function<void(float)> func)
 	{
 		updateCallbacks.push_back(std::make_tuple(interval, 0.f, func));
 	}
