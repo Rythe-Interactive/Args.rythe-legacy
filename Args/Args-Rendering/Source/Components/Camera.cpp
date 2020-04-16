@@ -27,7 +27,7 @@ Args::Matrix4 Args::Camera::GetView()
 
 std::string Args::Camera::ObjectType()
 {
-	return GetTypeName<Camera>();
+	return componentName;
 }
 
 bool Args::Camera::SetData(const std::string& name, const std::string& value)

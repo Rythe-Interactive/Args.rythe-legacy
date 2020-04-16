@@ -42,7 +42,7 @@ void Args::AudioSource::CleanUp()
 
 std::string Args::AudioSource::ObjectType()
 {
-	return std::string();
+	return componentName;
 }
 
 bool Args::AudioSource::SetData(const std::string& name, const std::string& value)

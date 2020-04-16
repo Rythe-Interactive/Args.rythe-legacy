@@ -84,7 +84,6 @@ namespace Args
 				entityToComponentId[GetEntityID(entity)].push_back(id);
 			}
 
-			//Debug::Log(DebugInfo, "Created component %s with id %u for entity %u", GetTypeName<ComponentType>().c_str(), id, entityID);
 			return id;
 		}
 

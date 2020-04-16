@@ -62,28 +62,29 @@ void Args::ComponentManager::Destroy()
 	staticComponents.clear();
 }
 
-void Args::ComponentManager::DestroyComponentByTypeID(uint32 typeId, uint32 componentId)
+Args::uint32 Args::ComponentManager::GetTypeId(std::string typeName)
 {
-	auto& componentFamily = componentFamilies[componentTypeIds[typeId]];
-	uint32 entityId = componentFamily->GetComponentByID(componentId)->ownerID;
-	componentFamily->DestroyComponentByID(componentId);
+	uint32 hash = 0x811c9dc5;
+	uint32 prime = 0x1000193;
 
-	if (componentFamily->GetComponentCount(entityId) == 0)
+	for (int i = 0; i < typeName.length(); ++i)
 	{
-		entities[entityId].erase(typeId);
-		UpdateEntityList(entityId, typeId, true);
+		byte value = typeName[i];
+		hash = hash ^ value;
+		hash *= prime;
 	}
+
+	return hash;
 }
 
-void Args::ComponentManager::DestroyComponent(const std::string& typeName, uint32 componentId)
+void Args::ComponentManager::DestroyComponentByID(uint32 typeId, uint32 componentId)
 {
-	auto& componentFamily = componentFamilies[typeName];
+	auto& componentFamily = componentFamilies[typeId];
 	uint32 entityId = componentFamily->GetComponentByID(componentId)->ownerID;
 	componentFamily->DestroyComponentByID(componentId);
 
 	if (componentFamily->GetComponentCount(entityId) == 0)
 	{
-		uint32 typeId = componentFamily->GetComponentTypeID();
 		entities[entityId].erase(typeId);
 		UpdateEntityList(entityId, typeId, true);
 	}
@@ -91,12 +92,24 @@ void Args::ComponentManager::DestroyComponent(const std::string& typeName, uint3
 
 void Args::ComponentManager::DestroyComponent(uint32 entityId, const std::string& typeName, size_t index)
 {
-	auto& componentFamily = componentFamilies[typeName];
+	if (componentTypeIds.count(typeName))
+		DestroyComponent(entityId, componentTypeIds[typeName], index);
+	else
+		Debug::Warning(DebugInfo, "ComponentType %s is unknown.", typeName.c_str());
+}
+
+void Args::ComponentManager::DestroyComponent(uint32 entityId, uint32 typeId, size_t index)
+{
+	if (!componentFamilies.count(typeId))
+	{
+		Debug::Warning(DebugInfo, "ComponentType id %u is unknown.", typeId);
+		return;
+	}
+	auto& componentFamily = componentFamilies[typeId];
 	componentFamily->DestroyComponent(entityId, index);
 
 	if (componentFamily->GetComponentCount(entityId) == 0)
 	{
-		uint32 typeId = componentFamily->GetComponentTypeID();
 		entities[entityId].erase(typeId);
 		UpdateEntityList(entityId, typeId, true);
 	}
@@ -114,28 +127,37 @@ Args::Entity* Args::ComponentManager::GetEntityProxy(uint32 entityId)
 
 Args::uint32 Args::ComponentManager::AddComponent(std::string typeName, Args::uint32 entityID)
 {
-	if (componentFamilies.count(typeName)) // .count also painfull...
+	if (componentTypeIds.count(typeName))
 	{
-		auto& componentFamily = componentFamilies[typeName];
-		if (componentFamily)
-		{
-			auto componentID = componentFamily->CreateComponent(entityProxies[entityID]);
-			if (componentID && componentFamily->GetComponentCount(entityID) == 1)
-			{
-				uint32 typeId = componentFamily->GetComponentTypeID();
-				entities[entityID].insert(typeId);
-				UpdateEntityList(entityID, typeId, false); // more pain in here
-			}
-			return componentID;
-		}
+		return AddComponent(componentTypeIds[typeName], entityID);
 	}
 	Debug::Warning(DebugInfo, "ComponentType %s is unknown.", typeName.c_str());
 	return 0;
 }
 
+Args::uint32 Args::ComponentManager::AddComponent(uint32 typeId, uint32 entityId)
+{
+	if (componentFamilies.count(typeId))
+	{
+		auto& componentFamily = componentFamilies[typeId];
+		if (componentFamily)
+		{
+			auto componentID = componentFamily->CreateComponent(entityProxies[entityId]);
+			if (componentID && componentFamily->GetComponentCount(entityId) == 1)
+			{
+				entities[entityId].insert(typeId);
+				UpdateEntityList(entityId, typeId, false);
+			}
+			return componentID;
+		}
+	}
+	Debug::Warning(DebugInfo, "ComponentType id %u is unknown.", typeId);
+	return 0;
+}
+
 void Args::ComponentManager::DestroyComponent(IComponent* component)
 {
-	auto& componentFamily = componentFamilies[componentTypeIds[component->typeID]];
+	auto& componentFamily = componentFamilies[component->typeID];
 	uint32 entityId = component->ownerID;
 
 	componentFamily->DestroyComponent(component);
@@ -162,7 +184,7 @@ void Args::ComponentManager::DestroyEntity(uint32 entityId)
 {
 	for (uint32 componentTypeId : entities[entityId])
 	{
-		auto& componentFamily = componentFamilies[componentTypeIds[componentTypeId]];
+		auto& componentFamily = componentFamilies[componentTypeId];
 		for (int i = 0; i < componentFamily->GetComponentCount(entityId); i++)
 			componentFamily->DestroyComponent(entityId, i);
 	}

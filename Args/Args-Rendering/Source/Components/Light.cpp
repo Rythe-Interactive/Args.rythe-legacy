@@ -59,7 +59,7 @@ void Args::Light::SetFalloffPower(float power)
 
 std::string Args::Light::ObjectType()
 {
-	return std::string();
+	return componentName;
 }
 
 bool Args::Light::SetData(const std::string& name, const std::string& value)
