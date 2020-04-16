@@ -1,6 +1,6 @@
 #pragma once
 #include <unordered_map>
-#include <set>
+#include <Algorithms-DataStructures/sparse_set.h>
 #include <typeindex>
 #include <type_traits>
 

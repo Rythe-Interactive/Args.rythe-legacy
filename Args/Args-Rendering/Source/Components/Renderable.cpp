@@ -16,10 +16,10 @@ void Args::Renderable::SetMaterial(const std::string& materialName)
 
 		if (renderData->batches.count(mesh))
 			if (renderData->batches[mesh].count(material))
-				if (renderData->batches[mesh][material].count(owner))
-					renderData->batches[mesh][material].erase(owner);
+				if (renderData->batches[mesh][material].count(ownerID))
+					renderData->batches[mesh][material].erase(ownerID);
 
-		renderData->batches[mesh][materialName].insert(owner);
+		renderData->batches[mesh][materialName].insert(ownerID);
 	}
 
 	material = materialName;
@@ -40,10 +40,10 @@ void Args::Renderable::SetMesh(const std::string& meshName)
 
 		if (renderData->batches.count(mesh))
 			if (renderData->batches[mesh].count(material))
-				if (renderData->batches[mesh][material].count(owner))
-					renderData->batches[mesh][material].erase(owner);
+				if (renderData->batches[mesh][material].count(ownerID))
+					renderData->batches[mesh][material].erase(ownerID);
 
-		renderData->batches[meshName][material].insert(owner);
+		renderData->batches[meshName][material].insert(ownerID);
 	}
 
 	mesh = meshName;
@@ -55,8 +55,8 @@ void Args::Renderable::CleanUp()
 
 	if (renderData->batches.count(mesh))
 		if (renderData->batches[mesh].count(material))
-			if (renderData->batches[mesh][material].count(owner))
-				renderData->batches[mesh][material].erase(owner);
+			if (renderData->batches[mesh][material].count(ownerID))
+				renderData->batches[mesh][material].erase(ownerID);
 }
 
 std::string Args::Renderable::ObjectType()

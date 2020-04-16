@@ -4,7 +4,7 @@
 #include <tuple>
 #include <Utils/Common.h>
 
-namespace Args
+namespace Args::stl
 {
 	template<typename ...Arguments>
 	class DelegateBase

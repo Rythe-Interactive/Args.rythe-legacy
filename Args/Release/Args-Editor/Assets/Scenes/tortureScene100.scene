@@ -1,0 +1,3133 @@
+{"scene": [
+{
+		"name": "camera",
+		"components":[
+			{
+				"name": "Transform",
+				"position":{"x":0.0,"y":0.0,"z":0.0},
+				"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":0.0},
+				"scale":{"x":1.0,"y":1.0,"z":1.0},
+				"children":[]
+			},
+			{
+				"name": "Camera"
+			}
+		]
+	},
+	{
+		"name": "light",
+		"components":[
+			{
+				"name": "Transform",
+				"position":{"x":0.0,"y":0.0,"z":0.0},
+				"rotation":{"x":-135.0,"y":45.0,"z":0.0,"w":0.0},
+				"scale":{"x":1.0,"y":1.0,"z":1.0},
+				"children":[]
+			},
+			{
+				"name": "Light",
+				"type": "directional"
+			}
+		]
+	},
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 2.9519882202148438,
+          "y": 0.0013251304626464844,
+          "z": 13.494668006896973
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject0"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -0.6184043884277344,
+          "y": 4.894054412841797,
+          "z": 14.664660453796387
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject1"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 4.276178359985352,
+          "y": -0.8054180145263672,
+          "z": 10.570441246032715
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject2"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 1.9883966445922852,
+          "y": 3.4497804641723633,
+          "z": 6.896432876586914
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject3"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 2.0431060791015625,
+          "y": -6.032912731170654,
+          "z": 18.055500030517578
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject4"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 3.136850357055664,
+          "y": 3.198110580444336,
+          "z": 19.982513427734375
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject5"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -2.011910915374756,
+          "y": 6.489383697509766,
+          "z": 9.667415618896484
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject6"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -6.276947975158691,
+          "y": 0.0995326042175293,
+          "z": 20.257694244384766
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject7"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 0.5229806900024414,
+          "y": 4.955232620239258,
+          "z": 15.157726287841797
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject8"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -0.8910303115844727,
+          "y": -3.7490744590759277,
+          "z": 9.925337791442871
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject9"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -3.6337480545043945,
+          "y": 6.71951961517334,
+          "z": 16.592805862426758
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject10"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -5.396910190582275,
+          "y": -3.7635583877563477,
+          "z": 23.238807678222656
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject11"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 0.8374204635620117,
+          "y": -1.7665066719055176,
+          "z": 16.58531379699707
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject12"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 6.852302551269531,
+          "y": 3.8895912170410156,
+          "z": 18.44672966003418
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject13"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 4.197275161743164,
+          "y": -0.7870883941650391,
+          "z": 19.468692779541016
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject14"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -5.097444534301758,
+          "y": -3.916571617126465,
+          "z": 21.251209259033203
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject15"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 2.604142189025879,
+          "y": -3.1744384765625,
+          "z": 7.272546291351318
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject16"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -6.04466438293457,
+          "y": -0.7424001693725586,
+          "z": 21.003801345825195
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject17"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 5.528434753417969,
+          "y": 5.748146057128906,
+          "z": 23.20181655883789
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject18"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 1.649806022644043,
+          "y": -1.7023353576660156,
+          "z": 20.005191802978516
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject19"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -2.718534469604492,
+          "y": 6.233284950256348,
+          "z": 22.339550018310547
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject20"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 4.630374908447266,
+          "y": -6.9388747215271,
+          "z": 6.237595081329346
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject21"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -4.528928756713867,
+          "y": 6.520025253295898,
+          "z": 10.896096229553223
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject22"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 5.179825782775879,
+          "y": -4.209731578826904,
+          "z": 18.71166229248047
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject23"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 0.006420135498046875,
+          "y": 1.3518590927124023,
+          "z": 10.310012817382812
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject24"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 6.219438552856445,
+          "y": -2.9880781173706055,
+          "z": 8.729694366455078
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject25"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -6.860969066619873,
+          "y": 0.27258777618408203,
+          "z": 5.44992208480835
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject26"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -6.94132137298584,
+          "y": -3.975433826446533,
+          "z": 15.150686264038086
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject27"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -4.884134769439697,
+          "y": -3.0417284965515137,
+          "z": 22.065040588378906
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject28"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 4.971109390258789,
+          "y": -6.6986799240112305,
+          "z": 19.14105224609375
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject29"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -2.715730667114258,
+          "y": -3.4244165420532227,
+          "z": 23.044721603393555
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject30"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 2.35483455657959,
+          "y": -2.695648193359375,
+          "z": 12.165521621704102
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject31"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 0.31479692459106445,
+          "y": -5.522700786590576,
+          "z": 23.499561309814453
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject32"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 1.0590801239013672,
+          "y": 1.5653448104858398,
+          "z": 18.9141845703125
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject33"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 4.584407806396484,
+          "y": 1.5613231658935547,
+          "z": 13.37470817565918
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject34"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -5.095424652099609,
+          "y": -5.4482831954956055,
+          "z": 16.671913146972656
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject35"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 6.879935264587402,
+          "y": 4.076982498168945,
+          "z": 23.625375747680664
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject36"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -0.7846064567565918,
+          "y": -3.1942086219787598,
+          "z": 12.408002853393555
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject37"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 3.366663932800293,
+          "y": 1.8649177551269531,
+          "z": 14.55616569519043
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject38"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -5.362681865692139,
+          "y": 4.587224006652832,
+          "z": 7.611030578613281
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject39"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -3.099400043487549,
+          "y": -3.852471351623535,
+          "z": 11.526865005493164
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject40"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -0.21991491317749023,
+          "y": -1.688265323638916,
+          "z": 15.871304512023926
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject41"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 2.3018798828125,
+          "y": -6.394012451171875,
+          "z": 6.051460266113281
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject42"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 3.5099563598632812,
+          "y": -2.3354625701904297,
+          "z": 16.174137115478516
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject43"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -5.014046669006348,
+          "y": 5.78618049621582,
+          "z": 18.579097747802734
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject44"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -6.8043389320373535,
+          "y": -5.127779960632324,
+          "z": 5.768539905548096
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject45"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -1.0901603698730469,
+          "y": 6.629380226135254,
+          "z": 6.448845863342285
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject46"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 4.746734619140625,
+          "y": 2.334652900695801,
+          "z": 20.029621124267578
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject47"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 2.6371536254882812,
+          "y": -0.26097583770751953,
+          "z": 6.07771635055542
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject48"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -4.197742938995361,
+          "y": 5.9818267822265625,
+          "z": 19.0604190826416
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject49"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -2.122293472290039,
+          "y": -4.967385768890381,
+          "z": 18.792545318603516
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject50"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -6.7263689041137695,
+          "y": -0.864893913269043,
+          "z": 10.31706428527832
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject51"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 1.5303640365600586,
+          "y": -5.686347484588623,
+          "z": 13.237820625305176
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject52"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -4.448582172393799,
+          "y": 6.720697402954102,
+          "z": 5.2095947265625
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject53"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 5.658379554748535,
+          "y": -1.5734949111938477,
+          "z": 22.034076690673828
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject54"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 2.1358537673950195,
+          "y": -3.712923049926758,
+          "z": 15.155097007751465
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject55"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -6.876246452331543,
+          "y": 0.8299379348754883,
+          "z": 12.664523124694824
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject56"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 4.3185014724731445,
+          "y": -4.649920463562012,
+          "z": 8.713489532470703
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject57"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 0.6922540664672852,
+          "y": -1.8883543014526367,
+          "z": 19.18883514404297
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject58"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 6.737192153930664,
+          "y": 4.864137649536133,
+          "z": 12.843771934509277
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject59"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 0.5365643501281738,
+          "y": 6.256911277770996,
+          "z": 17.08798599243164
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject60"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 3.752120018005371,
+          "y": 6.120126724243164,
+          "z": 16.33469581604004
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject61"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -3.8520023822784424,
+          "y": -3.852609872817993,
+          "z": 10.482216835021973
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject62"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -4.334813117980957,
+          "y": 2.753114700317383,
+          "z": 10.519476890563965
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject63"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -5.294602870941162,
+          "y": 6.610342025756836,
+          "z": 15.535107612609863
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject64"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -6.01834774017334,
+          "y": -3.538144111633301,
+          "z": 14.064644813537598
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject65"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -2.7745847702026367,
+          "y": 2.413179397583008,
+          "z": 11.145368576049805
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject66"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -1.827610969543457,
+          "y": 2.2986669540405273,
+          "z": 5.6198859214782715
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject67"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -4.037422180175781,
+          "y": 0.5576820373535156,
+          "z": 13.26063346862793
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject68"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -4.5304341316223145,
+          "y": 0.6588783264160156,
+          "z": 24.065998077392578
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject69"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 2.8824052810668945,
+          "y": -4.482794761657715,
+          "z": 9.997758865356445
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject70"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 4.858201026916504,
+          "y": -5.396246910095215,
+          "z": 16.204605102539062
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject71"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 2.870576858520508,
+          "y": 0.3753070831298828,
+          "z": 7.701750755310059
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject72"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -3.665616273880005,
+          "y": -0.2974867820739746,
+          "z": 14.928546905517578
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject73"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 5.070945739746094,
+          "y": 2.6284799575805664,
+          "z": 6.395539283752441
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject74"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 2.306692123413086,
+          "y": 6.999286651611328,
+          "z": 17.207809448242188
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject75"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -6.741891860961914,
+          "y": 3.0897655487060547,
+          "z": 13.409499168395996
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject76"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 0.6040501594543457,
+          "y": 4.667825698852539,
+          "z": 12.765098571777344
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject77"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 3.082514762878418,
+          "y": -4.139335632324219,
+          "z": 22.83173179626465
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject78"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -5.76749849319458,
+          "y": 5.805405616760254,
+          "z": 20.51373863220215
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject79"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -1.2830686569213867,
+          "y": -1.7467823028564453,
+          "z": 19.24174690246582
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject80"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 0.14098024368286133,
+          "y": 6.356189727783203,
+          "z": 13.877924919128418
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject81"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 6.956377983093262,
+          "y": -4.8840484619140625,
+          "z": 20.185047149658203
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject82"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -0.29921817779541016,
+          "y": 5.947566986083984,
+          "z": 11.973413467407227
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject83"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -4.480881690979004,
+          "y": 5.578105926513672,
+          "z": 18.908363342285156
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject84"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -6.006837368011475,
+          "y": -1.2137212753295898,
+          "z": 19.540599822998047
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject85"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 4.795889854431152,
+          "y": 0.7325820922851562,
+          "z": 17.50438117980957
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject86"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 4.129886627197266,
+          "y": -5.316948413848877,
+          "z": 14.937516212463379
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject87"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 1.094400405883789,
+          "y": -6.406790733337402,
+          "z": 15.008991241455078
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject88"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 1.2855539321899414,
+          "y": -4.559305667877197,
+          "z": 12.149515151977539
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject89"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 4.625796318054199,
+          "y": -4.17067289352417,
+          "z": 21.898963928222656
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject90"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 1.7506656646728516,
+          "y": 1.2136011123657227,
+          "z": 21.570316314697266
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject91"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 3.364274024963379,
+          "y": 1.869654655456543,
+          "z": 11.704511642456055
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject92"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -3.3808000087738037,
+          "y": -3.0436928272247314,
+          "z": 11.576766014099121
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject93"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 3.6211376190185547,
+          "y": 1.894561767578125,
+          "z": 23.63054084777832
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject94"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -1.0415701866149902,
+          "y": 5.540228843688965,
+          "z": 6.323848724365234
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject95"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -2.231992721557617,
+          "y": -1.730391502380371,
+          "z": 22.759397506713867
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject96"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -5.530305862426758,
+          "y": -2.443851947784424,
+          "z": 7.661629676818848
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject97"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": 0.31571292877197266,
+          "y": -6.552033424377441,
+          "z": 22.362262725830078
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject98"
+  },
+  {
+    "components": [
+      {
+        "children": [],
+        "rotation": {
+          "w": 0.0,
+		  "x": 0.0,
+		  "y": 0.0,
+		  "z": 0.0
+        },
+        "name": "Transform",
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "position": {
+          "x": -0.691347599029541,
+          "y": -6.054603576660156,
+          "z": 13.86944580078125
+        }
+      },
+      {
+        "material": "Default",
+        "name": "Renderable",
+        "mesh": "Sphere"
+      },
+      {"name": "TestComponent"}
+    ],
+    "name": "testObject99"
+  }
+]}

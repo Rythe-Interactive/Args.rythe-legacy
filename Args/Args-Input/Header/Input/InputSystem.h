@@ -5,7 +5,6 @@
 #include <functional>
 #include <list>
 #include <array>
-#include <map>
 #include <unordered_map>
 #include <vector>
 #include "../../Args-Engine/Header/Serialisation/JSONLoader.h"
@@ -188,8 +187,8 @@ namespace Args
         void RetrieveInput();
         bool isConnected = false;
         bool wasPressed = false;
-        std::map<int,std::set<int>> keyPressed;
-        std::map<int, Key> glfwToKey = {std::pair<int,Key>(0,DIGITAL0),std::pair<int,Key>(1,DIGITAL1),std::pair<int,Key>(2,DIGITAL2), 
+        std::unordered_map<int, stl::sparse_set<uint>> keyPressed;
+        std::unordered_map<int, Key> glfwToKey = {std::pair<int,Key>(0,DIGITAL0),std::pair<int,Key>(1,DIGITAL1),std::pair<int,Key>(2,DIGITAL2),
                                                             std::pair<int,Key>(3,DIGITAL3),std::pair<int,Key>(4,DIGITAL4),std::pair<int,Key>(5,DIGITAL5),
                                                             std::pair<int,Key>(6,DIGITAL6),std::pair<int,Key>(7,DIGITAL7),std::pair<int,Key>(8,DIGITAL8),
                                                             std::pair<int,Key>(9,DIGITAL9), std::pair<int,Key>(10,DIGITAL10), std::pair<int,Key>(11,DIGITAL11),

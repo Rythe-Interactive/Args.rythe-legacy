@@ -17,13 +17,14 @@ namespace Args
 	public:
 		const uint32 ownerID;
 		const uint32 typeID;
+		const uint32 externalTypeId;
 
 		Entity* owner;
 
 		uint32 id;
 
-		IComponent(Entity* entity, uint32 typeId);
-		virtual void CleanUp(){}
+		IComponent(Entity* entity, uint32 typeId, uint32 externalId);
+		virtual void CleanUp() {}
 	};
 
 	template<class Self>
@@ -32,8 +33,9 @@ namespace Args
 	public:
 		static const std::string componentName;
 		static uint32 typeId;
+		static uint32 externalTypeId;
 
-		Component(Entity* entity) : IComponent(entity, typeId) {}
+		Component(Entity* entity) : IComponent(entity, typeId, externalTypeId) {}
 
 	protected:
 	private:
@@ -43,10 +45,10 @@ namespace Args
 	{
 	public:
 		const uint32 typeID;
-
+		const uint32 externalTypeId;
 		uint32 id;
 
-		IGlobalComponent(uint32 typeId) : typeID(typeId), id(0) {}
+		IGlobalComponent(uint32 typeId, uint32 externalId) : typeID(typeId), id(0), externalTypeId(externalId) {}
 		virtual void CleanUp() {}
 	};
 
@@ -57,8 +59,9 @@ namespace Args
 	public:
 		static const std::string componentName;
 		static uint32 typeId;
+		static uint32 externalTypeId;
 
-		GlobalComponent() : IGlobalComponent(typeId) {}
+		GlobalComponent() : IGlobalComponent(typeId, externalTypeId) {}
 
 	protected:
 	private:
@@ -71,8 +74,14 @@ namespace Args
 	uint32 GlobalComponent<Self>::typeId = 0;
 
 	template<class Self>
+	uint32 GlobalComponent<Self>::externalTypeId = 0;
+
+	template<class Self>
 	const std::string Component<Self>::componentName(GetTypeName<Self>());
 
 	template<class Self>
-	uint32 Component<Self>::typeId = componentTypeCount++;
+	uint32 Component<Self>::typeId = 0;
+
+	template<class Self>
+	uint32 Component<Self>::externalTypeId = 0;
 }

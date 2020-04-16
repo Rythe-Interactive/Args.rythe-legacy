@@ -9,7 +9,7 @@ namespace Args
 
 	struct RenderData : public GlobalComponent<RenderData>
 	{
-		std::unordered_map<std::string, std::unordered_map<std::string, std::set<Entity*>>> batches;
+		std::unordered_map<std::string, std::unordered_map<std::string, stl::sparse_set<uint32>>> batches;
 
 		// Inherited via GlobalComponent
 		virtual std::string ObjectType() override;

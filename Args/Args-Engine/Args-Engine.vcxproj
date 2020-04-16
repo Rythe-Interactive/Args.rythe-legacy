@@ -157,6 +157,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Header\Algorithms-DataStructures\EnumStruct.h" />
+    <ClInclude Include="Header\Algorithms-DataStructures\sparse_set.h" />
     <ClInclude Include="Header\Base Components\Transform.h" />
     <ClInclude Include="Header\ECS\Managers\ECS.h" />
     <ClInclude Include="Header\Engine\CoreModule.h" />

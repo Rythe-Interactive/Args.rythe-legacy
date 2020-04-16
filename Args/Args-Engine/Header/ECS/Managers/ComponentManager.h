@@ -1,6 +1,6 @@
 #pragma once
 #include <unordered_map>
-#include <set>
+#include <Algorithms-DataStructures/sparse_set.h>
 #include <memory>
 #include <typeindex>
 #include "Utils/Common.h"
@@ -19,15 +19,17 @@ namespace Args
 	private:
 		std::unordered_map<uint32, std::unique_ptr<IComponentFamily>> componentFamilies;
 		std::unordered_map<uint32, std::unique_ptr<IGlobalComponent>> staticComponents;
-		std::unordered_map<std::string, uint32> staticComponentTypeIds;
+		std::unordered_map<uint32, uint32> internalGlobalComponentIds;
+		std::unordered_map<uint32, uint32> internalComponentIds;
+		std::unordered_map<std::string, uint32> globalComponentTypeIds;
 		std::unordered_map<std::string, uint32> componentTypeIds;
-		std::unordered_map<uint32, std::set<uint32>> entities;
+		std::unordered_map<uint32, stl::sparse_set<uint32>> entities;
 		std::unordered_map<uint32, Entity*> entityProxies;
-		std::unordered_map<std::type_index, std::set<uint32>> entityLists;
+		std::unordered_map<std::type_index, stl::sparse_set<uint32>> entityLists;
 
 		std::unordered_map<std::type_index, std::unique_ptr<ISystem>>* systems = nullptr;
 
-		bool SetOverlaps(const std::set<uint32>* lhs, const std::set<uint32>* rhs);
+		bool SetOverlaps(const stl::sparse_set<uint32>* lhs, const stl::sparse_set<uint32>* rhs);
 
 		void UpdateEntityList(uint32 entityID, uint32 componentTypeId, bool erased);
 
@@ -79,9 +81,9 @@ namespace Args
 		void DestroyEntity(uint32 entityId);
 
 		template<class SystemType, INHERITS_FROM(SystemType, ISystem)>
-		const std::set<uint32>& GetEntityList();
+		const stl::sparse_set<uint32>& GetEntityList();
 
-		const std::set<uint32>& GetEntityList(std::type_index systemType);
+		const stl::sparse_set<uint32>& GetEntityList(std::type_index systemType);
 
 		template<typename ComponentType, INHERITS_FROM(ComponentType, IGlobalComponent)>
 		ComponentType* GetGlobalComponent();
@@ -150,31 +152,46 @@ namespace Args
 	void ComponentManager::RegisterComponentType()
 	{
 		std::string typeName = GetTypeName<ComponentType>();
-		uint32 id = GetTypeId(typeName);
+		uint32 externalId = GetTypeId(typeName);
 
-		if (componentFamilies.count(id))
+		if (internalComponentIds.count(externalId))
 		{
-			Debug::Warning(DebugInfo, "Possibly registered component type %s multiple times, received id is %u", typeName.c_str(), id);
+			Debug::Warning(DebugInfo, "Possibly registered component type %s multiple times, external id is %u", typeName.c_str(), externalId);
 			return;
 		}
 
+		uint32 id = internalComponentIds.size() + 1;
+		internalComponentIds[externalId] = id;
+
 		ComponentType::typeId = id;
+		ComponentType::externalTypeId = externalId;
 		componentTypeIds[typeName] = id;
 		componentFamilies[id] = std::unique_ptr<IComponentFamily>(new TypedComponentFamily<ComponentType>(id));
 
-		Debug::Log(DebugInfo, "Registered component type %s with type id %u", typeName.c_str(), id);
+		Debug::Log(DebugInfo, "Registered component type %s with type id %u, external id %u", typeName.c_str(), id, externalId);
 	}
 
 	template<typename ComponentType, typename>
 	inline void ComponentManager::RegisterGlobalComponentType()
 	{
 		std::string typeName = GetTypeName<ComponentType>();
-		uint32 id = GetTypeId(typeName);
-		staticComponentTypeIds[typeName] = id;
+		uint32 externalId = GetTypeId(typeName);
+
+		if (internalGlobalComponentIds.count(externalId))
+		{
+			Debug::Warning(DebugInfo, "Possibly registered global component type %s multiple times, external id is %u", typeName.c_str(), externalId);
+			return;
+		}
+
+		uint32 id = internalGlobalComponentIds.size() + 1;
+		internalGlobalComponentIds[externalId] = id;
+
+		globalComponentTypeIds[typeName] = id;
 		ComponentType::typeId = id;
+		ComponentType::externalTypeId = externalId;
 		staticComponents[id] = std::unique_ptr<IGlobalComponent>(new ComponentType());
 
-		Debug::Log(DebugInfo, "Registered static component type %s with type id %u", typeName.c_str(), id);
+		Debug::Log(DebugInfo, "Registered global component type %s with type id %u, external id %u", typeName.c_str(), id, externalId);
 	}
 
 	template<typename ComponentType, typename>
@@ -204,7 +221,7 @@ namespace Args
 	}
 
 	template<class SystemType, typename>
-	const std::set<uint32>& ComponentManager::GetEntityList()
+	const stl::sparse_set<uint32>& ComponentManager::GetEntityList()
 	{
 		return entityLists[typeid(SystemType)];
 	}

@@ -5,7 +5,7 @@ namespace Args
 {
 	typedef uint8 ControllerID;
 	typedef uint8 EventID;
-	typedef int InputCode;
+	typedef uint InputCode;
 	typedef float AxisValue;
 
 	class InputSystem;
@@ -29,9 +29,9 @@ namespace Args
 		std::unordered_map<InputCode, EventID> actionMapping;
 		std::unordered_map<InputCode, std::pair<EventID, AxisValue>> axisMapping;
 
-		std::set<ControllerID> controllers;
+		stl::sparse_set<ControllerID> controllers;
 
-		std::unordered_map<ControllerID, std::set<InputCode>> registeredInputs;
+		std::unordered_map<ControllerID, stl::sparse_set<InputCode>> registeredInputs;
 
 	public:
 

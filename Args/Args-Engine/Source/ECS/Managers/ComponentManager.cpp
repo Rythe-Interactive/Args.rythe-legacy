@@ -5,7 +5,7 @@
 #include "ECS/Entity.h"
 
 
-bool Args::ComponentManager::SetOverlaps(const std::set<uint32>* systemRequirements, const std::set<uint32>* entityComponents)
+bool Args::ComponentManager::SetOverlaps(const stl::sparse_set<uint32>* systemRequirements, const stl::sparse_set<uint32>* entityComponents)
 {
 	if (systemRequirements->empty())
 		return true;
@@ -34,6 +34,9 @@ void Args::ComponentManager::UpdateEntityList(uint32 entityID, uint32 componentT
 			{
 				if (entityList->count(entityID))
 					entityList->erase(entityID);
+
+				if (SetOverlaps(systemRequirements, &entities[entityID]))
+					entityList->insert(entityID); // takes a lot of time
 			}
 			else
 				if (SetOverlaps(systemRequirements, &entities[entityID]))
@@ -157,14 +160,14 @@ Args::uint32 Args::ComponentManager::AddComponent(uint32 typeId, uint32 entityId
 
 void Args::ComponentManager::DestroyComponent(IComponent* component)
 {
-	auto& componentFamily = componentFamilies[component->typeID];
+	uint32 typeId = component->typeID;
+	auto& componentFamily = componentFamilies[typeId];
 	uint32 entityId = component->ownerID;
 
 	componentFamily->DestroyComponent(component);
 
 	if (componentFamily->GetComponentCount(entityId) == 0)
 	{
-		uint32 typeId = component->typeID;
 		entities[entityId].erase(typeId);
 		UpdateEntityList(entityId, typeId, true);
 	}
@@ -203,7 +206,7 @@ void Args::ComponentManager::DestroyEntity(uint32 entityId)
 		}
 }
 
-const std::set<Args::uint32>& Args::ComponentManager::GetEntityList(std::type_index systemType)
+const Args::stl::sparse_set<Args::uint32>& Args::ComponentManager::GetEntityList(std::type_index systemType)
 {
 	return entityLists[systemType];
 }

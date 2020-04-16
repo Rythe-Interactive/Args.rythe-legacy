@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
 #include <memory>
-#include <set>
+#include <Algorithms-DataStructures/sparse_set.h>
 #include <functional>
 #include <unordered_map>
 #include <typeindex>
@@ -20,7 +20,7 @@ namespace Args
 		ECS* ecs;
 
 		std::set<std::string> commandlineArguments;
-		static std::set<uint32> eventIds;
+		static stl::sparse_set<uint32> eventIds;
 		static std::unordered_map<uint32, Args::IEvent*> events;
 		
 		static std::unordered_map<std::type_index, std::vector<std::function<void(Args::IEvent*)>>> eventCallbacks;

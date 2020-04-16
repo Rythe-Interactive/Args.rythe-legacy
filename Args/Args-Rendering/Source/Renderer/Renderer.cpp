@@ -137,8 +137,8 @@ void Args::Renderer::Render(float deltaTime)
 
 			std::vector<Matrix4> modelMatrices = std::vector<Matrix4>();
 
-			for (Entity* instance : materialGroup.second)
-				modelMatrices.push_back(instance->GetComponent<Transform>()->GetWorldTransform());
+			for (uint32 instanceId : materialGroup.second)
+				modelMatrices.push_back(GetComponent<Transform>(instanceId)->GetWorldTransform());
 
 			material->Render(modelMatrices, mesh, camera);
 
