@@ -230,7 +230,7 @@ namespace Args
 				return static_cast<ComponentType*>(componentFamily->GetComponent(entityId, index));
 		}
 
-		Debug::Error(DebugInfo, "ComponentType %s was never registered", typeName.c_str());
+		Debug::Error(DebugInfo, "ComponentType %s was never registered", GetTypeName<ComponentType>().c_str());
 
 		return nullptr;
 #else
