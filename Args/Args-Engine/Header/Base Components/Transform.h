@@ -92,7 +92,7 @@ namespace Args
 		// Inherited via Component
 		std::string ObjectType() override
 		{
-			return GetTypeName<Transform>();
+			return componentName;
 		}
 
 		bool SetData(const std::string& name, const std::string& value) override

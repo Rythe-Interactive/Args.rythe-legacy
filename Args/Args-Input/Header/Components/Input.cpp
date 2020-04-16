@@ -2,7 +2,7 @@
 
 std::string Args::Input::ObjectType()
 {
-	return std::string();
+	return componentName;
 }
 
 bool Args::Input::SetData(const std::string& name, const std::string& value)

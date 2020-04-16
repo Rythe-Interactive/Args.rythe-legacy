@@ -2,7 +2,7 @@
 
 std::string Args::RenderData::ObjectType()
 {
-	return std::string();
+	return componentName;
 }
 
 bool Args::RenderData::SetData(const std::string& name, const std::string& value)

@@ -25,7 +25,7 @@ namespace Args
 		// Inherited via Component
 		virtual std::string ObjectType() override
 		{
-			return std::string();
+			return componentName;
 		}
 
 		virtual bool SetData(const std::string& name, const std::string& value) override

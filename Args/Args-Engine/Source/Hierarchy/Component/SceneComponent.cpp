@@ -2,7 +2,7 @@
 
 std::string Args::SceneComponent::ObjectType()
 {
-	return std::string();
+	return componentName;
 }
 
 bool Args::SceneComponent::SetData(const std::string& name, const std::string& value)

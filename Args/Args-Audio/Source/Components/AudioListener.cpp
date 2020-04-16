@@ -9,7 +9,7 @@ void Args::AudioListener::UpdateListener(Transform* transform)
 
 std::string Args::AudioListener::ObjectType()
 {
-	return std::string();
+	return componentName;
 }
 
 bool Args::AudioListener::SetData(const std::string& name, const std::string& value)

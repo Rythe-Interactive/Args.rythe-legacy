@@ -27,7 +27,7 @@ namespace Args
 		// Inherited via Component
 		virtual std::string ObjectType() override
 		{
-			return GetTypeName<Collider>();
+			return componentName;
 		}
 
 		virtual bool SetData(const std::string& name, const std::string& value) override

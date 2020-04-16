@@ -2,7 +2,7 @@
 
 std::string Args::Window::ObjectType()
 {
-	return std::string();
+	return componentName;
 }
 
 bool Args::Window::SetData(const std::string& name, const std::string& value)

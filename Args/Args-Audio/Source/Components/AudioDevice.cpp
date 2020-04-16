@@ -24,7 +24,7 @@ void Args::AudioDevice::UpdateListener(Vector3 position, Vector3 forward, Vector
 
 std::string Args::AudioDevice::ObjectType()
 {
-	return std::string();
+	return componentName;
 }
 
 bool Args::AudioDevice::SetData(const std::string& name, const std::string& value)

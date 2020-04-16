@@ -2,7 +2,7 @@
 
 std::string TestComponent::ObjectType()
 {
-	return "TestComponentA";
+	return componentName;
 }
 
 bool TestComponent::SetData(const std::string& name, const std::string& value)

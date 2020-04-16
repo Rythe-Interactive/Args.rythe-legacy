@@ -61,7 +61,7 @@ void Args::Renderable::CleanUp()
 
 std::string Args::Renderable::ObjectType()
 {
-	return Args::GetTypeName<Renderable>();
+	return componentName;
 }
 
 bool Args::Renderable::SetData(const std::string& name, const std::string& value)
