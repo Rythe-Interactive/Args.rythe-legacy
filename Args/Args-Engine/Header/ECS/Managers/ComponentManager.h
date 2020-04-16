@@ -174,7 +174,7 @@ namespace Args
 		ComponentType::typeId = id;
 		staticComponents[id] = std::unique_ptr<IGlobalComponent>(new ComponentType());
 
-		Debug::Log(DebugInfo, "Registered static component type %s with type id %i", typeName.c_str(), (int)id);
+		Debug::Log(DebugInfo, "Registered static component type %s with type id %u", typeName.c_str(), id);
 	}
 
 	template<typename ComponentType, typename>
