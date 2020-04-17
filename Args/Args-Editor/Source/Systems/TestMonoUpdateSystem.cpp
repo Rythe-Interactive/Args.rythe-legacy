@@ -2,23 +2,23 @@
 
 using namespace Args;
 
-float TestMonoUpdateSystem::lowestQuery = FLT_MAX;
-float TestMonoUpdateSystem::highestQuery = 0.f;
-float TestMonoUpdateSystem::lowestAdd = FLT_MAX;
-float TestMonoUpdateSystem::highestAdd = 0.f;
-float TestMonoUpdateSystem::lowestRemove = FLT_MAX;
-float TestMonoUpdateSystem::highestRemove = 0.f;
+double TestMonoUpdateSystem::lowestQuery = DBL_MAX;
+double TestMonoUpdateSystem::highestQuery = 0.0;
+double TestMonoUpdateSystem::lowestAdd = DBL_MAX;
+double TestMonoUpdateSystem::highestAdd = 0.0;
+double TestMonoUpdateSystem::lowestRemove = DBL_MAX;
+double TestMonoUpdateSystem::highestRemove = 0.0;
 
-float TestMonoUpdateSystem::addTime = 0.f;
-float TestMonoUpdateSystem::removeTime = 0.f;
-float TestMonoUpdateSystem::queryTime = 0.f;
+double TestMonoUpdateSystem::addTime = 0.0;
+double TestMonoUpdateSystem::removeTime = 0.0;
+double TestMonoUpdateSystem::queryTime = 0.0;
 int TestMonoUpdateSystem::torturedComponents = 0;
 
 void TestMonoUpdateSystem::Init()
 {
 	BindForUpdate(std::bind(&TestMonoUpdateSystem::Update, this, std::placeholders::_1));
 	BindForFixedUpdate(1.f, std::bind(&TestMonoUpdateSystem::Print, this, std::placeholders::_1));
-	BindForFixedUpdate(300.f, std::bind(&TestMonoUpdateSystem::Shutdown, this, std::placeholders::_1));
+	BindForFixedUpdate(120.f, std::bind(&TestMonoUpdateSystem::Shutdown, this, std::placeholders::_1));
 	//BindForFixedUpdate(30.f, std::bind(&TestMonoUpdateSystem::Shutdown, this, std::placeholders::_1));
 
 	GetGlobalComponent<Args::Input>()->BindAction("Exit", std::bind(&TestMonoUpdateSystem::Exit, this, std::placeholders::_1, std::placeholders::_2));
@@ -34,6 +34,16 @@ void TestMonoUpdateSystem::Start()
 
 void TestMonoUpdateSystem::Update(float deltaTime)
 {
+	if (lastDeltaTime == 0)
+	{
+		lastDeltaTime = deltaTime * 1000.f;
+	}
+	else
+	{
+		accumDeviation += abs((deltaTime * 1000.f) - lastDeltaTime);
+		lastDeltaTime = deltaTime * 1000.f;
+	}
+
 	totalQuery += queryTime;
 	totalAdd += addTime;
 	totalRemove += removeTime;
@@ -57,8 +67,6 @@ void TestMonoUpdateSystem::Update(float deltaTime)
 	if (removeTime > highestRemoveFrame)
 		highestRemoveFrame = removeTime;
 
-	//Debug::Log(DEBUG_BLUE, DebugInfo, "queried %i components with an average time of %fms and a total of %fms", torturedComponents, queryTime / torturedComponents, queryTime);
-	//Debug::Log(DEBUG_BLUE, DebugInfo, "tortured %i components with an average time of %fms and a total of %fms\n", torturedComponents, tortureTime / torturedComponents, tortureTime);
 	torturedComponents = 0;
 	addTime = 0.f;
 	removeTime = 0.f;
@@ -87,7 +95,7 @@ void TestMonoUpdateSystem::Print(float deltaTime)
 
 void TestMonoUpdateSystem::Shutdown(float deltaTime)
 {
-	double elapsedms = elapsedTime * 1000.0;
+	float elapsedms = elapsedTime * 1000.f;
 	std::string benchmarkFormat = "Benchmark Data\n";
 	benchmarkFormat += "---Querying---\n";
 	benchmarkFormat += "\t-Per Operation-\n";
@@ -109,18 +117,19 @@ void TestMonoUpdateSystem::Shutdown(float deltaTime)
 	benchmarkFormat += "Total Elapsed: %ims";
 
 	Debug::Log(DebugInfo, benchmarkFormat,
-		lowestQuery, highestQuery, totalQuery / totalTortured,
-		lowestQueryFrame, highestQueryFrame, totalQuery / totalFrames, (int)round(totalQuery), (totalQuery / elapsedms) * 100.f,
+		(float)lowestQuery, (float)highestQuery, (float)(totalQuery / totalTortured),
+		(float)lowestQueryFrame, (float)highestQueryFrame, (float)(totalQuery / totalFrames), (int)round(totalQuery), (float)((totalQuery / elapsedms) * 100.0),
 
-		lowestAdd, highestAdd, totalAdd / totalTortured,
-		lowestAddFrame, highestAddFrame, totalAdd / totalFrames, (int)round(totalAdd), (totalAdd / elapsedms) * 100.f,
+		(float)lowestAdd, (float)highestAdd, (float)(totalAdd / totalTortured),
+		(float)lowestAddFrame, (float)highestAddFrame, (float)(totalAdd / totalFrames), (int)round(totalAdd), (float)((totalAdd / elapsedms) * 100.0),
 
-		lowestRemove, highestRemove, totalRemove / totalTortured,
-		lowestRemoveFrame, highestRemoveFrame, totalRemove / totalFrames, (int)round(totalRemove), (totalRemove / elapsedms) * 100.f,
+		(float)lowestRemove, (float)highestRemove, (float)(totalRemove / totalTortured),
+		(float)lowestRemoveFrame, (float)highestRemoveFrame, (float)(totalRemove / totalFrames), (int)round(totalRemove), (float)((totalRemove / elapsedms) * 100.0),
 		(int)round(elapsedms)
 	);
 
-	Debug::Success(DebugInfo, "Elapsed Time: %f", elapsedTime);
+
+	Debug::Success(DebugInfo, "---Run data---\n\tElapsed time: %fs\n\tAverage frame time: %fms\n\tAverage frame rate: %ffps\n\tAverage deviation: %fms", elapsedTime, elapsedms / totalFrames, totalFrames / elapsedTime, accumDeviation / (totalFrames - 1.0));
 	Engine::RaiseEvent<Events::Exit>();
 }
 

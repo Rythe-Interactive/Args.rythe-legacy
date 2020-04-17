@@ -11,13 +11,13 @@ void ECSTestSystem::Init()
 void ECSTestSystem::Update(float deltaTime)
 {
 	Transform* transform;
-	float time;
+	double time;
 
 	for (int i = 0; i < 10; i++)
 	{
 		clock.Start();
 		transform = entity->GetComponent<Transform>();
-		time = clock.End().Milliseconds();
+		time = clock.End().Milliseconds<double>();
 
 		if (time < TestMonoUpdateSystem::lowestQuery)
 			TestMonoUpdateSystem::lowestQuery = time;
@@ -27,13 +27,13 @@ void ECSTestSystem::Update(float deltaTime)
 		TestMonoUpdateSystem::queryTime += time;
 	}
 
-	transform->Rotate(up, (float)deltaTime);
+	transform->Rotate(up, deltaTime);
 
 	for (int i = 0; i < 10; i++)
 	{
 		clock.Start();
 		entity->AddComponent<TestComponent>();
-		time = clock.End().Milliseconds();
+		time = clock.End().Milliseconds<double>();
 
 		if (time < TestMonoUpdateSystem::lowestAdd)
 			TestMonoUpdateSystem::lowestAdd = time;
@@ -44,7 +44,7 @@ void ECSTestSystem::Update(float deltaTime)
 
 		clock.Start();
 		entity->DestroyComponent<TestComponent>();
-		time = clock.End().Milliseconds();
+		time = clock.End().Milliseconds<double>();
 
 		if (time < TestMonoUpdateSystem::lowestRemove)
 			TestMonoUpdateSystem::lowestRemove = time;
