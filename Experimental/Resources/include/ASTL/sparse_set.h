@@ -18,7 +18,7 @@ namespace Args::stl
 		using reference = value_type&;
 		using const_reference = const value_type&;
 
-		using iterator = typename dense_container::const_iterator;
+		using iterator = typename dense_container::iterator;
 		using const_iterator = typename dense_container::const_iterator;
 
 		[[nodiscard]] iterator begin() { return m_dense.begin(); }
