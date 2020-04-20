@@ -7,14 +7,13 @@
 
 namespace Args::stl
 {
-
-	template <typename value_type, template<typename> typename Dense = std::vector, template<typename> typename Sparse = std::deque>
+	template <typename value_type, template<typename> typename dense_type = std::vector, template<typename> typename sparse_type = std::vector>
 	class sparse_set
 	{
 		static_assert(std::is_unsigned_v<value_type>, "value_type must an unsigned type.");
 	public:
-		using sparse_container = Sparse<value_type>;
-		using dense_container = Dense<value_type>;
+		using sparse_container = sparse_type<value_type>;
+		using dense_container = dense_type<value_type>;
 
 		using size_type = std::size_t;
 
@@ -31,7 +30,6 @@ namespace Args::stl
 		[[nodiscard]] const_iterator end() const { return m_dense.cbegin() + m_size; }
 
 		[[nodiscard]] size_type size() const noexcept { return m_size; }
-		[[nodiscard]] size_type max_size() const noexcept(std::is_nothrow_invocable_r_v<sparse_container, &sparse_container::max_size>) { return m_sparse.max_size(); }
 
 		[[nodiscard]] size_type capacity() const noexcept { return m_capacity; }
 
