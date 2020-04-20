@@ -8,10 +8,10 @@ struct test : public Args::component<test>
 	float x, y;
 };
 
-class TestSystem : public Args::System
+class TestSystem : public Args::System<TestSystem>
 {
 public:
-	using Args::System::System;
+	using Args::System<TestSystem>::System;
 	void init() override {}
 };
 
