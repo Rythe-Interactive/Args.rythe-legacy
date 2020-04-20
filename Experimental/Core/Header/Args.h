@@ -3,7 +3,7 @@
 #include <ASTL/delegate.h>
 
 #include <ECS/component.h>
-#include <ECS/component_family.h>
+#include <ECS/ComponentFamily.h>
 #include <ECS/component_query.h>
 #include <ECS/ECS.h>
 #include <ECS/entity.h>

@@ -34,7 +34,7 @@ namespace Args
 		template<typename SystemType, inherits_from<SystemType, SystenBase> = 0>
 		void Register()
 		{
-			systems.push_back(std::move(SystemType(*this)));
+			systems.push_back(std::move(SystemType()));
 			std::cout << "system" << std::endl;
 		}
 	};

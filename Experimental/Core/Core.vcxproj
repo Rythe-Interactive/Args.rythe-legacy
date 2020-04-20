@@ -175,11 +175,13 @@
   <ItemGroup>
     <ClInclude Include="Header\Args.h" />
     <ClInclude Include="Header\ASTL\delegate.h" />
+    <ClInclude Include="Header\ASTL\sparse_map.h" />
     <ClInclude Include="Header\ASTL\sparse_set.h" />
     <ClInclude Include="Header\ECS\component.h" />
     <ClInclude Include="Header\ECS\ComponentFamily.h" />
     <ClInclude Include="Header\ECS\ComponentQuery.h" />
-    <ClInclude Include="Header\ECS\component_family.h" />
+    <ClInclude Include="Header\ECS\ComponentFamily.h" />
+    <ClInclude Include="Header\ASTL\default_index_list.h" />
     <ClInclude Include="Header\ECS\component_query.h" />
     <ClInclude Include="Header\ECS\ECS.h" />
     <ClInclude Include="Header\ECS\entity.h" />

@@ -15,7 +15,6 @@ public:
 	void init() override {}
 };
 
-
 int main(int argc, char* argv[])
 {
 	Args::ECS ecs;
