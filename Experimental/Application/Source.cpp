@@ -15,19 +15,21 @@ public:
 	void init() override {}
 };
 
+
+
 int main(int argc, char* argv[])
-{
-	Args::ECS ecs;
-	ecs.Register<test>();
-	ecs.Register<TestSystem>();
+{ 
+	Args::Engine engine;
+	engine.Register<test>();
+	engine.Register<TestSystem>();
 
 	Args::id_type id = 1;
 
-	Args::entity testEntity(ecs, id);
+	Args::entity testEntity(&engine, id);
 
-	test testComp(ecs, testEntity, id);
+	test testComp(&engine, testEntity);
 
-	TestSystem testSystem(ecs);
+	TestSystem testSystem(engine);
 	testSystem.init();
 	system("pause");
 }

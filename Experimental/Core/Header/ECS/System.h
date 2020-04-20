@@ -1,28 +1,29 @@
 #pragma once
 #include <ECS/Operation.h>
-#include <unordered_map>
+#include <Types/prioritization.h>
+#include <map>
 #include <memory>
 
 namespace Args
 {
-	class ECS;
+	class Engine;
 
-	class SystenBase
+	class SystemBase
 	{
 
 	};
 
 	template<class SystemType>
-	class System : public SystenBase
+	class System : public SystemBase
 	{
 	protected:
-		ECS& ecs;
+		Engine* engine;
 
 	public:
-		std::unordered_map<id_type, std::unique_ptr<operation_base>> operations;
+		std::map<priority, std::unique_ptr<operation_base>> operations;
 
-		System(ECS& ecs) : ecs(ecs){}
-		System(const System&) = delete;
+		System() = default;
+		System(Engine* engine) : engine(engine){}
 
 		virtual void init() = 0;
 

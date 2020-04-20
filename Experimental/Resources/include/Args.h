@@ -5,10 +5,11 @@
 #include <ECS/component.h>
 #include <ECS/ComponentFamily.h>
 #include <ECS/component_query.h>
-#include <ECS/ECS.h>
 #include <ECS/entity.h>
 #include <ECS/operation.h>
 #include <ECS/System.h>
+
+#include <Engine/Engine.h>
 
 #include <Scheduling/Job.h>
 #include <Scheduling/Scheduler.h>

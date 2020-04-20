@@ -32,6 +32,8 @@ namespace Args::stl
 			key_type key;
 			value_type value;
 
+			template<typename... Arguments>
+			value_container(key_type key, Arguments... arguments) : key(key), value(arguments...) {}
 			value_container(key_type key, value_type value) : key(key), value(value) {}
 			value_container(key_type key) : key(key) {}
 
@@ -41,7 +43,8 @@ namespace Args::stl
 			operator value_const_reference() const { return value; }
 			bool operator==(value_const_reference rhs) const { return value == rhs; }
 			bool operator!=(value_const_reference rhs) const { return value != rhs; }
-			value_container& operator= (value_const_reference source) { value = source; return *this; }
+
+			value_container& operator=(const value_container&) = default;
 		};
 
 		using sparse_container = sparse_type<size_type>;
@@ -169,6 +172,39 @@ namespace Args::stl
 			return std::make_pair(m_dense.end(), false);
 		}
 
+		template<typename... Arguments>
+		std::pair<iterator, bool> emplace(key_const_reference key, Arguments&&... arguments)
+		{
+			if (!contains(key))
+			{
+				if (key >= m_capacity)
+					reserve(key + 1);
+
+				auto itr = m_dense.begin() + m_size;
+				*itr = std::move(value_container(key, arguments...));
+				m_sparse[key] = (key_type)m_size;
+				++m_size;
+				return std::make_pair(itr, true);
+			}
+			return std::make_pair(m_dense.end(), false);
+		}
+		template<typename... Arguments>
+		std::pair<iterator, bool> emplace(key_type&& key, Arguments&&... arguments)
+		{
+			if (!contains(key))
+			{
+				if (key >= m_capacity)
+					reserve(key + 1);
+
+				auto itr = m_dense.begin() + m_size;
+				*itr = std::move(value_container(key, arguments...));
+				m_sparse[key] = (key_type)m_size;
+				++m_size;
+				return std::make_pair(itr, true);
+			}
+			return std::make_pair(m_dense.end(), false);
+		}
+
 		value_reference operator[](key_const_reference key)
 		{
 			if (!contains(key))
@@ -201,7 +237,7 @@ namespace Args::stl
 			if (contains(key))
 			{
 				m_dense[m_sparse[key]] = m_dense[m_size - 1];
-				m_sparse[m_dense[m_size - 1]] = m_sparse[key];
+				m_sparse[m_dense[m_size - 1].key] = m_sparse[key];
 				--m_size;
 				return true;
 			}

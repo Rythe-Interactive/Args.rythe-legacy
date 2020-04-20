@@ -24,9 +24,6 @@
     <ClInclude Include="Header\ECS\ComponentQuery.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header\ECS\ECS.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Header\ECS\System.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -43,9 +40,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Header\Types\identification.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Header\Utils\SFINAE.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Header\ASTL\delegate.h">
@@ -85,6 +79,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Header\ASTL\default_index_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Engine\Engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Scheduling\SystemGroup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Types\prioritization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Types\SFINAE.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

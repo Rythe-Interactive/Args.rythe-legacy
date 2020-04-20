@@ -3,15 +3,10 @@
 
 namespace Args
 {
-	using id_type = uint32;
-	id_type invalid_id = 0;
-	using entity_id = id_type;
-	using type_id = id_type;
-
 	template<typename T>
 	constexpr string GetTypeName()
 	{
-		static string typeName = "";
+		static string typeName;
 		if (typeName == "")
 		{
 			typeName = typeid(T).name();
@@ -32,30 +27,4 @@ namespace Args
 	{
 		return GetTypeName<T>();
 	}
-
-	template<typename T>
-	constexpr id_type GetTypeHash()
-	{
-		static id_type hash = 0;
-		if (hash == 0)
-		{
-			hash = 0x811c9dc5;
-			uint32 prime = 0x1000193;
-			string typeName = GetTypeName<T>();
-			for (int i = 0; i < typeName.length(); ++i)
-			{
-				byte value = typeName[i];
-				hash = hash ^ value;
-				hash *= prime;
-			}
-		}
-		return hash;
-	}
-
-	template<typename T>
-	constexpr id_type GetTypeHash(T expr)
-	{
-		return GetTypeHash<T>();
-	}
-
 }

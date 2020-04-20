@@ -5,23 +5,23 @@
 
 namespace Args
 {
-	class ECS;
+	class Engine;
 
-	class SystenBase
+	class SystemBase
 	{
 
 	};
 
 	template<class SystemType>
-	class System : public SystenBase
+	class System : public SystemBase
 	{
 	protected:
-		ECS& ecs;
+		Engine& engine;
 
 	public:
 		std::unordered_map<id_type, std::unique_ptr<operation_base>> operations;
 
-		System(ECS& ecs) : ecs(ecs){}
+		System(Engine& engine) : engine(engine){}
 		System(const System&) = delete;
 
 		virtual void init() = 0;

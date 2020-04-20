@@ -1,23 +1,24 @@
 #pragma once
 #include <ECS/Entity.h>
+#include <Types/identification.h>
 
 namespace Args
 {
-	class ECS;
+	class Engine;
 
 	struct component_base
 	{
 	protected:
-		ECS& ecs;
-
+		Engine* engine;
+		static inline type_id lastId = invalid_id;
 	public:
-		const type_id type;
-		const type_id externalType;
-		const entity owner;
-		const component_id id;
+		type_id type;
+		type_id externalType;
+		entity owner;
 
-		component_base(ECS& ecs, const entity& owner, const component_id& id, const type_id& type, const type_id& externalType)
-			: ecs(ecs), owner(owner), id(id), type(type), externalType(externalType)
+		component_base() = default;
+		component_base(Engine* engine, const entity& owner, const type_id& type, const type_id& externalType)
+			: engine(engine), owner(owner), type(type), externalType(externalType)
 		{
 		}
 	};
@@ -28,15 +29,16 @@ namespace Args
 		static type_id type;
 		static type_id externalType;
 
-		component(ECS& ecs, const entity& owner, const component_id& id)
-			: component_base(ecs, owner, id, type, externalType)
+		component() = default;
+		component(Engine* engine, const entity& owner)
+			: component_base(engine, owner, type, externalType)
 		{
 		}
 	};
 
-	 template<typename component_type>
-	 type_id component<component_type>::type = invalid_id;
+	template<typename component_type>
+	type_id component<component_type>::type = ++lastId;
 
-	 template<typename component_type>
-	 type_id component<component_type>::externalType = invalid_id;
+	template<typename component_type>
+	type_id component<component_type>::externalType = GetTypeHash<component_type>();
 }
