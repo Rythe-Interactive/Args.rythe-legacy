@@ -12,7 +12,7 @@ namespace Args
 		virtual size_type entityCount() const = 0;
 		virtual const stl::sparse_set<type_id>& requirements() const = 0;
 	protected:
-		static id_type lastId;
+		static inline id_type lastId = invalid_id;
 	};
 
 	template<typename... component_types>

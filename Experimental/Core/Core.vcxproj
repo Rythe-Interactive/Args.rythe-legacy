@@ -197,7 +197,6 @@
     <ClInclude Include="pch.h" />
     <ClInclude Include="Header\Scheduling\Job.h" />
     <ClInclude Include="Header\Scheduling\Scheduler.h" />
-    <ClInclude Include="Source\ECS\component_query.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">

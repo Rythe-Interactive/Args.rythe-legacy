@@ -69,9 +69,6 @@
     <ClInclude Include="Header\ASTL\sparse_set.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Source\ECS\component_query.cpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Header\ECS\ComponentFamily.h">
       <Filter>Header Files</Filter>
     </ClInclude>
