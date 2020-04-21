@@ -180,7 +180,6 @@
     <ClInclude Include="Header\ECS\component.h" />
     <ClInclude Include="Header\ECS\ComponentFamily.h" />
     <ClInclude Include="Header\ECS\ComponentQuery.h" />
-    <ClInclude Include="Header\ECS\ComponentFamily.h" />
     <ClInclude Include="Header\ASTL\default_index_list.h" />
     <ClInclude Include="Header\ECS\component_query.h" />
     <ClInclude Include="Header\Engine\Engine.h" />
