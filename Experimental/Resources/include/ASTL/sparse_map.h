@@ -224,7 +224,7 @@ namespace Args::stl
 
 			return m_dense[m_sparse[key]].value;
 		}
-		const value_reference operator[](key_const_reference key) const
+		value_const_reference operator[](key_const_reference key) const
 		{
 			if (!contains(key))
 				throw std::out_of_range("Sparse map does not contain this key and is non modifiable.");

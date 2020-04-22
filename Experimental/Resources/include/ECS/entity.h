@@ -1,6 +1,6 @@
 #pragma once
 #include <Types/identification.h>
-#include <ASTL/sparse_set.h>
+#include <ECS/ecs_containers.h>
 
 namespace Args
 {
@@ -8,7 +8,7 @@ namespace Args
 	struct entity
 	{
 		entity_id id;
-		stl::sparse_set<type_id> componentTypes;
+		type_set componentTypes;
 		Engine* engine;
 
 		entity() = default;

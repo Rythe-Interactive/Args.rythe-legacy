@@ -1,7 +1,9 @@
 #pragma once
-#include <Types/primitives.h>
-#include <ASTL/sparse_set.h>
+#include <Types/identification.h>
 #include <ECS/entity.h>
+#include <ECS/ecs_containers.h>
+#include <ECS/component_family.h>
+#include <Logging/Debug.h>
 
 namespace Args
 {
@@ -10,20 +12,23 @@ namespace Args
 		const id_type id;
 		virtual void evaluate(const entity& entity, bool erasure) = 0;
 		virtual size_type entityCount() const = 0;
-		virtual const stl::sparse_set<type_id>& requirements() const = 0;
+		virtual const type_set& requirements() const = 0;
 	protected:
-		static id_type lastId;
+		static inline id_type lastId = invalid_id;
 	};
 
 	template<typename... component_types>
 	struct component_query : public component_query_base
 	{
-		stl::sparse_set<type_id> componentTypes;
-		stl::sparse_set<entity_id> entities;
+		static inline std::unordered_map<type_id, component_family_base*> componentFamilies;
+		static inline type_set componentTypes;
+		static inline entity_set entities;
+		static inline id_type id = ++lastId;
 
-		component_query() : component_query_base::id(++lastId)
+		component_query() : component_query_base::id(id)
 		{
-			insert<sizeof...(component_types), component_types...>();
+			if (componentTypes.size() == 0)
+				insert<sizeof...(component_types), component_types...>();
 		}
 
 		virtual void evaluate(const entity& entity, bool erasure) override
@@ -34,33 +39,42 @@ namespace Args
 					entities.erase(entity);
 			}
 			else if (!entities.contains(entity) && entity.componentTypes.contains(componentTypes))
-					entities.insert(entity);
+				entities.insert(entity);
 		}
+
 		virtual size_type entityCount() const override
 		{
 			return entities.size();
 		}
-		virtual const stl::sparse_set<type_id>& requirements() const override
+
+		template<typename component_type>
+		component_container<component_type>& components()
+		{
+			Debug::assert(componentTypes.contains(component_type::type), "component type is not included in query.");
+			return static_cast<component_family<component_type>>(componentFamilies[component_type::type])->components;
+		}
+
+		virtual const type_set& requirements() const override
 		{
 			return componentTypes;
 		}
 
 	private:
 		template<size_type component_count, typename component_type, typename... component_types>
-		void insert()
+		inline void insert()
 		{
 			componentTypes.insert(component_type::type);
 			insert<sizeof...(component_types), component_types...>();
 		}
 
 		template<size_type component_count, typename component_type>
-		void insert()
+		inline void insert()
 		{
 			componentTypes.insert(component_type::type);
 		}
 
 		template<size_type component_count>
-		void insert() {}
+		inline void insert() {}
 	};
 
 }

@@ -3,14 +3,14 @@
 #include <ASTL/delegate.h>
 
 #include <ECS/component.h>
-#include <ECS/ComponentFamily.h>
+#include <ECS/component_family.h>
 #include <ECS/component_query.h>
 #include <ECS/entity.h>
-#include <ECS/operation.h>
 #include <ECS/System.h>
 
 #include <Engine/Engine.h>
 
+#include <Scheduling/operation.h>
 #include <Scheduling/Job.h>
 #include <Scheduling/Scheduler.h>
 

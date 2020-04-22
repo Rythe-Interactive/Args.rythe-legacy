@@ -29,7 +29,7 @@ int main(int argc, char* argv[])
 
 	test testComp(&engine, testEntity);
 
-	TestSystem testSystem(engine);
+	TestSystem testSystem(&engine);
 	testSystem.init();
 	system("pause");
 }

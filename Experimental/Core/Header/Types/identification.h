@@ -6,6 +6,7 @@ namespace Args
 	using id_type = uint32;
 	id_type invalid_id = 0;
 	using entity_id = id_type;
+	using process_id = id_type;
 	using type_id = id_type;
 
 	template<typename T>

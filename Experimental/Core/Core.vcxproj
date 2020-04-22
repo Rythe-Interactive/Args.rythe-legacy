@@ -178,24 +178,28 @@
     <ClInclude Include="Header\ASTL\sparse_map.h" />
     <ClInclude Include="Header\ASTL\sparse_set.h" />
     <ClInclude Include="Header\ECS\component.h" />
-    <ClInclude Include="Header\ECS\ComponentFamily.h" />
+    <ClInclude Include="Header\ECS\component_family.h" />
     <ClInclude Include="Header\ECS\ComponentQuery.h" />
     <ClInclude Include="Header\ASTL\default_index_list.h" />
     <ClInclude Include="Header\ECS\component_query.h" />
     <ClInclude Include="Header\Engine\Engine.h" />
     <ClInclude Include="Header\ECS\entity.h" />
-    <ClInclude Include="Header\ECS\operation.h" />
+    <ClInclude Include="Header\Scheduling\operation.h" />
     <ClInclude Include="Header\ECS\System.h" />
     <ClInclude Include="Header\Logging\Console.h" />
     <ClInclude Include="Header\Logging\Debug.h" />
-    <ClInclude Include="Header\Scheduling\SystemGroup.h" />
+    <ClInclude Include="Header\Scheduling\process.h" />
+    <ClInclude Include="Header\Scheduling\process_group.h" />
+    <ClInclude Include="Header\ECS\ecs_containers.h" />
+    <ClInclude Include="Header\Timing\clock.h" />
+    <ClInclude Include="Header\Timing\time.h" />
     <ClInclude Include="Header\Types\identification.h" />
     <ClInclude Include="Header\Types\primitives.h" />
     <ClInclude Include="Header\Types\prioritization.h" />
     <ClInclude Include="Header\Types\time_types.h" />
     <ClInclude Include="Header\Types\SFINAE.h" />
     <ClInclude Include="pch.h" />
-    <ClInclude Include="Header\Scheduling\Job.h" />
+    <ClInclude Include="Header\Scheduling\job.h" />
     <ClInclude Include="Header\Scheduling\Scheduler.h" />
   </ItemGroup>
   <ItemGroup>

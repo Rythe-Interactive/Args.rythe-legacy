@@ -18,16 +18,10 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header\ECS\ComponentFamily.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Header\ECS\ComponentQuery.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Header\ECS\System.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Header\Scheduling\Job.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Header\Scheduling\Scheduler.h">
@@ -54,9 +48,6 @@
     <ClInclude Include="Header\ECS\entity.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header\ECS\operation.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Header\Types\time_types.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -81,13 +72,34 @@
     <ClInclude Include="Header\Engine\Engine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header\Scheduling\SystemGroup.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Header\Types\prioritization.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Header\Types\SFINAE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\ECS\component_family.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\ECS\ecs_containers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Scheduling\process.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Scheduling\job.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Scheduling\process_group.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Scheduling\operation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Timing\time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Timing\clock.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

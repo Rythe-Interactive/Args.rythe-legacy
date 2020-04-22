@@ -7,12 +7,47 @@ namespace Args
 	class Debug
 	{
 	public:
-		static void assert(bool condition)
+		static inline void soft_assert(bool condition, const char* message)
+		{
+			if (!condition)
+			{
+				Console::log(message);
+			}
+		}
+
+		static inline void soft_assert(bool condition, string message)
+		{
+			if (!condition)
+			{
+				Console::log(message);
+			}
+		}
+
+		template<typename... Arguments>
+		static inline void soft_assert(bool condition, const char* message, Arguments... arguments)
+		{
+			if (!condition)
+			{
+				Console::log(message, arguments...);
+			}
+		}
+
+		template<typename... Arguments>
+		static inline void soft_assert(bool condition, string message, Arguments... arguments)
+		{
+			if (!condition)
+			{
+				Console::log(message, arguments...);
+			}
+		}
+
+		static inline void assert(bool condition)
 		{
 			if (!condition)
 				throw std::logic_error("");
 		}
-		static void assert(bool condition, const char* message)
+
+		static inline void assert(bool condition, const char* message)
 		{
 			if (!condition)
 			{
@@ -20,7 +55,8 @@ namespace Args
 				throw std::logic_error(message);
 			}
 		}
-		static void assert(bool condition, string message)
+
+		static inline void assert(bool condition, string message)
 		{
 			if (!condition)
 			{
@@ -28,21 +64,23 @@ namespace Args
 				throw std::logic_error(message);
 			}
 		}
+
 		template<typename... Arguments>
-		static void assert(bool condition, const char* message, Arguments... arguments)
+		static inline void assert(bool condition, const char* message, Arguments... arguments)
 		{
 			if (!condition)
 			{
-				Console::log(message, arguments);
+				Console::log(message, arguments...);
 				throw std::logic_error("");
 			}
 		}
+
 		template<typename... Arguments>
-		static void assert(bool condition, string message, Arguments... arguments)
+		static inline void assert(bool condition, string message, Arguments... arguments)
 		{
 			if (!condition)
 			{
-				Console::log(message, arguments);
+				Console::log(message, arguments...);
 				throw std::logic_error("");
 			}
 		}

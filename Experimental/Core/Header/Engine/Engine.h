@@ -17,8 +17,8 @@ namespace Args
 	private:
 		entity world;
 		std::unordered_map<id_type, std::unique_ptr<component_query_base>> componentQueries;
-		std::unordered_map<type_id, std::unique_ptr<ComponentFamilyBase>> componentFamilies;
-		
+		std::unordered_map<type_id, std::unique_ptr<component_family_base>> componentFamilies;
+
 		Scheduler scheduler;
 
 	public:
@@ -29,13 +29,17 @@ namespace Args
 		void Register()
 		{
 			componentQueries[query_type::id] = std::make_unique<query_type>();
+
+			for (type_id componentTypeId : query_type::componentTypes)
+				query_type::componentFamilies[componentTypeId] = componentFamilies[componentTypeId].get();
+
 			std::cout << "query" << std::endl;
 		}
 
 		template<typename component_type, inherits_from<component_type, component_base> = 0>
 		void Register()
 		{
-			componentFamilies[component_type::type] = std::make_unique<ComponentFamily<component_type>>(this);
+			componentFamilies[component_type::type] = std::make_unique<component_family<component_type>>(this);
 			std::cout << "component" << std::endl;
 		}
 
