@@ -43,7 +43,8 @@ namespace Args
 			hash = 0x811c9dc5;
 			uint32 prime = 0x1000193;
 			string typeName = GetTypeName<T>();
-			for (int i = 0; i < typeName.length(); ++i)
+
+			for (int i = 0; i < typeName.length(); i++)
 			{
 				byte value = typeName[i];
 				hash = hash ^ value;
@@ -57,6 +58,23 @@ namespace Args
 	constexpr id_type GetTypeHash(T expr)
 	{
 		return GetTypeHash<T>();
+	}
+
+	template<size_type N>
+	constexpr id_type GetNameHash(const char(&name)[N])
+	{
+		id_type hash = 0;
+
+		hash = 0x811c9dc5;
+		uint32 prime = 0x1000193;
+		for (int i = 0; i < N-1; i++)
+		{
+			byte value = name[i];
+			hash = hash ^ value;
+			hash *= prime;
+		}
+
+		return hash;
 	}
 
 }

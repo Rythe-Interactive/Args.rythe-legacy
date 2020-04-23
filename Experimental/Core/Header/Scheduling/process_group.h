@@ -1,30 +1,66 @@
 #pragma once
-#include <map>
-#include <memory>
-#include <ECS/System.h>
-#include <Types/prioritization.h>
-#include <Types/SFINAE.h>
+#include <unordered_map>
+#include <Scheduling/process.h>
+#include <Types/identification.h>
 
 namespace Args
 {
 	class Engine;
-	class SystemGroup
+	class process_group
 	{
-		// maybe not priority but interval instead?
-		std::multimap<priority, std::unique_ptr<SystemBase>> systems;
+		std::unordered_map<process_id, process> processes;
 
 		Engine* engine;
 
-		SystemGroup() = default;
-		SystemGroup(Engine* engine) : engine(engine){}
+		process_group() = default;
+		process_group(Engine* engine) : engine(engine) {}
 
-
-		template<typename SystemType, inherits_from<SystemType, SystemBase> = 0>
-		void AddSystem(priority priority = default_priority)
+		void execute()
 		{
-			systems.emplace(std::make_pair<priority, std::make_unique<SystemType>(engine)>)
+			bool allProcessesDone = true;
+			do
+			{
+				for (auto process : processes)
+					allProcessesDone &= process.second.step();
+			} while (!allProcessesDone);
 		}
 
+		process_group& operator+=(const process& process)
+		{
+			processes[process.id] = process;
+			return *this;
+		}
 
+		process_group& insert(const process& process)
+		{
+			processes[process.id] = process;
+			return *this;
+		}
+
+		process_group& operator-=(const process& process)
+		{
+			processes.erase(process.id);
+			return *this;
+		}
+
+		process_group& erase(const process& process)
+		{
+			processes.erase(process.id);
+			return *this;
+		}
+
+		template<size_type nameLength>
+		process_group& operator-=(const char(&name)[nameLength])
+		{
+			processes.erase(GetNameHash<nameLength>(name));
+			return *this;
+		}
+
+		template<size_type nameLength>
+		process_group& erase(const char(&name)[nameLength])
+		{
+			processes.erase(GetNameHash<nameLength>(name));
+			return *this;
+		}
 	};
 }

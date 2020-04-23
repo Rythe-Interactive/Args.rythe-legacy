@@ -182,6 +182,7 @@
     <ClInclude Include="Header\ECS\ComponentQuery.h" />
     <ClInclude Include="Header\ASTL\default_index_list.h" />
     <ClInclude Include="Header\ECS\component_query.h" />
+    <ClInclude Include="Header\ECS\EntityComponentSystem.h" />
     <ClInclude Include="Header\Engine\Engine.h" />
     <ClInclude Include="Header\ECS\entity.h" />
     <ClInclude Include="Header\Scheduling\operation.h" />

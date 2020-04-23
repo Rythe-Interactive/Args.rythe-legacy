@@ -60,9 +60,6 @@
     <ClInclude Include="Header\ASTL\sparse_set.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header\ECS\ComponentFamily.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Header\ASTL\sparse_map.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -100,6 +97,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Header\Timing\clock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\ECS\EntityComponentSystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

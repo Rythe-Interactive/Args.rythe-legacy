@@ -8,22 +8,16 @@
 namespace Args
 {
 	class Engine;
-	class SystemGroup
+	class process_group
 	{
 		// maybe not priority but interval instead?
-		std::multimap<priority, std::unique_ptr<SystemBase>> systems;
+		std::multimap<type_id, process> systems;
 
 		Engine* engine;
 
-		SystemGroup() = default;
-		SystemGroup(Engine* engine) : engine(engine){}
+		process_group() = default;
+		process_group(Engine* engine) : engine(engine){}
 
-
-		template<typename SystemType, inherits_from<SystemType, SystemBase> = 0>
-		void AddSystem(priority priority = default_priority)
-		{
-			systems.emplace(std::make_pair<priority, std::make_unique<SystemType>(engine)>)
-		}
 
 
 	};

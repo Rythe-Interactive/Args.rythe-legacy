@@ -1,10 +1,11 @@
 #pragma once
-#include <ECS/Entity.h>
 #include <Types/identification.h>
+#include <ECS/entity.h>
 
 namespace Args
 {
 	class Engine;
+	struct entity;
 
 	struct component_base
 	{
