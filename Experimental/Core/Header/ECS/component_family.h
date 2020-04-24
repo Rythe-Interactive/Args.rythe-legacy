@@ -7,15 +7,15 @@
 
 namespace Args
 {
-	class Engine;
+	class EntityComponentSystem;
 	class component_family_base
 	{
 	public:
 		const type_id componentType;
 		const type_id componentExternalType;
-		Engine* engine;
+		EntityComponentSystem* ecs;
 
-		component_family_base(Engine* engine, const type_id& componentType, const type_id& componentExternalType) : engine(engine), componentType(componentType), componentExternalType(componentExternalType) {}
+		component_family_base(EntityComponentSystem* ecs, const type_id& componentType, const type_id& componentExternalType) : ecs(ecs), componentType(componentType), componentExternalType(componentExternalType) {}
 
 		virtual void emplace(const entity& entity) = 0;
 		virtual size_type erase(const entity& entity) = 0;
@@ -29,20 +29,20 @@ namespace Args
 		static inline type_id componentType = component_type::type;
 		static inline type_id componentExternalType = component_type::externalType;
 
-		component_family(Engine* engine) : component_family_base(engine, componentType, componentExternalType) {}
+		component_family(EntityComponentSystem* ecs) : component_family_base(ecs, componentType, componentExternalType) {}
 
 		component_container<component_type> components;
 
 		virtual void emplace(const entity& entity) override
 		{
-			components.emplace(entity, engine, entity);
+			components.emplace(entity, ecs, entity);
 		}
 
 		virtual size_type erase(const entity& entity) override
 		{
 			return components.erase(entity);
 		}
-	
+
 		virtual size_type size() override
 		{
 			return components.size();

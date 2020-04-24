@@ -11,11 +11,13 @@ namespace Args
 {
 	struct process
 	{
-		const process_id id;
+		process_id id = invalid_id;
 
 		fast_seconds interval = 0;
 		fast_seconds timeBuffer = 0;
 		bool fixedTimeStep = true;
+
+		process() = default;
 
 		template<size_type nameLength>
 		process(const char(&name)[nameLength], fast_seconds interval) : interval(interval), fixedTimeStep(false), id(GetNameHash<nameLength>(name))

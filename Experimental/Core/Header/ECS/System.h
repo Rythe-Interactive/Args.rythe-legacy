@@ -6,26 +6,24 @@
 
 namespace Args
 {
-	class Engine;
+	class EntityComponentSystem;
 
 	class SystemBase
 	{
-
+	public:
+		virtual void init() = 0;
 	};
 
 	template<class SystemType>
 	class System : public SystemBase
 	{
 	protected:
-		Engine* engine;
+		EntityComponentSystem* ecs;
 
 	public:
 		std::map<process_id, std::unique_ptr<process>> processes;
 
 		System() = default;
-		System(Engine* engine) : engine(engine){}
-
-		virtual void init() = 0;
-		
+		System(EntityComponentSystem* ecs) : ecs(ecs) {}
 	};
 }

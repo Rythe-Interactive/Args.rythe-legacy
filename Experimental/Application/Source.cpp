@@ -32,13 +32,15 @@ int main(int argc, char* argv[])
 	engine.Register<test>();
 	engine.Register<TestSystem>();
 
+	Args::EntityComponentSystem ecs;
+
 	Args::id_type id = 1;
 
-	Args::entity testEntity(&engine, id);
+	Args::entity testEntity(&ecs, id);
 
-	test testComp(&engine, testEntity);
+	test testComp(&ecs, testEntity);
 
-	TestSystem testSystem(&engine);
+	TestSystem testSystem(&ecs);
 	testSystem.init();
 	system("pause");
 }

@@ -1,5 +1,6 @@
 #pragma once
 #include <unordered_map>
+#include <unordered_set>
 #include <Scheduling/process.h>
 #include <Types/identification.h>
 
@@ -17,12 +18,14 @@ namespace Args
 
 		void execute()
 		{
-			bool allProcessesDone = true;
+			std::unordered_set<process_id> finishedProcesses;
 			do
 			{
 				for (auto process : processes)
-					allProcessesDone &= process.second.step();
-			} while (!allProcessesDone);
+					if (!finishedProcesses.count(process.first))
+						if (process.second.step())
+							finishedProcesses.insert(process.first);
+			} while (finishedProcesses.size() != processes.size());
 		}
 
 		process_group& operator+=(const process& process)

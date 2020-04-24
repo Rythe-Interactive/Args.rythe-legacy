@@ -4,9 +4,11 @@
 #include <memory>
 #include <type_traits>
 #include <Types/SFINAE.h>
-#include <ECS/component.h>
+#include <ECS/component_family.h>
+#include <ECS/entity.h>
 #include <ECS/System.h>
 #include <ECS/component_query.h>
+#include <ECS/EntityComponentSystem.h>
 #include <Scheduling/Scheduler.h>
 #include <iostream>
 
@@ -14,24 +16,21 @@ namespace Args
 {
 	class Engine
 	{
+		friend struct entity;
 	private:
-		entity world;
-		std::unordered_map<id_type, std::unique_ptr<component_query_base>> componentQueries;
-		std::unordered_map<type_id, std::unique_ptr<component_family_base>> componentFamilies;
-
+		entity* world;
+		EntityComponentSystem ecs;
 		Scheduler scheduler;
 
 	public:
 
-		Engine() : world(this, 0) {}
+		Engine() : world(new entity(&ecs, 0)) {}
+		~Engine() { delete world; world = nullptr; }
 
 		template<typename query_type, inherits_from<query_type, component_query_base> = 0>
 		void Register()
 		{
-			componentQueries[query_type::id] = std::make_unique<query_type>();
-
-			for (type_id componentTypeId : query_type::componentTypes)
-				query_type::componentFamilies[componentTypeId] = componentFamilies[componentTypeId].get();
+			ecs.componentQueries[query_type::id] = std::make_unique<query_type>();
 
 			std::cout << "query" << std::endl;
 		}
@@ -39,7 +38,7 @@ namespace Args
 		template<typename component_type, inherits_from<component_type, component_base> = 0>
 		void Register()
 		{
-			componentFamilies[component_type::type] = std::make_unique<component_family<component_type>>(this);
+			ecs.componentFamilies[component_type::type] = std::make_unique<component_family<component_type>>(&ecs);
 			std::cout << "component" << std::endl;
 		}
 

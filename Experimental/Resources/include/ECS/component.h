@@ -4,12 +4,12 @@
 
 namespace Args
 {
-	class Engine;
+	class EntityComponentSystem;
 
 	struct component_base
 	{
 	protected:
-		Engine* engine;
+		EntityComponentSystem* ecs;
 		static inline type_id lastId = invalid_id;
 	public:
 		type_id type;
@@ -17,8 +17,8 @@ namespace Args
 		entity owner;
 
 		component_base() = default;
-		component_base(Engine* engine, const entity& owner, const type_id& type, const type_id& externalType)
-			: engine(engine), owner(owner), type(type), externalType(externalType)
+		component_base(EntityComponentSystem* ecs, const entity& owner, const type_id& type, const type_id& externalType)
+			: ecs(ecs), owner(owner), type(type), externalType(externalType)
 		{
 		}
 	};
@@ -30,8 +30,8 @@ namespace Args
 		static type_id externalType;
 
 		component() = default;
-		component(Engine* engine, const entity& owner)
-			: component_base(engine, owner, type, externalType)
+		component(EntityComponentSystem* ecs, const entity& owner)
+			: component_base(ecs, owner, type, externalType)
 		{
 		}
 	};

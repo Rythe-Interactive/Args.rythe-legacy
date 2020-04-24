@@ -1,18 +1,23 @@
 #pragma once
 #include <Types/identification.h>
 #include <ECS/ecs_containers.h>
+#include <ECS/EntityComponentSystem.h>
 
 namespace Args
 {
-	class Engine;
 	struct entity
 	{
-		entity_id id;
-		type_set componentTypes;
-		Engine* engine;
+		entity_id id = invalid_id;
+		EntityComponentSystem* ecs = nullptr;
 
 		entity() = default;
-		entity(Engine* engine, const entity_id& id) : engine(engine), id(id) {}
+		entity(const entity&) = default;
+		entity(EntityComponentSystem* ecs, const entity_id& id) : ecs(ecs), id(id) {}
+
+		type_set& containedComponents()
+		{
+			return ecs->entityContainedComponents[id];
+		}
 
 		operator entity_id() const { return id; }
 		operator const entity_id& () const { return id; }

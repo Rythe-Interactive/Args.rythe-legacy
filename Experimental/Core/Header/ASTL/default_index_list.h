@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include <stdexcept>
 #include <type_traits>
 
 namespace Args::stl

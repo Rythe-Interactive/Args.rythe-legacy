@@ -11,11 +11,13 @@ namespace Args
 {
 	struct process
 	{
-		const process_id id;
+		process_id id = invalid_id;
 
 		fast_seconds interval = 0;
 		fast_seconds timeBuffer = 0;
 		bool fixedTimeStep = true;
+
+		process() = default;
 
 		template<size_type nameLength>
 		process(const char(&name)[nameLength], fast_seconds interval) : interval(interval), fixedTimeStep(false), id(GetNameHash<nameLength>(name))
@@ -25,12 +27,14 @@ namespace Args
 		template<size_type nameLength>
 		process(const char(&name)[nameLength]) : id(GetNameHash<nameLength>(name)) {}
 
+		process(const process& source) : interval(source.interval), fixedTimeStep(source.fixedTimeStep), timeBuffer(source.timeBuffer), id(source.id) {}
+
 		std::vector<std::unique_ptr<operation_base>> operations;
 
 		clock<fast_time> clock;
 
 		// triggers process update, returns whether the process has finished updating.
-		bool execute()
+		bool step()
 		{
 			fast_seconds deltaTime = clock.End().seconds();
 
@@ -56,6 +60,12 @@ namespace Args
 
 				return timeBuffer < interval;
 			}
+		}
+
+		process& operator=(const process& source)
+		{
+			*this = std::move(process(source));
+			return *this;
 		}
 
 		template<typename operation_type, inherits_from<operation_type, operation_base> = 0>

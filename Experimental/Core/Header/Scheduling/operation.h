@@ -1,6 +1,7 @@
 #pragma once
 #include <ASTL/delegate.h>
 #include <ECS/ecs_containers.h>
+#include <ECS/EntityComponentSystem.h>
 #include <ECS/component_query.h>
 #include <Types/time_types.h>
 #include <Types/identification.h>
@@ -10,6 +11,10 @@ namespace Args
 {
 	struct operation_base
 	{
+		EntityComponentSystem* ecs;
+
+		operation_base(EntityComponentSystem* ecs) : ecs(ecs) {}
+
 		virtual void operator()(fast_seconds delta_time) = 0;
 		virtual void invoke(fast_seconds delta_time) = 0;
 	};
@@ -21,7 +26,7 @@ namespace Args
 		stl::delegate<void(fast_seconds, argument_types...)> operationFunc;
 
 	public:
-		typed_operation_base(const stl::delegate<void(fast_seconds, argument_types...)>& delegate)
+		typed_operation_base(EntityComponentSystem* ecs, const stl::delegate<void(fast_seconds, argument_types...)>& delegate) : operation_base(ecs)
 		{
 			operationFunc = delegate;
 		}
@@ -36,16 +41,16 @@ namespace Args
 
 		using typed_operation_base<component_container<component_types>&...>::typed_operation_base;
 
-		component_query<component_types...> query;
-
 		virtual void operator()(fast_seconds delta_time) override
 		{
-			this->operationFunc.invoke(delta_time, query.components<component_types>()...);
+			component_query<component_types...>* query = &operation_base::ecs->componentQueries[component_query<component_types...>::id];
+			this->operationFunc.invoke(delta_time, query->components<component_types>()...);
 		}
 
 		virtual void invoke(fast_seconds delta_time) override
 		{
-			this->operationFunc.invoke(delta_time, query.components<component_types>()...);
+			component_query<component_types...>* query = &operation_base::ecs->componentQueries[component_query<component_types...>::id];
+			this->operationFunc.invoke(delta_time, query->components<component_types>()...);
 		}
 	};
 
@@ -59,18 +64,18 @@ namespace Args
 
 		using typed_operation_base<component_types&...>::typed_operation_base;
 
-		component_query<component_types...> query;
-
 		virtual void operator()(fast_seconds delta_time) override
 		{
-			for (entity_id entity : query.entities)
-				this->operationFunc.invoke(delta_time, query.components<component_types>()[entity]...); // TODO: change to job request instead of linear iteration
+			component_query<component_types...>* query = &operation_base::ecs->componentQueries[component_query<component_types...>::id];
+			for (entity_id entity : query->entities())
+				this->operationFunc.invoke(delta_time, query->components<component_types>()[entity]...); // TODO: change to job request instead of linear iteration
 		}
 
 		virtual void invoke(fast_seconds delta_time) override
 		{
-			for (entity_id entity : query.entities)
-				this->operationFunc.invoke(delta_time, query.components<component_types>()[entity]...); // TODO: change to job request instead of linear iteration
+			component_query<component_types...>* query = &operation_base::ecs->componentQueries[component_query<component_types...>::id];
+			for (entity_id entity : query->entities())
+				this->operationFunc.invoke(delta_time, query->components<component_types>()[entity]...); // TODO: change to job request instead of linear iteration
 		}
 	};
 }
