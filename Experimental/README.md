@@ -6,4 +6,4 @@ This new experimental version is designed aroung a revised core:
 ![Args new core uml](https://cdn.discordapp.com/attachments/448616491416551438/704044271929655356/unknown.png)
 <br>
 Threading sequence diagram:
-![Args threading sequence diagram](https://cdn.discordapp.com/attachments/448616491416551438/703997061812584579/unknown.png)
+![Args threading sequence diagram](https://cdn.discordapp.com/attachments/448616491416551438/714400162906374165/unknown.png)
