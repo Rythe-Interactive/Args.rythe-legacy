@@ -1,5 +1,5 @@
 #pragma once
-#include <glad/glad.h>
+#include <Utils/GL.h>
 #include <vector>
 #include <string>
 #include <Args-Core.h>

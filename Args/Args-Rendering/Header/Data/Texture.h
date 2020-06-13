@@ -1,6 +1,6 @@
 #pragma once
 #include <string>
-#include <glad/glad.h>
+#include <Utils/GL.h>
 #include <Args-Core.h>
 
 namespace Args

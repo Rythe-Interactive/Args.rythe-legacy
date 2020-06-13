@@ -1,7 +1,7 @@
 #pragma once
 
 #include <vector>
-#include <glad/glad.h>
+#include <Utils/GL.h>
 #include <Args-Core.h>
 #include <unordered_map>
 
