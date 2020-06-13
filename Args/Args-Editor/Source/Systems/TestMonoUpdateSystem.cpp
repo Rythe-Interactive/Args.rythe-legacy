@@ -93,7 +93,7 @@ void TestMonoUpdateSystem::Print(float deltaTime)
 	}
 }
 
-void TestMonoUpdateSystem::Shutdown(float deltaTime)
+void TestMonoUpdateSystem::Shutdown(float deltaTime) const
 {
 	float elapsedms = elapsedTime * 1000.f;
 	std::string benchmarkFormat = "Benchmark Data\n";
@@ -133,7 +133,7 @@ void TestMonoUpdateSystem::Shutdown(float deltaTime)
 	Engine::RaiseEvent<Events::Exit>();
 }
 
-void TestMonoUpdateSystem::Exit(Args::ControllerID controller, Args::ActionState action)
+void TestMonoUpdateSystem::Exit(Args::ControllerID controller, Args::ActionState action) const
 {
 	if (action == Args::ActionState::PRESS)
 	{

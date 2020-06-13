@@ -9,6 +9,6 @@ namespace Args
 	{
 	public:
 		JSONLoader();
-		Document LoadFile(std::string fileName);
+		Document LoadFile(std::string fileName) const;
 	};
 }

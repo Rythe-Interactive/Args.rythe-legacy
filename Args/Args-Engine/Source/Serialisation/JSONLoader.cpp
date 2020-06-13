@@ -16,7 +16,7 @@ Args::JSONLoader::JSONLoader()
 {
 }
 
-Document Args::JSONLoader::LoadFile(std::string fileName)
+Document Args::JSONLoader::LoadFile(std::string fileName) const
 {
 	std::fstream file(fileName, std::ios::in);
 	std::string json;

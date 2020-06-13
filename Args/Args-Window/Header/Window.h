@@ -18,20 +18,20 @@ namespace Args
 
 		operator GLFWwindow* () const { return handle; }
 
-		IVector2 GetFramebufferSize()
+		IVector2 GetFramebufferSize() const
 		{
 			int width, height;
 			glfwGetFramebufferSize(handle, &width, &height);
 			return IVector2(width, height);
 		}
 
-		float GetAspectRatio()
+		float GetAspectRatio() const
 		{
 			IVector2 size = GetFramebufferSize();
 			return size.x / (float)size.y;
 		}
 
-		void Display()
+		void Display() const
 		{
 			if (handle)
 				glfwSwapBuffers(handle);
@@ -44,17 +44,17 @@ namespace Args
 			glfwSwapInterval(interval);
 		}
 
-		void MakeCurrent()
+		void MakeCurrent() const
 		{
 			glfwMakeContextCurrent(handle);
 		}
 
-		void SetKeyCallback(GLFWkeyfun callback)
+		void SetKeyCallback(GLFWkeyfun callback) const
 		{
 			glfwSetKeyCallback(handle, callback);
 		}
 
-		void SetWindowCloseCallback(GLFWwindowclosefun callback)
+		void SetWindowCloseCallback(GLFWwindowclosefun callback) const
 		{
 			glfwSetWindowCloseCallback(handle, callback);
 		}

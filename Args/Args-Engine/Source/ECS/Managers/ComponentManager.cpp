@@ -118,7 +118,7 @@ void Args::ComponentManager::DestroyComponent(uint32 entityId, uint32 typeId, si
 	}
 }
 
-size_t Args::ComponentManager::GetEntityCount()
+size_t Args::ComponentManager::GetEntityCount() const
 {
 	return entities.size();
 }

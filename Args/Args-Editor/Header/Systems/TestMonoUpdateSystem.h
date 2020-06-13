@@ -44,7 +44,7 @@ public:
 
 	void Update(float deltaTime);
 	void Print(float deltaTime);
-	void Shutdown(float deltaTime);
+	void Shutdown(float deltaTime) const;
 
-	void Exit(Args::ControllerID controller, Args::ActionState action);
+	void Exit(Args::ControllerID controller, Args::ActionState action) const;
 };

@@ -7,7 +7,7 @@ namespace Args
 	{
 		AudioListener(Entity* entity) : Component<AudioListener>(entity) {}
 
-		void UpdateListener(Transform* transform);
+		void UpdateListener(Transform* transform) const;
 
 		// Inherited via Component
 		virtual std::string ObjectType() override;

@@ -72,17 +72,17 @@ void Args::Transform::SetRotation(const Matrix3& rotation)
 //	return 	inverse(matrix) * Vector4(point, 1);
 //}
 
-Args::Vector3 Args::Transform::GetForward()
+Args::Vector3 Args::Transform::GetForward() const
 {
 	return WorldRotatePoint(forward);
 }
 
-Args::Vector3 Args::Transform::GetRight()
+Args::Vector3 Args::Transform::GetRight() const
 {
 	return WorldRotatePoint(right);
 }
 
-Args::Vector3 Args::Transform::GetUp()
+Args::Vector3 Args::Transform::GetUp() const
 {
 	return WorldRotatePoint(up);
 }
@@ -132,7 +132,7 @@ void Args::Transform::Scale(const Vector3& scale)
 	SetScale(GetScale() * scale);
 }
 
-Args::Matrix4 Args::Transform::GetWorldTransform()
+Args::Matrix4 Args::Transform::GetWorldTransform() const
 {
 	if (parent == 0)
 		return matrix;
@@ -140,7 +140,7 @@ Args::Matrix4 Args::Transform::GetWorldTransform()
 	return manager->GetComponent<Transform>(parent)->GetWorldTransform() * matrix;
 }
 
-Args::Vector3 Args::Transform::GetWorldPosition()
+Args::Vector3 Args::Transform::GetWorldPosition() const
 {
 	if (parent == 0)
 		return position;
@@ -159,7 +159,7 @@ void Args::Transform::SetWorldPosition(const Vector3& position)
 	this->position = inverse(manager->GetComponent<Transform>(parent)->GetWorldTransform()) * Vector4(position, 1);
 }
 
-Args::Vector3 Args::Transform::GetWorldScale()
+Args::Vector3 Args::Transform::GetWorldScale() const
 {
 	if (parent == 0)
 		return GetScale();
@@ -181,7 +181,7 @@ void Args::Transform::SetWorldScale(const Vector3& scale)
 	SetScale(scale / parentWorldScale);
 }
 
-Args::Quaternion Args::Transform::GetWorldRotation()
+Args::Quaternion Args::Transform::GetWorldRotation() const
 {
 	if (parent == 0)
 		GetRotation();
@@ -203,37 +203,37 @@ void Args::Transform::SetWorldRotation(const Quaternion& rotation)
 	SetRotation(inverse(parentWorldRotation) * rotation);
 }
 
-Args::Vector3 Args::Transform::WorldRotatePoint(const Vector3& point)
+Args::Vector3 Args::Transform::WorldRotatePoint(const Vector3& point) const
 {
 	return GetWorldTransform() * Vector4(point, 0);
 }
 
-Args::Vector3 Args::Transform::WorldTransformPoint(const Vector3& point)
+Args::Vector3 Args::Transform::WorldTransformPoint(const Vector3& point) const
 {
 	return GetWorldTransform() * Vector4(point, 1);
 }
 
-Args::Vector3 Args::Transform::GetWorldForward()
+Args::Vector3 Args::Transform::GetWorldForward() const
 {
 	return WorldRotatePoint(forward);
 }
 
-Args::Vector3 Args::Transform::GetWorldRight()
+Args::Vector3 Args::Transform::GetWorldRight() const
 {
 	return WorldRotatePoint(right);
 }
 
-Args::Vector3 Args::Transform::GetWorldUp()
+Args::Vector3 Args::Transform::GetWorldUp() const
 {
 	return WorldRotatePoint(up);
 }
 
-Args::uint32 Args::Transform::GetParent()
+Args::uint32 Args::Transform::GetParent() const
 {
 	return parent;
 }
 
-std::vector<Args::uint32> Args::Transform::GetChildren()
+std::vector<Args::uint32> Args::Transform::GetChildren() const
 {
 	return children;
 }

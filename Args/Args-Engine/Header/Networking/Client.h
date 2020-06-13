@@ -6,5 +6,5 @@ class Client
 public:
 	Client();
 	~Client();
-	void start();
+	void start() const;
 };

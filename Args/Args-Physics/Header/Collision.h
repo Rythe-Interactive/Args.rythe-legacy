@@ -15,7 +15,7 @@ namespace Args
 
 		Collision() : other(nullptr), self(nullptr), impulse(), normal(), penetration(0) {}
 
-		operator bool()
+		operator bool() const
 		{
 			return other != nullptr;
 		}

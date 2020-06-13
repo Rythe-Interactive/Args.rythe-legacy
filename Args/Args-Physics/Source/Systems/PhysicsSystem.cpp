@@ -87,7 +87,7 @@ void Args::PhysicsSystem::ResolveCollisions(float deltaTime)
 	}
 }
 
-Args::Vector3 Args::PhysicsSystem::CalcImpact(Vector3 surfaceNormal, Vector3 incomingVec, float restitution)
+Args::Vector3 Args::PhysicsSystem::CalcImpact(Vector3 surfaceNormal, Vector3 incomingVec, float restitution) const
 {
 	Vector3 result = -(1 + restitution) * dot(incomingVec, surfaceNormal) * surfaceNormal;
 	if(result.x != result.x)

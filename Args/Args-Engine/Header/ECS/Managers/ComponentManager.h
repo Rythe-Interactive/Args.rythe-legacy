@@ -72,7 +72,7 @@ namespace Args
 		void DestroyComponent(uint32 entityId, uint32 typeId, size_t index = 0);
 
 
-		size_t GetEntityCount();
+		size_t GetEntityCount() const;
 
 		Entity* GetEntityProxy(uint32 entityId);
 

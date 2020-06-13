@@ -89,7 +89,7 @@ void Args::Engine::Run()
 	Debug::Log(DebugInfo, "Engine exited with code: %i", ExitCode());
 }
 
-int Args::Engine::ExitCode()
+int Args::Engine::ExitCode() const
 {
 	if (CheckEvent<Events::Exit>())
 		return GetEvent<Events::Exit>()->exitCode;

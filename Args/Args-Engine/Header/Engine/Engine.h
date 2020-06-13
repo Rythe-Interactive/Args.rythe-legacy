@@ -58,7 +58,7 @@ namespace Args
 		template<class ComponentType, INHERITS_FROM(ComponentType, IComponent)>
 		uint32 AddComponent(uint32 entityId, ComponentType** componentHandle);
 
-		uint32 CreateEntity()
+		uint32 CreateEntity() const
 		{
 			return ecs->CreateEntity();
 		}
@@ -72,7 +72,7 @@ namespace Args
 		template<typename ComponentType, INHERITS_FROM(ComponentType, IComponent)>
 		void RegisterComponentType();
 
-		int ExitCode();
+		int ExitCode() const;
 	};
 
 	template<typename EventType, typename... Arguments>

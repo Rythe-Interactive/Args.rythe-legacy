@@ -10,8 +10,8 @@ namespace Args
 		std::chrono::time_point<std::chrono::system_clock> start;
 	public:
 		void Start();
-		Time GetElapsedTime();
-		Time End();
+		Time GetElapsedTime() const;
+		Time End() const;
 		Time Restart();
 	};
 }

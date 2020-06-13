@@ -69,7 +69,7 @@ void Args::WindowSystem::Update(float deltaTime)
 	glfwPollEvents();
 }
 
-void Args::WindowSystem::OnExit(IEvent* event)
+void Args::WindowSystem::OnExit(IEvent* event) const
 {
 	Window* window = componentManager->GetGlobalComponent<Window>();
 	glfwDestroyWindow(window->handle);
