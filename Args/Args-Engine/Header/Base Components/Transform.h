@@ -50,9 +50,9 @@ namespace Args
 		void SetRotation(const Quaternion& rotation);
 		void SetRotation(const Matrix3& rotation);
 
-		Vector3 GetForward();
-		Vector3 GetRight();
-		Vector3 GetUp();
+		Vector3 GetForward() const;
+		Vector3 GetRight() const;
+		Vector3 GetUp() const;
 
 		void SetForward(const Vector3& forward);
 		void SetRight(const Vector3& right);
@@ -65,26 +65,26 @@ namespace Args
 		// Scale locally
 		void Scale(const Vector3& scale);
 
-		Matrix4 GetWorldTransform();
+		Matrix4 GetWorldTransform() const;
 
-		Vector3 GetWorldPosition();
+		Vector3 GetWorldPosition() const;
 		void SetWorldPosition(const Vector3& position);
 
-		Vector3 GetWorldScale();
+		Vector3 GetWorldScale() const;
 		void SetWorldScale(const Vector3& scale);
 
-		Quaternion GetWorldRotation();
+		Quaternion GetWorldRotation() const;
 		void SetWorldRotation(const Quaternion& rotation);
 
-		Vector3 WorldRotatePoint(const Vector3& point);
-		Vector3 WorldTransformPoint(const Vector3& point);
+		Vector3 WorldRotatePoint(const Vector3& point) const;
+		Vector3 WorldTransformPoint(const Vector3& point) const;
 
-		Vector3 GetWorldForward();
-		Vector3 GetWorldRight();
-		Vector3 GetWorldUp();
+		Vector3 GetWorldForward() const;
+		Vector3 GetWorldRight() const;
+		Vector3 GetWorldUp() const;
 		
-		uint32 GetParent();
-		std::vector<uint32> GetChildren();
+		uint32 GetParent() const;
+		std::vector<uint32> GetChildren() const;
 		void SetParent(Transform* transform);
 		void AddChild(Transform* transform);
 		void RemoveChild(Transform* transform);

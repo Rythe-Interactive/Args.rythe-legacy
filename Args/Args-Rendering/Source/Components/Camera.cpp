@@ -10,17 +10,17 @@ void Args::Camera::SetProjection(float fovy, float ratio, float nearz)
 		0.0f, 0.0f, nearz, 0.0f);
 }
 
-Args::Vector3 Args::Camera::GetPosition()
+Args::Vector3 Args::Camera::GetPosition() const
 {
 	return owner->GetComponent<Transform>()->GetPosition();
 }
 
-Args::Matrix4 Args::Camera::GetViewProjection()
+Args::Matrix4 Args::Camera::GetViewProjection() const
 {
 	return projection * inverse(owner->GetComponent<Transform>()->GetWorldTransform());
 }
 
-Args::Matrix4 Args::Camera::GetView()
+Args::Matrix4 Args::Camera::GetView() const
 {
 	return inverse(owner->GetComponent<Transform>()->GetWorldTransform());
 }

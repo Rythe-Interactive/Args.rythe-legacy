@@ -18,8 +18,8 @@ namespace Args
 		template<typename T>
 		T Milliseconds() { return std::chrono::duration_cast<std::chrono::duration<T, std::milli>>(time).count(); }
 
-		float Minutes() { return std::chrono::duration_cast<std::chrono::duration<float, std::ratio<60>>>(time).count(); }
-		float Seconds() { return std::chrono::duration_cast<std::chrono::duration<float>>(time).count(); }
-		float Milliseconds() { return std::chrono::duration_cast<std::chrono::duration<float, std::milli>>(time).count(); }
+		float Minutes() const { return std::chrono::duration_cast<std::chrono::duration<float, std::ratio<60>>>(time).count(); }
+		float Seconds() const { return std::chrono::duration_cast<std::chrono::duration<float>>(time).count(); }
+		float Milliseconds() const { return std::chrono::duration_cast<std::chrono::duration<float, std::milli>>(time).count(); }
 	};
 }

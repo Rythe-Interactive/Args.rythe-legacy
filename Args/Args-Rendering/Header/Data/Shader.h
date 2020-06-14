@@ -1,5 +1,5 @@
 #pragma once
-#include <glad/glad.h>
+#include <Utils/GL.h>
 #include <vector>
 #include <string>
 #include <Args-Core.h>
@@ -42,7 +42,7 @@ namespace Args
 	public:
 		Sampler(Shader* shader, std::string name, GLenum type, GLint location, GLint sampler) : IShaderParameter(shader, name, type, location), sampler(sampler) {}
 
-		void SetTexture(const Texture* texture)
+		void SetTexture(const Texture* texture) const
 		{
 			glActiveTexture(GL_TEXTURE0 + sampler);
 			glBindTexture(GL_TEXTURE_2D, texture->GetTexture());
@@ -176,13 +176,13 @@ namespace Args
 	public:
 		Attribute(Shader* shader, std::string name, GLenum type, GLint location) : IShaderParameter(shader, name, type, location) {}
 
-		void SetAttributePointer(GLint size, GLenum type, GLboolean normalized, GLsizei stride, const GLvoid* pointer)
+		void SetAttributePointer(GLint size, GLenum type, GLboolean normalized, GLsizei stride, const GLvoid* pointer) const
 		{
 			glEnableVertexAttribArray(location);
 			glVertexAttribPointer(location, size, type, normalized, stride, pointer);
 		}
 
-		void DisableAttributePointer()
+		void DisableAttributePointer() const
 		{
 			glDisableVertexAttribArray(location);
 		}
@@ -196,7 +196,7 @@ namespace Args
 		static Shader* CreateShader(const std::string& name, const std::string& vertexShader, const std::string& fragmentShader);
 		static Shader* GetShader(const std::string& name);
 
-		void Use();
+		void Use() const;
 		void Bind(Mesh* mesh, const std::vector<LightData>& lights);
 		void Render(const std::vector<Matrix4>& instances, Mesh* mesh, Camera* camera);
 		void Release(Mesh* mesh);
@@ -235,11 +235,11 @@ namespace Args
 
 		void AddShader(GLuint pShaderType, const std::string& pShaderPath);
 
-		std::string ReadFile(const std::string& shaderPath);
+		std::string ReadFile(const std::string& shaderPath) const;
 
-		GLuint CompileShader(GLuint shaderType, const std::string& shaderSource);
+		GLuint CompileShader(GLuint shaderType, const std::string& shaderSource) const;
 
-		void ProcessIncludes(std::string& shaderSource);
+		void ProcessIncludes(std::string& shaderSource) const;
 
 		void ProcessParameters();
 

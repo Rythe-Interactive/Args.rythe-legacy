@@ -216,8 +216,8 @@ namespace Args
         //void BindFunctionToButtonEvent(std::string name, std::function<void()> func); 
         void InvokeAction(Key key, bool onPress);
         void InvokeAxis(Key key);
-        void doSomething();
-        void axisDoSomething(float axis);
+        void doSomething() const;
+        void axisDoSomething(float axis) const;
 
     private:
         std::unordered_map<std::string, Key> enumStorage;

@@ -12,7 +12,7 @@ Client::~Client()
 {
 }
 
-void Client::start()
+void Client::start() const
 {
 	WORD winsock_version = 0x202;
 	WSADATA winsock_data;

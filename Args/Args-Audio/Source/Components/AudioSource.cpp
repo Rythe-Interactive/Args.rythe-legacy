@@ -1,7 +1,7 @@
 #include "Components/AudioSource.h"
 #include "Components/AudioDevice.h"
 
-void Args::AudioSource::Load(const std::string& file, bool loop)
+void Args::AudioSource::Load(const std::string& file, bool loop) const
 {
 	AudioDevice* device = owner->manager->GetGlobalComponent<AudioDevice>();
 

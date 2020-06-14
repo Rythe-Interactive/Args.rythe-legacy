@@ -1,7 +1,7 @@
 #include "Components/AudioListener.h"
 #include "Components/AudioDevice.h"
 
-void Args::AudioListener::UpdateListener(Transform* transform)
+void Args::AudioListener::UpdateListener(Transform* transform) const
 {
 	AudioDevice* device = owner->manager->GetGlobalComponent<AudioDevice>();
 	device->UpdateListener(transform->GetWorldPosition(), transform->GetWorldForward(), up);

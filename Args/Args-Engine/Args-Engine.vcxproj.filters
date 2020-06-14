@@ -129,6 +129,9 @@
     <ClInclude Include="Header\Algorithms-DataStructures\sparse_set.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Header\Utils\GL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Time\Clock.cpp">

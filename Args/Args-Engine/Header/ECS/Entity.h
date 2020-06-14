@@ -27,7 +27,7 @@ namespace Args
 			return manager->AddComponent<ComponentType>(id);
 		}
 
-		uint32 AddComponent(std::string typeName)
+		uint32 AddComponent(std::string typeName) const
 		{
 			return manager->AddComponent(typeName, id);
 		}
@@ -38,12 +38,12 @@ namespace Args
 			manager->DestroyComponent<ComponentType>(id, index);
 		}
 
-		void DestroyComponent(std::string typeName, size_t index = 0)
+		void DestroyComponent(std::string typeName, size_t index = 0) const
 		{
 			manager->DestroyComponent(id, typeName, index);
 		}
 
-		void DestroyEntity();
+		void DestroyEntity() const;
 
 		template<typename ComponentType, INHERITS_FROM(ComponentType, IComponent)>
 		ComponentType* GetComponent(size_t index = 0)

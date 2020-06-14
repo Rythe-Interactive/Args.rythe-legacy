@@ -72,7 +72,7 @@ namespace Args
 		void DestroyComponent(uint32 entityId, uint32 typeId, size_t index = 0);
 
 
-		size_t GetEntityCount();
+		size_t GetEntityCount() const;
 
 		Entity* GetEntityProxy(uint32 entityId);
 
@@ -160,7 +160,7 @@ namespace Args
 			return;
 		}
 
-		uint32 id = internalComponentIds.size() + 1;
+		uint32 id = static_cast<uint32>(internalComponentIds.size()) + 1;
 		internalComponentIds[externalId] = id;
 
 		ComponentType::typeId = id;
@@ -183,7 +183,7 @@ namespace Args
 			return;
 		}
 
-		uint32 id = internalGlobalComponentIds.size() + 1;
+		uint32 id = static_cast<uint32>(internalGlobalComponentIds.size()) + 1;
 		internalGlobalComponentIds[externalId] = id;
 
 		globalComponentTypeIds[typeName] = id;

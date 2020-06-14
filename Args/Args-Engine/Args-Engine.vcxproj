@@ -177,6 +177,7 @@
     <ClInclude Include="Header\ECS\Managers\ComponentManager.h" />
     <ClInclude Include="Header\Serialisation\Serialisable.h" />
     <ClInclude Include="Header\Utils\Debug.h" />
+    <ClInclude Include="Header\Utils\GL.h" />
     <ClInclude Include="Include\Engine\BaseComponents.h" />
     <ClInclude Include="Include\Engine\ECSBase.h" />
     <ClInclude Include="Include\Engine\Events.h" />

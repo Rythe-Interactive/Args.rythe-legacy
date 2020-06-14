@@ -306,11 +306,11 @@ void Args::InputSystem::InvokeAxis(Key key)
 	}
 	//Debug::Log(DebugInfo, "DoSomething \n");
 }
-void Args::InputSystem::doSomething()
+void Args::InputSystem::doSomething() const
 {
 	Debug::Log(DebugInfo, "DidSomething");
 }
-void Args::InputSystem::axisDoSomething(float axis)
+void Args::InputSystem::axisDoSomething(float axis) const
 {
 	Debug::Log(DebugInfo, "Axis: %f", axis);
 }

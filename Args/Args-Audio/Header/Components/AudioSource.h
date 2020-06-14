@@ -10,7 +10,7 @@ namespace Args
 
 		//irrklang::ISound* sound;
 
-		void Load(const std::string& file, bool loop = false);
+		void Load(const std::string& file, bool loop = false) const;
 
 		void SetPosition(Vector3 position);
 

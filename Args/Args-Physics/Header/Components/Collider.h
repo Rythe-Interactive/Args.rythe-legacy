@@ -2,7 +2,6 @@
 #include <Args-Core.h>
 #include <Args-Math.h>
 #include <functional>
-#include <glad/glad.h>
 #include "Collision.h"
 
 namespace Args

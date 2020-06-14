@@ -29,7 +29,7 @@ void Args::Shader::AddShader(GLuint shaderType, const std::string& shaderPath)
 		shaderIds.push_back(shaderId);
 }
 
-std::string Args::Shader::ReadFile(const std::string& shaderPath)
+std::string Args::Shader::ReadFile(const std::string& shaderPath) const
 {
 	std::string contents;
 	std::ifstream file(shaderPath, std::ios::in);
@@ -49,7 +49,7 @@ std::string Args::Shader::ReadFile(const std::string& shaderPath)
 }
 
 // compile the code, and detect errors.
-GLuint Args::Shader::CompileShader(GLuint shaderType, const std::string& shaderSource)
+GLuint Args::Shader::CompileShader(GLuint shaderType, const std::string& shaderSource) const
 {
 	std::string shadertype = "unknown";
 
@@ -104,7 +104,7 @@ GLuint Args::Shader::CompileShader(GLuint shaderType, const std::string& shaderS
 	}
 }
 
-void Args::Shader::ProcessIncludes(std::string& shaderSource)
+void Args::Shader::ProcessIncludes(std::string& shaderSource) const
 {
 	while (size_t includePosition = shaderSource.find("#include") != std::string::npos)
 	{
@@ -319,7 +319,7 @@ Args::Shader* Args::Shader::GetShader(const std::string& name)
 	return shaders[name];
 }
 
-void Args::Shader::Use()
+void Args::Shader::Use() const
 {
 	glUseProgram(programId);
 }

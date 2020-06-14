@@ -14,9 +14,9 @@ namespace Args
 
 		void SetProjection(float fovy, float ratio, float nearz);
 
-		Vector3 GetPosition();
-		Matrix4 GetViewProjection();
-		Matrix4 GetView();
+		Vector3 GetPosition() const;
+		Matrix4 GetViewProjection() const;
+		Matrix4 GetView() const;
 
 		// Inherited via Component
 		virtual std::string ObjectType() override;
